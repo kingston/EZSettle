@@ -1,3 +1,15 @@
-.body               { }
-.header             { }
-.footer             { text-align: center; }
+body                { background: #fff url(../images/background.png) repeat-x top left; 
+                        font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 16px;
+                        text-decoration: none; color: #000000; }
+a                   { text-decoration: none; color: #0000cc; }
+a:hover             { text-decoration: underline; }
+.container          { background: #fff; color: #000; padding: 10px;
+                        -moz-border-radius: 10px; -webkit-border-radius: 10px;
+                        -moz-box-shadow: 3px 3px 5px #333; -webkit-box-shadow: 3px 3px 5px #555;}                        
+.header             {  }
+.main_body          { min-height: 600px; }
+.headline           { font-size: 1.5em; }
+
+
+.footer             { text-align: center; margin-top: 15px;}
+#nav                { float: right; }
