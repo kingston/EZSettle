@@ -15,9 +15,14 @@
 	<body>
 		<div class="container">
 			<div class="header span-24 last append-bottom">
-				<div class="logo span-6"><img class="left" src="images/ezsettle.png"></div>
+				<div class="logo span-6"><a href="index.php"><img class="left" src="images/ezsettle.png"></a></div>
 				<div class="header_links prepend-6 span-10 append-2 last">
 					<div id="nav">
-						<a href="index.php">Home</a> | EZSettle0.1 | Company | Legal | FAQ | Contact</div>
+						<a href="index.php">Home</a> | 
+						<a href="system.php">EZSettle0.1</a> | 
+						<a href="terms.php">Terms</a> |
+						<a href="faq.php">FAQ</a> |
+						<a href="contact.php">Contact</a>
+					</div>
 				</div>
 			</div><!-- end header -->
