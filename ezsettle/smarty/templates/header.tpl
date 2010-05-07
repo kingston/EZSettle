@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="css/buttons.css" type="text/css" />
 		<!--[if lt IE 8]><link rel="stylesheet" href="/../css/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
 		
-		<script type="text/javascript" src="js/lib/jquery-1.4.js"></script>
+		<script type="text/javascript" src="js/jquery-1.4.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -20,7 +20,7 @@
 					<div id="nav">
 						<a href="index.php">Home</a> | 
 						<a href="system.php">EZSettle0.1</a> | 
-						<a href="terms.php">Terms</a> |
+						<a href="privacy.php">Privacy</a> |
 						<a href="faq.php">FAQ</a> |
 						<a href="contact.php">Contact</a>
 					</div>

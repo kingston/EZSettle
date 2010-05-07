@@ -1,7 +1,7 @@
 {include file="header.tpl"}
 
 <div class="main_body">
-	<div class="large loud headline">Terms of service</div>
+	<div class="large loud headline">Privacy Policy</div>
 	<hr class="space"/>
 	Your privacy is important to EZSettle. We limit the collection and use of customer information to the minimum required to deliver superior service to our customers, which includes advising them about our products, services and other opportunities, and to administer our business. We do not reveal customer information to external organizations unless we have previously informed the customer in disclosures or agreements, have been authorized by the customer, or are required by law.
 <hr class="space"/>

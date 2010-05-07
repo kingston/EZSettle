@@ -18,8 +18,11 @@
 			<div class="span-12 quiet last">EZSettle is the gold standard in secure online dispute resolution support systems. The EZSettle system is build around the patent pending AnaLegal computational optimization engine to speed up the decision process and produce fair and efficient solutions for any type of case, anywhere in the world.</div>
 		</div>
 		<hr class="space"/>
-		<div class="prepend-11 span-4 last">
-			<button class="large awesome super red button">Learn More »</button>
+		<div class="prepend-7 span-4">
+			<button class="large awesome super black button">Learn More</button>
+		</div>
+		<div class="span-4 last pull-1">
+			<a href="signin.php" class="large awesome super red button">Get Started »</a>
 		</div>
 	</div>
 </div><!-- end main body -->
