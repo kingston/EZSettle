@@ -19,7 +19,7 @@
 		</div>
 		<hr class="space"/>
 		<div class="prepend-7 span-4">
-			<button class="large awesome super black button">Learn More</button>
+			<a class="large awesome super black button">Learn More</a>
 		</div>
 		<div class="span-4 last pull-1">
 			<a href="signin.php" class="large awesome super red button">Get Started »</a>

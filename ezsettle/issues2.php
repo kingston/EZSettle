@@ -7,7 +7,7 @@ $issuesArr = array('Return laptop', 'Pay back cost of computer', 'Pay back origi
 
 $smarty->assign('issues', $issuesArr);
 
-$smarty->display('issues.tpl');
+$smarty->display('issues_rank.tpl');
 
 ?>
 

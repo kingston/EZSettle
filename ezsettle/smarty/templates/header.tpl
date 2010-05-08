@@ -11,6 +11,7 @@
 		<!--[if lt IE 8]><link rel="stylesheet" href="/../css/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
 		
 		<script type="text/javascript" src="js/jquery-1.4.js"></script>
+		<script type="text/javascript" src="js/jqueryui/js/jqueryui.js"></script>
 	</head>
 	<body>
 		<div class="container">
