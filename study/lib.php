@@ -1,5 +1,5 @@
 <?php
 function echoHeader(){
-    echo "We deliver quantity, not quality!<br />";
+    echo "<img src='header.png'>";
 }
 ?>
