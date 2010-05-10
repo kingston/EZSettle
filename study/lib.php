@@ -1,5 +1,5 @@
 <?php
 function echoHeader(){
-    echo "<img src='header.png'>";
+    echo "<img style:'padding:20px;' src='header.png'>";
 }
 ?>
