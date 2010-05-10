@@ -1,8 +1,12 @@
+<?php include("lib.php"); ?>
+
 <HTML>
 
 <head>
 
-<h1> Welcome! </h1>
+    <LINK href="style.css" rel="stylesheet" type="text/css">
+
+	<h1> Welcome! </h1>
 
 </head>
 

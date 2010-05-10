@@ -1,6 +1,10 @@
+<?php include("lib.php"); ?>
+
 <HTML>
 
 <head>
+
+    <LINK href="style.css" rel="stylesheet" type="text/css">
 
 	<h1> Fact Card - Keep open for reference </h1>
 

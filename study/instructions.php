@@ -1,4 +1,10 @@
+<?php include("lib.php"); ?>
+
 <HTML>
+
+<head>
+	<LINK href="style.css" rel="stylesheet" type="text/css">
+</head>
 
 <h1> Instructions </h1>
 <h2> Keep this open for the rest of the experiment. </h2>

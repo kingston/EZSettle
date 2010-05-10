@@ -1,4 +1,12 @@
+<?php include("lib.php"); ?>
+
 <HTML>
+
+<head>
+
+    <LINK href="style.css" rel="stylesheet" type="text/css">
+
+</head>
 
 Before going on to the experiment, we need you to fill out some basic information.
 
