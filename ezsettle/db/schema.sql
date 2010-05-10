@@ -1,15 +1,18 @@
 CREATE TABLE users (
     user_id INTEGER PRIMARY KEY,
     experimental_id INTEGER UNIQUE NOT NULL,
-    password,
-    condition,
-    
+    condition INTEGER AUTO_INCREMENT  
+);
+
+CREATE TABLE conditions (
+    condition_id INTEGER PRIMARY KEY,
+    condition VARCHAR(128)
 );
 
 CREATE TABLE pages (
     page_id INTEGER PRIMARY KEY,
     name TEXT,
-)
+);
 
 CREATE TABLE times (
     time_id INTEGER PRIMARY KEY,
@@ -21,7 +24,7 @@ CREATE TABLE times (
     FOREIGN KEY(user_id) REFERENCES users(user_id),
     
     time_spent INTEGER
-)
+);
 
 CREATE TABLE offers (
     offer_id INTEGER PRIMARY KEY,
