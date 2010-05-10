@@ -1,7 +1,5 @@
-<?php>
-
-	echoHeader(){
-		echo "<img src=''/>"
-	}
-
-</?>
+<?php
+function echoHeader(){
+    echo "We deliver quantity, not quality!<br />";
+}
+?>
