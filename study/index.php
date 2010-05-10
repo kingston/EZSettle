@@ -18,7 +18,7 @@
 </body>
 
 <p>
-	<a href="info.html"> Continue </a>
+	<a href="info.php"> Continue </a>
 </p>
 
 <HTML>
