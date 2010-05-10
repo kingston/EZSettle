@@ -3,7 +3,9 @@
 <HTML>
 
 <head>
-
+	
+	<?php echoHeader(); ?>
+	
     <LINK href="style.css" rel="stylesheet" type="text/css">
 
 	<h1> Welcome! </h1>
