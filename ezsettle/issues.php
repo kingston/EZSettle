@@ -6,13 +6,22 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL); // show EVERYTHING
 require('init_smarty.php');
 
-$issuesArr = array('Return laptop', 'Pay back cost of computer', 'Pay back original shipment', 'Pay cost of renewal computer', 'Pay emotional distress damages', 'If relevant, pay cost of return shipment');
+$_SESSION['issuesArr']= array('Return laptop', 'Pay back cost of computer', 'Pay back original shipment', 'Pay cost of renewal computer', 'Pay emotional distress damages', 'If relevant, pay cost of return shipment');
 
-$_SESSION['issuesArr'] = $issuesArr;
-$_SESSION['issuesArrIndex'] = 0;
+$_SESSION['chatNew'] = array(
+	array('speaker'=>'Mediator', 'message'=>'Hello!'), 
+	array('speaker' => 'Mediator', 'message' => 'In this process, we would like to address the concerns that both you and Casey345 raised. We combined the issues that the two of you included in your correspondence with PC4U.com into a single list.'), 
+	
+	array('speaker' => 'Mediator', 'message' => 'You may not recognize all the issues in the list, if the other party has raised an issue that you did not include in your list. After reviewing the list, please click “yes” to confirm that these are the issues or “no” to add another issue.'),
 
-$smarty->assign('issues', $issuesArr);
-$smarty->assign('issues_index', $_SESSION['issuesArrIndex']);
+
+	);
+$_SESSION['chatOld'] = array();
+
+$smarty->assign('issues', $_SESSION['issuesArr']);
+$smarty->assign('chatNew', $_SESSION['chatNew']);
+$smarty->assign('chatOld', $_SESSION['chatOld']);
+
 $smarty->display('issues.tpl');
 
 ?>

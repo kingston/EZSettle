@@ -5,9 +5,9 @@
 		{literal}
 			//<![CDATA[
 		$(".chat").each(function(index) {
-			var time = $(this).attr("id") * 2000;
+			var time = $(this).attr("id") * 2500;
 			var elem = $(this);
-			setTimeout(function() { $(elem).show(); }, time);
+			setTimeout(function() { $(elem).show(); $("#chatbox").scrollTo($(elem)); }, time);
 		});
 		//]]>
 		{/literal}

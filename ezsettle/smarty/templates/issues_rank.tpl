@@ -3,7 +3,7 @@
 <div class="main_body">
 	<div class="loud headline append-bottom">Please rank the importance of each of the issues to you</div>
 	<div class="span-24 last">
-		<div class="box" style="height: 200px; overflow: scroll;"><span class="speaker">EZSettle Mediator:</span>Pull the marker to indicate how important each issue is to you  (most right – very important, most left –not important) we will show you a numerical value ranging from 1-100 corresponding to your mark on the scale. In case you and Casey345 do not reach an agreement within 3 rounds of mediation, your ranking will help the EZSettle arbitrator consider which aspects of this dispute are more important to you when determining the final settlement.</div>
+		{include file="chat.tpl"}
 		<div class="prepend-3 span-18 last">
 		<table>
 			<tr>
