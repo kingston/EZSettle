@@ -36,3 +36,15 @@ CREATE TABLE offers (
     
     amount INTEGER
 );
+
+CREATE TABLE chat (
+    chat_id INTEGER PRIMARY KEY,
+    
+    text VARCHAR(1024),
+    
+    user_id INTEGER,
+    FOREIGN KEY(user_id) REFERENCES users(user_id),
+    
+    page_id INTEGER,
+    FOREIGN KEY(page_id) REFERENCES pages(page_id)
+)

@@ -12,7 +12,7 @@
 
 <ol>
 	<li> Click <a href="factcard.php" target="_blank">here</a> to view your role and fact card.</li>
-	<li> Click <a href="ezsettle.dmsalias.com" target="_blank">here</a> and login with username and password in your e-mail.</li>
+	<li> Click <a href="http://ezsettle.dnsalias.com" target="_blank">here</a> and login with username and password in your e-mail.</li>
 	<li> Fill out your exit survey <a href="">here</a> </li>
 </ol>
 
