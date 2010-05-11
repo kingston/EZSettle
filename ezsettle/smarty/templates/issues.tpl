@@ -29,6 +29,7 @@
 		<div style="display:none;" id="more_issues">
 			Add additional issues:
 			<input type="text" />
+			<input type="submit" value="Add">
 		</div>
 	</div>
 	</div>

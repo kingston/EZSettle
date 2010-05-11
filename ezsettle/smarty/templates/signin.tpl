@@ -3,16 +3,51 @@
 <div class="main_body prepend-5 span-14 append-5">
 	<div class="loud notice">Get started:</div>
 	<div class="box">
-		<form id="signin" name="signin" method="post" action="postsignin.php">
+		<form id="signin" name="signin" method="post" action="actions/postsignin.php">
 			<fieldset>
 			<div class="span-5"><label for="username">Username:</label></div>
 			<div class="span-5 last"><input type="text" id="username" name="username"/></div>
 			<div class="span-5"><label for="password">Password:</label></div>
 			<div class="span-5 last"><input type="password" id="password" name="password"/></div>
-			<div class="span-10 last"><input type="checkbox" id="agree" name="agree" disabled/>
+			<div class="span-10 last"><input type="checkbox" id="agree" name="agree"/>
 				I have read and agree to the <a href="privacy.php">terms of service.</a></div>
-			<div class="prepend-5 span-5 last"><input type="submit" class="super awesome large red button" value="Sign In"/></div>
+			<div class="prepend-7 span-5 last"><input type="submit" class="super awesome large red button" value="Sign In"/></div>
 			</fieldset>
 		</form>
 	</div>
+	<div id="errors" class="error" style="display:none;"></div>
 </div><!-- end main body -->
+
+<script type="text/javascript">
+{literal}
+	//<![CDATA[
+		$(document).ready(function() {
+			$("#signin").ajaxForm({
+				dataType: 'json',
+				beforeSubmit: preSignin,
+				success: postSignin
+			});
+		});
+		
+		function preSignin(formData, jqForm, options) {
+			var errors = "";
+			if($("#username").val() == "") {
+				errors += "You must enter your username!<br/>";
+			}
+			if($("#password").val() == "") {
+				errors += "You must enter your password!<br/>";
+			}
+			if (errors != "") {
+				$("#errors").html(errors);
+				$("#errors").show();
+				return false;
+			}
+		}
+		
+		function postSignin(data) {
+			window.location = 'cases.php';
+		}
+		
+	//]]>
+{/literal}
+</script>

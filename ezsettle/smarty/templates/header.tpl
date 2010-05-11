@@ -13,6 +13,7 @@
 		
 		<script type="text/javascript" src="js/jquery-1.4.js"></script>
 		<script type="text/javascript" src="js/jqueryui/js/jqueryui.js"></script>
+		<script type="text/javascript" src="js/jquery.form.js"></script>
 	</head>
 	<body>
 		<div class="container">

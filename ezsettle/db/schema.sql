@@ -1,3 +1,4 @@
+PRAGMA foreign_keys = ON;
 CREATE TABLE users (
     user_id INTEGER PRIMARY KEY,
     experimental_id INTEGER UNIQUE NOT NULL,
@@ -6,33 +7,41 @@ CREATE TABLE users (
 
 CREATE TABLE conditions (
     condition_id INTEGER PRIMARY KEY,
-    condition VARCHAR(128)
+    condition TEXT
 );
 
 CREATE TABLE pages (
     page_id INTEGER PRIMARY KEY,
-    name TEXT,
+    name TEXT
 );
 
 CREATE TABLE times (
     time_id INTEGER PRIMARY KEY,
     
-    page_id INTEGER,
-    FOREIGN KEY(page_id) REFERENCES pages(page_id),
+    page_fk INTEGER,
+    FOREIGN KEY(page_fk) REFERENCES pages(page_id),
     
-    user_id INTEGER,
-    FOREIGN KEY(user_id) REFERENCES users(user_id),
+    user_fk INTEGER,
+    FOREIGN KEY(user_fk) REFERENCES users(user_id),
     
     time_spent INTEGER
+);
+
+CREATE TABLE issues (
+    issue_id INTEGER PRIMARY KEY,
+    issue TEXT
 );
 
 CREATE TABLE offers (
     offer_id INTEGER PRIMARY KEY,
     
-    user_id INTEGER,
-    FOREIGN KEY(user_id) REFERENCES users(user_id),
+    user_fk INTEGER,
+    FOREIGN KEY(user_fk) REFERENCES users(user_id),
     
-    step INTEGER,
+    issue_fk INTEGER,
+    FOREIGN KEY(issue_fk) REFERENCES issues(issue_id),
+    
+    offer_num INTEGER,
     
     amount INTEGER
 );
@@ -42,9 +51,9 @@ CREATE TABLE chat (
     
     text VARCHAR(1024),
     
-    user_id INTEGER,
-    FOREIGN KEY(user_id) REFERENCES users(user_id),
+    user_fk INTEGER,
+    FOREIGN KEY(user_fk) REFERENCES users(user_id),
     
-    page_id INTEGER,
-    FOREIGN KEY(page_id) REFERENCES pages(page_id)
-)
+    page_fk INTEGER,
+    FOREIGN KEY(page_fk) REFERENCES pages(page_id)
+);
