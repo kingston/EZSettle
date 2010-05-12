@@ -1,7 +1,13 @@
 {include file="header.tpl"}
 
 <div class="main_body prepend-5 span-14 append-5">
-	<div class="loud notice">Get started:</div>
+	
+	{if isset($logout)}
+		<div class="loud notice">You have been successfully logged out.</div>
+	{else}
+		<div class="loud success">Please login to get started:</div>
+	{/if}
+	
 	<div class="box">
 		<form id="signin" name="signin" method="post" action="actions/postsignin.php">
 			<fieldset>

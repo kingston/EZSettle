@@ -5,6 +5,7 @@ error_reporting(E_ALL); // show EVERYTHING
 require('init_smarty.php');
 
 $newOld = array_merge($_SESSION['chatOld'], $_SESSION['chatNew']);
+$_SESSION['chatOld'] = $newOld;
 
 $_SESSION['offer_titles'] = array(	1 => "Your offer #1",
 									2 => "Casey345's Response #1",
@@ -13,27 +14,60 @@ $_SESSION['offer_titles'] = array(	1 => "Your offer #1",
 									5 => "Your offer #3",
 									6 => "Casey345's Response #3"
 								);
-									
-if (!isset($_POST['offer'])) {
-	$_SESSION['offer'] = 1;
+$_SESSION['counteroffers'] = array(
+									array('No', '500', '0', '0', '0', '0'),
+									array('No', '600', '0', '0', '0', '0'),
+									array('No', '700', '0', '0', '0', '0')
+									);			
+															
+if (!isset($_POST['offer_num'])) {
+	$_SESSION['offer_num'] = 1;
+	$_SESSION['offers'] = array();
 
 }
 else {
-	$_SESSION['offer'] = $_POST['offer'];
+	$_SESSION['offer_num'] = $_POST['offer_num'];
+	$_SESSION['offer_num']++;
+	$step = $_SESSION['offer_num']/2-1;
+	$_SESSION['offers'][$step] = array(	postvar('issues0'),
+										postvar('issues1'),
+										postvar('issues2'),
+										postvar('issues3'),
+										postvar('issues4'),
+										postvar('issues5')
+									);
+									
 }
 
-$_SESSION['chatOld'] = $newOld;
-$_SESSION['chatNew'] = array(
-							array(	'speaker' => 'Mediator', 
-									'message' => 'Pat128, since you initiated the process, please list in the fields below your first offer on each item. Remember, you and Casey345 will be able to exchange 3 offers in order to reach an agreement.')
-							);
-
+switch($_SESSION['offer_num']) {
+	case 1:
+		$_SESSION['chatNew'] = array(
+								array(	'speaker' => 'Mediator', 
+										'message' => 'Pat128, since you initiated the process, please list in the fields below your first offer on each item. Remember, you and Casey345 will be able to exchange 3 offers in order to reach an agreement.')
+								);
+		break;
+	default:
+		$_SESSION['chatNew'] = array();
+		
+}
+							
+							
+$smarty->assign('username', sessionVar('username'));
 $smarty->assign('issues', $_SESSION['issuesArr']);
 $smarty->assign('chatNew', $_SESSION['chatNew']);
 $smarty->assign('chatOld', $_SESSION['chatOld']);
-$smarty->assign('offer_title', $_SESSION['offer_titles'][$_SESSION['offer']]);
-$smarty->assign('offer', $_SESSION['offer']);
-$smarty->display('offer.tpl');
+$smarty->assign('offer_title', $_SESSION['offer_titles'][$_SESSION['offer_num']]);
+$smarty->assign('offer_num', $_SESSION['offer_num']);
+$smarty->assign('offers', $_SESSION['offers'][$step]);
+$smarty->assign('counteroffers', $_SESSION['counteroffers'][$step]);
 
+//Your offer
+if($_SESSION['offer_num']%2 == 1) {
+	$smarty->display('offer.tpl');
+}
+
+else {
+	$smarty->display('offer_response.tpl');
+}
 ?>
 

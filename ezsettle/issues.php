@@ -17,7 +17,7 @@ $_SESSION['chatNew'] = array(
 
 	);
 $_SESSION['chatOld'] = array();
-
+$smarty->assign('username', sessionVar('username'));
 $smarty->assign('issues', $_SESSION['issuesArr']);
 $smarty->assign('chatNew', $_SESSION['chatNew']);
 $smarty->assign('chatOld', $_SESSION['chatOld']);
