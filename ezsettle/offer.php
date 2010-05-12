@@ -1,7 +1,7 @@
 <?php
 session_start();
-ini_set('display_errors', 1);
-error_reporting(E_ALL); // show EVERYTHING
+ini_set('display_errors', 0);
+//error_reporting(E_ALL); // show EVERYTHING
 require('init_smarty.php');
 
 $newOld = array_merge($_SESSION['chatOld'], $_SESSION['chatNew']);
@@ -60,7 +60,7 @@ $smarty->assign('offer_title', $_SESSION['offer_titles'][$_SESSION['offer_num']]
 $smarty->assign('offer_num', $_SESSION['offer_num']);
 $smarty->assign('offers', $_SESSION['offers'][$step]);
 $smarty->assign('counteroffers', $_SESSION['counteroffers'][$step]);
-
+//var_dump($_SESSION['counteroffers'][$step]);
 //Your offer
 if($_SESSION['offer_num']%2 == 1) {
 	$smarty->display('offer.tpl');

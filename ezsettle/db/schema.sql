@@ -58,14 +58,16 @@ CREATE TABLE offers (
     amount INTEGER
 );
 
-CREATE TABLE chat (
+CREATE TABLE messages (
     chat_id INTEGER PRIMARY KEY,
     
-    text VARCHAR(1024),
+    to_field TEXT,
+    message_text TEXT,
+    length INTEGER,
     
     user_fk INTEGER,
     --FOREIGN KEY(user_fk) REFERENCES users(user_id),
     
-    page_fk INTEGER
+    offer_num INTEGER
     --FOREIGN KEY(page_fk) REFERENCES pages(page_id)
 );

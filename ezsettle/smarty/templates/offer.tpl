@@ -21,7 +21,7 @@
 					<td width="300">{ $issues[issuesIndex] }</td>
 					<td width="400"><div style="float: right;">
 					{if $smarty.section.issuesIndex.index == 0}
-						<input type="radio" name="issue0" value="Yes">Yes <input type="radio" name="issue0" value="No">No
+						<input type="radio" name="issues0" value="Yes">Yes <input type="radio" name="issues0" value="No">No
 					{else}
 						$<input type="text" size="10" maxlength="10" name="issues{$smarty.section.issuesIndex.index}" value="" />
 					{/if}
@@ -29,6 +29,8 @@
 					</td>
 					</tr>
 				{/section}
+					<tr><td>Comments for Casey345:</td><td><div style="float: right;"><input type="text" size="50" name="casey" value="" /></div></td></tr>
+					<tr><td>Comments for me:</td><td><div style="float: right;"><input type="text" size="50" name="mediator" value="" /></div></td></tr>
 					<tr><td colspan="2"><div style="float: right;"><input type="submit" class="super large awesome red button" name="submit" value="Make offer" /></div></td></tr>
 			</table>
 		</form>
