@@ -3,13 +3,13 @@
 <div class="main_body">
 	<div class="large loud headline">Frequenty Asked Questions</div>
 	<ol class="faq">
-	<li><div class="loud">What is Online Dispute Resolution (ODR)?</div>
-	<div class="quiet box">
-	Online dispute resolution (ODR) is a method of dispute resolution that uses technology to failitate the resolution of disputes between parties. ODR primarily involves mediation or arbitration, or a combination of the two (as is the case for the EZSettle system). </div>
+	<li><div class="loud q" id="q1">What is Online Dispute Resolution (ODR)? <span id="arrow1">↓</span></div>
+	<div class="quiet box hide" id="a1">
+	Online dispute resolution (ODR) is a method of dispute resolution that uses technology to failitate the resolution of disputes between parties. ODR primarily involves mediation or arbitration, or a combination of the two (as is the case for the EZSettle system).</div>
 	</li>
 	
-	<li><div class="loud">How do I use the EZSettle system?</div>
-		<div class="quiet box">EZSettle is an entirely web based ODR system. Contact us today to begin using EZSettle for your case. Please review our 6-step process page for more details.
+	<li><div class="loud" id="q2">How do I use the EZSettle system? ↓</div>
+		<div class="quiet box" id="a2">EZSettle is an entirely web based ODR system. Contact us today to begin using EZSettle for your case. Please review our 6-step process page for more details.
 	</div></li>
 	
 	<li><div class="loud">When can I access the system?</div>
@@ -48,7 +48,20 @@
 	<div class="quiet box">Please use our <a href="contact.php">contact form</a> or call to speak with an agent for assistance.</div></li>
 </li>
 	
-	
 </div><!-- end main body -->
 
 {include file="footer.tpl"}
+
+<script type="text/javascript">
+{literal}
+	//<![CDATA[
+	$(document).ready(function() {
+		$(".q").live('click', function() {
+			var id = $(this).attr("id")[1];
+			alert(id);
+			$("#a"+id).fadeIn();
+		});
+	});
+//]]>
+{/literal}
+</script>

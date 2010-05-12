@@ -7,12 +7,12 @@ require('init_smarty.php');
 $newOld = array_merge($_SESSION['chatOld'], $_SESSION['chatNew']);
 $_SESSION['chatOld'] = $newOld;
 
-$_SESSION['offer_titles'] = array(	1 => "Your offer #1",
-									2 => "Casey345's Response #1",
-									3 => "Your offer #2",
-									4 => "Casey345's Response #2",
-									5 => "Your offer #3",
-									6 => "Casey345's Response #3"
+$_SESSION['offer_titles'] = array(	1 => "Your First Offer",
+									2 => "Casey345's First Response",
+									3 => "Your Second Offer",
+									4 => "Casey345's Second Response",
+									5 => "Your Final Offer",
+									6 => "Casey345's Final Response"
 								);
 $_SESSION['counteroffers'] = array(
 									array('No', '500', '0', '0', '0', '0'),

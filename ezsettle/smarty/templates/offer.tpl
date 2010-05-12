@@ -29,8 +29,10 @@
 					</td>
 					</tr>
 				{/section}
-					<tr><td>Comments for Casey345:</td><td><div style="float: right;"><input type="text" size="50" name="casey" value="" /></div></td></tr>
-					<tr><td>Comments for me:</td><td><div style="float: right;"><input type="text" size="50" name="mediator" value="" /></div></td></tr>
+					<tr><td>Comments for Casey345:</td><td><div style="float: right;"><textarea rows="3" cols="40" name="casey" value="" ></textarea></div></td></tr>
+					<tr><td>Comments for the mediator:<br/>
+					<span class="quiet">(These will not be shown to Casey345)</span></td>
+					<td><div style="float: right;"><textarea rows="3" cols="40" name="mediator" value="" ></textarea></div></td></tr>
 					<tr><td colspan="2"><div style="float: right;"><input type="submit" class="super large awesome red button" name="submit" value="Make offer" /></div></td></tr>
 			</table>
 		</form>
