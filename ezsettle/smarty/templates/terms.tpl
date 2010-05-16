@@ -1,0 +1,16 @@
+{include file="header.tpl"}
+
+<div class="main_body">
+	<div class="large loud headline">Terms of Service</div>
+	<hr class="space"/>
+
+<p>EZSettle.com is an informal dispute resolution program. By participating in EZSettle.com’s dispute resolution process (including direct negotiation, mediation, and voluntary arbitration) you agree to act in good faith, which includes taking reasonable steps to achieve a fair and expeditious resolution of the dispute. Additionally, by participating in the process you agree to make a reasonable effort to complete the actions outlined in a completed and accepted Mediated Agreement. You also agree to abide by the Neutral’s decision in the case of Voluntary Arbitration. Voluntary Arbitration decisions are final and are not subject to negotiation or appeal. Voluntary Arbitration is a voluntary process that is binding on both parties. By agreeing to participate in Voluntary Arbitration, both parties agree to be bound by the EZSettle arbitrator’s decision and fully comply with the outcome. Voluntary Arbitration decisions may include, a full or partial refund to one or both party for costs actually incurred (not to exceed 150% of the purchase price of the item), damages, replacement or repair of an item if feasible, and/or no additional action to be taken by one or both parties. Voluntary Arbitration decisions cannot include compensation for attorney fees.</p>
+
+<p>EZSettle.com takes reasonable measures to authenticate and confirm the identities of the parties participating in this dispute resolution process. By participating in this process you affirm that you are a party to the dispute or an agent authorized to act on behalf of a party to the dispute. Evidence that the dispute resolution process was managed by someone not authorized to act on behalf of a party may result in the Mediated Agreement Voluntary Arbitration decision being overturned or becoming void.
+Dispute Resolution processes are generally considered to be a confidential means to settle disagreements. As such, information contained in the comments posted by either party are not intended to be copied or distributed. EZSettle.com insists that you observe discretion in matters related to the details and specifics of a claim. EZSettle.com takes reasonable measures to ensure the privacy of the dispute and the participants. EZSettle.com agrees to treat all information received in the course of its review activities as confidential with respect to persons or entities. EZSettle.com further agrees that such confidential information may not be used for any purpose by EZSettle.com except to fulfill its dispute resolution obligations. For more information, please see our <a href="privacy.php">privacy statement</a>.</p>
+
+<p>In consideration of the services provided by EZSettle.com, you agree to hold harmless EZSettle.com and any of its directors, officers, agents, servants, employees, independent contractors, assignees, permittees, designees, or shareholders from and against any and all claims, causes of action, liabilities, costs and/or expenses of any kind arising from or in connection with the third party alternative dispute resolution program currently known as EZSettle.com.</p>
+
+</div><!-- end main body -->
+
+{include file="footer.tpl"}

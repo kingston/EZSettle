@@ -20,17 +20,26 @@
 		<div class="container">
 			<div class="header span-24 last append-bottom">
 				<div class="logo span-6"><a href="index.php"><img class="left" width="375" src="images/ezsettle.png"></a></div>
-					
-				<div class="header_links prepend-7 span-10 append-1 last">
+				
+				<div class="prepend-6 span-12 last">
 					<div id="nav">
 						<a href="index.php">Home</a> | 
-						<a href="system.php">EZSettle0.1</a> | 
 						<a href="privacy.php">Privacy</a> |
+						<a href="terms.php">Terms of Service</a> |
 						<a href="faq.php">FAQ</a> |
 						<a href="contact.php">Contact</a>
+					</div><br/>
+					<div style="float: right;">
+						{if isset($username) && $username != "" }
+							Welcome, {$username}! | <a href="signin.php?logout=true">Logout</a>
+						{else}
+							<a href="signin.php">Login</a>
+						{/if}
 					</div>
 				</div>
-				{if isset($username) }
-					<div class="prepend-17 span-6 last">Welcome, {$username}! | <a href="signin.php?logout=true">Logout</a></div>
-				{/if}
+				
+				<div class="header_links span-24 last">
+					
+				</div>
+			
 			</div><!-- end header -->

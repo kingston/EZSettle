@@ -1,5 +1,5 @@
 body                { background: #fff url(../images/background.png) repeat-x top left; 
-                        font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 16px;
+                        font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 14px;
                         text-decoration: none; color: #000000; }
 a                   { text-decoration: none; color: #0000cc; }
 a:hover             { text-decoration: underline; }
@@ -12,7 +12,7 @@ a:hover             { text-decoration: underline; }
 
 
 .footer             { text-align: center; margin-top: 15px;}
-#nav                { float: right; }
+#nav                { float: right;}
 .speaker            { font-weight: bold; color: #ff0000;}
 .profile_picture    { width: 50px; height: 50px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
 .issues             { width: 300px; float: left;}
