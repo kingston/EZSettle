@@ -7,6 +7,9 @@
 		<div class="prepend-3 span-18 last">
 		<form id="offer" name="ofer" method="post" action="offer.php">
 			<input type="hidden" name="offer" value="{$offer}" />
+			<div class="success">
+				Here is Casey345’s counter offer. You may accept the offer or make a new counter offer.
+			</div>
 			<table>
 				<tr>
 					<th>Issues:</th>
@@ -42,7 +45,7 @@
 					</td>
 					</tr>
 				{/section}
-					<tr><td colspan="3"><div style="float: right;"><input type="submit" class="super large awesome black button" name="submit" value="Make Counteroffer" /><input type="submit" class="super large awesome red button" name="submit" value="Accept Offer" /></div></td></tr>
+					<tr><td colspan="3"><div style="float: right;"><input type="submit" class="super large awesome red button" name="submit" value="✓ Accept Offer" /><input type="submit" class="super large awesome black button" name="submit" value="Make Counteroffer »" /></div></td></tr>
 			</table>
 		</form>
 		</div>
