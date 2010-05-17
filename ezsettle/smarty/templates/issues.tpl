@@ -3,7 +3,7 @@
 <div class="main_body">
 	<div class="loud headline append-bottom">The issues that need to be resolved</div>
 	<div class="span-24 last">
-		
+	{include file="chat_notice.tpl"}
 		<div class="span-8">
 		<table>
 			<tr>
@@ -32,7 +32,6 @@
 		</div>
 	</div>
 	</div>
-	
 	{include file="chat.tpl"}
 </div><!-- end main body -->
 

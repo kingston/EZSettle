@@ -1,8 +1,6 @@
 <?php
 
-session_start();
-
-require('init_smarty.php');
+require_once("include.php");
 
 $newOld = array_merge($_SESSION['chatOld'], $_SESSION['chatNew']);
 $_SESSION['chatOld'] = $newOld;
@@ -14,7 +12,8 @@ $smarty->assign('username', sessionVar('username'));
 $smarty->assign('issues', $_SESSION['issuesArr']);
 $smarty->assign('chatNew', $_SESSION['chatNew']);
 $smarty->assign('chatOld', $_SESSION['chatOld']);
-
+$smarty->assign('condition', $_SESSION['condition']);
+$smarty->assign('avatar', $avatar);
 $smarty->display('issues_rank.tpl');
 
 ?>

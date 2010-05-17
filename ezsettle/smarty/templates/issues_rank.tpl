@@ -3,7 +3,7 @@
 <div class="main_body">
 	<div class="loud headline append-bottom">Please rank the importance of each of the issues to you</div>
 	<div class="span-24 last">
-
+{include file="chat_notice.tpl"}
 		<div class="prepend-3 span-18 last">
 		<table>
 			<tr>

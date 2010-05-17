@@ -4,19 +4,27 @@
 		<script type="text/javascript">
 		{literal}
 			//<![CDATA[
+		$(document).ready(function() {
 		$(".chat").each(function(index) {
-			var time = $(this).attr("id") * 5000;
+			var time = $(this).attr("id") * 4000;
 			var elem = $(this);
 			setTimeout(function() { $(elem).fadeIn(); $("#chatbox").scrollTo($(elem));}, time);
 		});
 		
-		$(".chat").live(function() {
-			$(elem).bind('fadeIn', function() {
-				$(elem).addClass("highlighted")
-			})
+
+		$(".chatnotice").each(function(index) {
+			var time = $(this).attr("alt") * 3000;
+			var elem = $(this);
+			setTimeout(function() { $(elem).fadeIn();}, time);
 		});
-		//]]>
-		{/literal}
+	});
+	function closeNotice(id) {
+		$("#"+id).hide();
+	}
+	//]]>
+	{/literal}
+	
+
 		</script>
  	</body>
 </html>

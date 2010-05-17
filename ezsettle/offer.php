@@ -1,7 +1,5 @@
 <?php
-session_start();
-
-require('init_smarty.php');
+require_once("include.php");
 
 $newOld = array_merge($_SESSION['chatOld'], $_SESSION['chatNew']);
 $_SESSION['chatOld'] = $newOld;
@@ -59,6 +57,8 @@ $smarty->assign('offer_title', $_SESSION['offer_titles'][$_SESSION['offer_num']]
 $smarty->assign('offer_num', $_SESSION['offer_num']);
 $smarty->assign('offers', $_SESSION['offers'][$step]);
 $smarty->assign('counteroffers', $_SESSION['counteroffers'][$step]);
+$smarty->assign('condition', $_SESSION['condition']);
+$smarty->assign('avatar', $avatar);
 //var_dump($_SESSION['counteroffers'][$step]);
 //Your offer
 if($_SESSION['offer_num']%2 == 1) {
