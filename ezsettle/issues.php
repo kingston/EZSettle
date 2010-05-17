@@ -2,11 +2,9 @@
 
 session_start();
 
-ini_set('display_errors', 1);
-error_reporting(E_ALL); // show EVERYTHING
 require('init_smarty.php');
 
-$_SESSION['issuesArr']= array('Return laptop', 'Pay back cost of computer', 'Pay back original shipment', 'Pay cost of renewal computer', 'Pay emotional distress damages', 'If relevant, pay cost of return shipment');
+$_SESSION['issuesArr']= array('Return laptop', 'Pay back cost of computer', 'Pay back original shipment', 'Pay cost of rental computer', 'Pay emotional distress damages', 'If relevant, who pays the cost of return shipment?');
 
 $_SESSION['chatNew'] = array(
 	array('speaker'=>'Mediator', 'message'=>'Hello!'), 
@@ -21,7 +19,7 @@ $smarty->assign('username', sessionVar('username'));
 $smarty->assign('issues', $_SESSION['issuesArr']);
 $smarty->assign('chatNew', $_SESSION['chatNew']);
 $smarty->assign('chatOld', $_SESSION['chatOld']);
-
+$smarty->assign('condition', $_SESSION['condition']);
 $smarty->display('issues.tpl');
 
 ?>

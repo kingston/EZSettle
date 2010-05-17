@@ -3,7 +3,7 @@
 <div class="main_body">
 	<div class="loud headline append-bottom">{ $offer_title}</div>
 	<div class="span-24 last">
-		{include file="chat.tpl"}
+
 		<div class="prepend-3 span-18 last">
 		<form id="offer" name="ofer" method="post" action="offer.php">
 			<input type="hidden" name="offer_num" value="{$offer_num}" />
@@ -22,6 +22,8 @@
 					<td width="400"><div style="float: right;">
 					{if $smarty.section.issuesIndex.index == 0}
 						<input type="radio" name="issues0" value="Yes">Yes <input type="radio" name="issues0" value="No">No
+					{elseif $smarty.section.issuesIndex.index == 5}
+						<input type="radio" name="issues5" value="buyer">Buyer <input type="radio" name="issues5" value="seller">Seller
 					{else}
 						$<input type="text" size="10" maxlength="10" name="issues{$smarty.section.issuesIndex.index}" value="" />
 					{/if}
@@ -29,6 +31,7 @@
 					</td>
 					</tr>
 				{/section}
+				<tr><td colspan="2"><hr/></td></tr>
 					<tr><td>Comments for Casey345:</td><td><div style="float: right;"><textarea rows="3" cols="40" name="casey" value="" ></textarea></div></td></tr>
 					<tr><td>Comments for the mediator:<br/>
 					<span class="quiet">(These will not be shown to Casey345)</span></td>
@@ -39,6 +42,7 @@
 		</div>
 
 	</div>
+	{include file="chat.tpl"}
 </div><!-- end main body -->
 
 <script type="text/javascript">

@@ -9,17 +9,25 @@
 		<table>
 			<tr>
 				<th>Case:</th>
-				<th>Other party</th>
-				<th>EZSettleAgent</th>
-				<th></th>
+				<th>Other party:</th>
+				<th>Agent:</th>
+				<th>Action:</th>
 			</tr>
 			<tr class="even">
 				<td>Laptop purchase</td>
 				<td>Casey345</td>
-				<td>Dewie_14</td>
-				<td><a href="mediator_statement.php" class="super large awesome red button">View</a></td>
+				<td>EZSettle Mediator</td>
+				<td><a href="mediator_statement.php" class="super large awesome red button">Resolve Case</a></td>
 			</tr>
 		</table>
+	</div>
+	<hr class="space"/>
+	<div class="loud headline append-bottom">
+	Completed Cases
+	</div>
+	<div class="span-15 last">
+		You do not have any completed cases.
+		
 	</div>
 </div><!-- end main body -->
 

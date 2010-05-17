@@ -3,7 +3,6 @@
 <div class="main_body">
 	<div class="loud headline append-bottom">{ $offer_title}</div>
 	<div class="span-24 last">
-		{include file="chat.tpl"}
 		<div class="prepend-3 span-18 last">
 		<form id="offer" name="ofer" method="post" action="offer.php">
 			<input type="hidden" name="offer" value="{$offer}" />
@@ -48,6 +47,7 @@
 		</div>
 
 	</div>
+	{include file="chat.tpl"}
 </div><!-- end main body -->
 
 <script type="text/javascript">

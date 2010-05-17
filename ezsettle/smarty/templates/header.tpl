@@ -35,6 +35,9 @@
 						{else}
 							<a href="signin.php">Login</a>
 						{/if}
+						{if isset($condition) }
+							(Condition {$condition})
+						{/if}
 					</div>
 				</div>
 				
