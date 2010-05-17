@@ -16,7 +16,7 @@
 			<div class="span-5"><label for="password">Password:</label></div>
 			<div class="span-5 last"><input type="password" id="password" name="password"/></div>
 			<div class="span-10 last"><input type="checkbox" id="agree" name="agree"/>
-				I have read and agree to the <a href="privacy.php">terms of service.</a></div>
+				I have read and agree to the <a href="terms.php">terms of service.</a></div>
 			<div class="prepend-7 span-5 last"><input type="submit" class="super awesome large red button" value="Sign In"/></div>
 			</fieldset>
 		</form>

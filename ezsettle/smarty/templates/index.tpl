@@ -35,8 +35,8 @@
 			</ul>
 		</div>
 		<hr class="space"/>
-		<div class="prepend-11 span-4 last pull-1">
-			<a href="signin.php" class="large awesome super red button">Get Started »</a>
+		<div class="prepend-11 span-4 last">
+			<a style="float: right;" href="signin.php" class="large awesome super red button">Get Started »</a>
 		</div>
 	</div>
 </div><!-- end main body -->
