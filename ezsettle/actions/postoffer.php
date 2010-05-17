@@ -1,7 +1,8 @@
 <?
 ini_set('display_errors', 1);
-require_once(dirname(__FILE__) . '/../include.php');
 
+session_start();
+require_once(dirname(__FILE__) . '/../utils.php');
 $result = array('success' => true);
 
 //write offer to db
@@ -9,12 +10,13 @@ $result = array('success' => true);
 $_SESSION['offer_num'] = $_POST['offer_num'];
 $_SESSION['offer_num']++;
 $step = $_SESSION['offer_num']/2-1;
-$_SESSION['offers'][$step] = array(	postvar('issues0'),
-									postvar('issues1'),
-									postvar('issues2'),
-									postvar('issues3'),
-									postvar('issues4'),
-									postvar('issues5')
+$_SESSION['step'] = $step;
+$_SESSION['offers'][$step] = array(	postVar('issues0'),
+									postVar('issues1'),
+									postVar('issues2'),
+									postVar('issues3'),
+									postVar('issues4'),
+									postVar('issues5')
 								);
 								
 echo json_encode($result);

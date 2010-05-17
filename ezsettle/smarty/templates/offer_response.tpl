@@ -3,6 +3,7 @@
 <div class="main_body">
 	<div class="loud headline append-bottom">{ $offer_title}</div>
 	<div class="span-24 last">
+		{include file="chat_notice.tpl"}
 		<div class="prepend-3 span-18 last">
 		<form id="offer" name="ofer" method="post" action="offer.php">
 			<input type="hidden" name="offer" value="{$offer}" />
@@ -35,7 +36,7 @@
 							<input type="radio" name="c_issue0" value="Yes" disabled="yes" {if $counteroffers[0]=="Yes"}checked{/if}>Yes 
 							<input type="radio" name="c_issue0" value="No" disabled="yes" {if $counteroffers[0]=="No"}checked{/if}>No
 					{else}
-						$<input type="text" size="10" maxlength="10" disabled="yes" name="c_issues{$smarty.section.issuesIndex.index}" value="{$counteroffers[issueIndex]}" />
+						$<input type="text" size="10" maxlength="10" disabled="yes" name="c_issues{$smarty.section.issuesIndex.index}" value="{$counteroffers[issuesIndex]}" />
 					{/if}
 					</div>
 					</td>
