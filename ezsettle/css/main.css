@@ -18,3 +18,14 @@ a:hover             { text-decoration: underline; color: #872300;}
 .speaker            { font-weight: bold; color: #ff0000;}
 .profile_picture    { width: 50px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
 .issues             { width: 300px; float: left;}
+tr.rowerror td      { background:#FBE3E4; color: #8A1F11;}
+
+#dark               { background-color: rgb(0, 0, 0); opacity: 0.7; /* Safari, Opera */ -moz-opacity:0.70; /* FireFox */
+                    filter: alpha(opacity=70); /* IE */ z-index: 20; height: 100%; width: 100%;
+                    background-repeat:repeat; position:fixed; top: 0px; left: 0px; display: none;}
+.loading            { width: 500px; height: 320px; padding: 10px;
+                    -moz-border-radius: 15px; -webkit-border-radiu: 15px;
+                    -moz-box-shadow: 5px 5px 7px #222; -webkit-box-shadow: 5px 5px 7px #222; position: absolute;
+                    border: 10px solid #333; background: #fff; display: none; z-index: 1000;}
+.loader             { clear: both; position: relative; width: 32px; height: 32px;}
+#diagram            { clear: both; position: relative; width: 219px; margin-left: 140px;}

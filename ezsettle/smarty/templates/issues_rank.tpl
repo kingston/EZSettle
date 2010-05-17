@@ -8,7 +8,7 @@
 		<table>
 			<tr>
 				<th>Issues:</th>
-				<th><span style="float: left;">Not important</span><span style="float:right;">Most important</span></th>
+				<th><span style="float: left;">Not important</span><span style="float:right;">Highly important</span></th>
 			</tr>
 			{section name=issuesIndex loop=$issues}
 				{ if $smarty.section.issuesIndex.index%2 == 0}

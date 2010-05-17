@@ -17,23 +17,10 @@ $_SESSION['counteroffers'] = array(
 									array('No', '700', '0', '0', '0', '0')
 									);			
 															
-if (!isset($_POST['offer_num'])) {
+if (!isset($_SESSION['offer_num'])) {
 	$_SESSION['offer_num'] = 1;
 	$_SESSION['offers'] = array();
 
-}
-else {
-	$_SESSION['offer_num'] = $_POST['offer_num'];
-	$_SESSION['offer_num']++;
-	$step = $_SESSION['offer_num']/2-1;
-	$_SESSION['offers'][$step] = array(	postvar('issues0'),
-										postvar('issues1'),
-										postvar('issues2'),
-										postvar('issues3'),
-										postvar('issues4'),
-										postvar('issues5')
-									);
-									
 }
 
 switch($_SESSION['offer_num']) {
@@ -59,6 +46,8 @@ $smarty->assign('offers', $_SESSION['offers'][$step]);
 $smarty->assign('counteroffers', $_SESSION['counteroffers'][$step]);
 $smarty->assign('condition', $_SESSION['condition']);
 $smarty->assign('avatar', $avatar);
+$smarty->assign('mediator', $mediator);
+$smarty->assign('mediator_caps', $mediator_caps);
 //var_dump($_SESSION['counteroffers'][$step]);
 //Your offer
 if($_SESSION['offer_num']%2 == 1) {

@@ -17,6 +17,7 @@
 		<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
 	</head>
 	<body>
+		<div id="dark">&nbsp;</div>
 		<div class="container">
 			<div class="header span-24 last append-bottom">
 				<div class="logo span-6"><a href="index.php"><img class="left" width="375" src="images/ezsettle.png"></a></div>
