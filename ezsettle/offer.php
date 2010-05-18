@@ -42,7 +42,7 @@ switch($_SESSION['offer_num']) {
 }
 							
 							
-$smarty->assign('username', sessionVar('username'));
+
 $smarty->assign('issues', $_SESSION['issuesArr']);
 $smarty->assign('chatNew', $_SESSION['chatNew']);
 $smarty->assign('chatOld', $_SESSION['chatOld']);
@@ -50,6 +50,7 @@ $smarty->assign('offer_title', $_SESSION['offer_titles'][$_SESSION['offer_num']]
 $smarty->assign('offer_num', $_SESSION['offer_num']);
 $smarty->assign('offers', $_SESSION['offers'][$step]);
 $smarty->assign('counteroffers', $_SESSION['counteroffers'][$step]);
+$smarty->assign('username', sessionVar('username'));
 $smarty->assign('condition', $_SESSION['condition']);
 $smarty->assign('avatar', $avatar);
 $smarty->assign('mediator', $mediator);

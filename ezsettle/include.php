@@ -4,7 +4,8 @@ session_start();
 
 require('init_smarty.php');
 $condition = $_SESSION['condition'];
-
+$admin = $_SESSION['admin'];
+$condition_arr
 if($condition == 1 || $condition == 2 || $condition == 5) {
 	$avatar = "images/ezsettle_computer.jpg";
 	$mediator = "EZSettle";
@@ -16,4 +17,5 @@ else {
 	$mediator_caps = "The mediator";
 }
 
+$smarty->assign('admin', $admin);
 ?>

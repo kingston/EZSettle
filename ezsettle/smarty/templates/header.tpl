@@ -36,9 +36,16 @@
 						{else}
 							<a href="signin.php">Login</a>
 						{/if}
-						{if isset($condition) }
-							(Condition {$condition})
+						{if $admin}
+							<br/>
+							Admin Mode
+							{if isset($condition) }
+								(Condition {$condition})
+							{/if}
+							<br/>
+							
 						{/if}
+							
 					</div>
 				</div>
 				
