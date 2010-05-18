@@ -28,6 +28,9 @@
 					{if $smarty.section.issuesIndex.index == 0}
 						<input type="radio" name="issues0" value="Yes" disabled="yes" {if $offers[0]=="Yes"}checked="yes"{/if} />Yes 
 						<input type="radio" name="issues0" value="No" disabled="yes" {if $offers[0]=="No"}checked="yes"{/if} />No
+					{elseif $smarty.section.issuesIndex.index == 5}
+						<input type="radio" name="issues5" value="buyer" disabled="yes {if $counteroffers[5]=="yes"}checked="yes{/if } />Buyer
+						<input type="radio" name="issues5" value="seller">Seller
 					{else}
 						$<input type="text" size="10" maxlength="10" disabled="yes" name="issues{$smarty.section.issuesIndex.index}" value="{$offers[issuesIndex]}" />
 					{/if}
@@ -36,8 +39,10 @@
 					
 					<td width="300"><div class="float: right;"> 
 					{if $smarty.section.issuesIndex.index == 0}
-							<input type="radio" name="c_issue0" value="Yes" disabled="yes" {if $counteroffers[0]=="Yes"}checked{/if}>Yes 
-							<input type="radio" name="c_issue0" value="No" disabled="yes" {if $counteroffers[0]=="No"}checked{/if}>No
+						<input type="radio" name="c_issue0" value="Yes" disabled="yes" {if $counteroffers[0]=="es"}checked{/if}>Yes 
+						<input type="radio" name="c_issue0" value="No" disabled="yes" {if $counteroffers[0]=="No"}checked{/if}>No
+					{elseif $smarty.section.issuesIndex.index == 5}
+						<input type="radio" name="issues5" value="buyer">Buyer <input type="radio" name="issues5" value="seller">Seller
 					{else}
 						$<input type="text" size="10" maxlength="10" disabled="yes" name="c_issues{$smarty.section.issuesIndex.index}" value="{$counteroffers[issuesIndex]}" />
 					{/if}

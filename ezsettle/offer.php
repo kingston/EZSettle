@@ -54,7 +54,7 @@ $smarty->assign('condition', $_SESSION['condition']);
 $smarty->assign('avatar', $avatar);
 $smarty->assign('mediator', $mediator);
 $smarty->assign('mediator_caps', $mediator_caps);
-var_dump($_SESSION['counteroffers'][$step]);
+//var_dump($_SESSION['counteroffers'][$step]);
 //Your offer
 if($_SESSION['offer_num']%2 == 1) {
 	$smarty->display('offer.tpl');
