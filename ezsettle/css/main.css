@@ -31,4 +31,6 @@ tr.rowerror td      { background:#FBE3E4; color: #8A1F11;}
 .loader             { clear: both; position: relative; width: 32px; height: 32px;}
 #diagram            { clear: both; position: relative; width: 219px; margin-left: 140px;}
 .condition, 
-.current              { font-size: 18px;}
+.current            { font-size: 18px;}
+.q                  { cursor: pointer; }
+.action             { color: #e33100; text-decoration: underline;}

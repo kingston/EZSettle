@@ -40,7 +40,8 @@
 							<br/>
 							Admin Mode
 							{if isset($condition) }
-								(Condition {$condition})
+								(Condition {$condition})<br/>
+								{$conditionDescription[$condition]}
 							{/if}
 							<br/>
 							Switch to condition:<br/> 
