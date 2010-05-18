@@ -62,7 +62,7 @@
 	</div></li>
 	
 </ol>	
-	<a style="float: right; margin-right: 15px;" href="signin.php" class="large awesome super red button">Get Started »</a>
+	<a style="float: right; margin-right: 15px;" href="mediator_statement.php" class="large awesome super red button">Get Started »</a>
 </div><!-- end main body -->
 
 {include file="footer.tpl"}
