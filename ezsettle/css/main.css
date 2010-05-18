@@ -13,8 +13,9 @@ a:hover             { text-decoration: underline; color: #872300;}
 
 .footer             { text-align: center; margin-top: 15px;}
 #nav                { float: right; font-size: 20px; color: #e33100;}
-#nav a              { color: #e33100;}
-#nav a:hover        { color: #872300;}
+#nav a, .condition  { color: #e33100; cursor: pointer;}
+#nav a:hover,
+.condition:hover    { color: #872300;}
 .speaker            { font-weight: bold; color: #ff0000;}
 .profile_picture    { width: 50px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
 .issues             { width: 300px; float: left;}
@@ -29,3 +30,5 @@ tr.rowerror td      { background:#FBE3E4; color: #8A1F11;}
                     border: 10px solid #333; background: #fff; display: none; z-index: 1000;}
 .loader             { clear: both; position: relative; width: 32px; height: 32px;}
 #diagram            { clear: both; position: relative; width: 219px; margin-left: 140px;}
+.condition, 
+.current              { font-size: 18px;}

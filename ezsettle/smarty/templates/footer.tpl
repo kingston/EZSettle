@@ -17,6 +17,18 @@
 			var elem = $(this);
 			setTimeout(function() { $(elem).fadeIn();}, time);
 		});
+		
+		$(".condition").live('click', function() {
+			var id = $(this).attr('id');
+
+			$.post(
+				'actions/postadmin.php', 
+				{ condition: id }, 
+				function() {
+					location.reload(true);
+				}, 'json'
+			);
+		});
 	});
 	function closeNotice(id) {
 		$("#"+id).hide();

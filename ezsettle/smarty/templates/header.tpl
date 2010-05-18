@@ -43,7 +43,15 @@
 								(Condition {$condition})
 							{/if}
 							<br/>
-							
+							Switch to condition:<br/> 
+							{section name=i start=1 loop=$conditionArr}
+								{if $condition != $smarty.section.i.index }<span class="condition change" id="{$conditionArr[i]}">
+								{else}<span class="current">
+								{/if}
+									{$conditionArr[i]} &nbsp;&nbsp;&nbsp;
+								</span>
+								
+							{/section}
 						{/if}
 							
 					</div>
