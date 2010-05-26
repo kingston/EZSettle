@@ -33,13 +33,25 @@
 	<li><div class="loud q" id="9">What is arbitration? &nbsp;&nbsp;&nbsp;<span id="arrow9"><img src="images/arrowdown.png"/></span></div>
 	<div class="quiet box hide" id="a9">Arbitration is a legal technique for the resolution of disputes outside the courts, wherein two parties to a dispute refer it to a third party (termed an arbitrator) for a decision. Arbitration is a legally binding procedure, and the arbitrator’s decision must be complied with.</div></li>
 	
-	<li><div class="loud q" id="10">Does EZSettle require a party to reveal preference information to another party?<span id="arrow10"><img src="images/arrowdown.png"/></span></div>
+	<li><div class="loud q" id="10">Does EZSettle require a party to reveal preference information to another party? &nbsp;&nbsp;&nbsp;<span id="arrow10"><img src="images/arrowdown.png"/></span></div>
 	<div class="quiet box hide" id="a10">No. What and how much is revealed is completely under each party’s own control. Confidential information revealed to the mediator will be treated as such and will not be revealed to the other party.</div></li>
 	
 		<li><div class="loud q" id="11">What are some resolution options? &nbsp;&nbsp;&nbsp;<span id="arrow11"><img src="images/arrowdown.png"/></span></div>
 	<div class="quiet box hide" id="a11">Every case is different and so some solutions may be better fits than others. Here are some options and ideas that have worked for other cases: 
 		<ul>
-			<li>Return of the item to the seller</li>			<li>Delivery of the item to the buyer</li>			<li>Repair of the item</li>			<li>Reimbursement of some or all expenses related to repair</li>			<li>Reimbursement of some or all expenses related to pickup/delivery</li>			<li>Reimbursement of costs associated with listing the item</li>			<li>Delivery of replacement parts/accessories</li>			<li>Installation of advertised parts/accessories/features</li>			<li>Compensation through installation of additional accessories</li> 			<li>Compensation through additional warranty coverage</li>			<li>Financial compensation</li> 			<li>Apology</li>			<li>A combination of some of the above options</li>
+			<li>Return of the item to the seller</li>
+			<li>Delivery of the item to the buyer</li>
+			<li>Repair of the item</li>
+			<li>Reimbursement of some or all expenses related to repair</li>
+			<li>Reimbursement of some or all expenses related to pickup/delivery</li>
+			<li>Reimbursement of costs associated with listing the item</li>
+			<li>Delivery of replacement parts/accessories</li>
+			<li>Installation of advertised parts/accessories/features</li>
+			<li>Compensation through installation of additional accessories</li> 
+			<li>Compensation through additional warranty coverage</li>
+			<li>Financial compensation</li> 
+			<li>Apology</li>
+			<li>A combination of some of the above options</li>
 		</ul>
 	</div></li>
 	
@@ -79,14 +91,14 @@
 		$(".q").live('click', function() {
 			var id = $(this).attr("id");
 			$("#a"+id).fadeIn();
-			$("#arrow"+id).html("<img src="images/arrowup.png"/>");
+			$("#arrow"+id).html("<img src=\"images/arrowup.png\"/>");
 			$(this).removeClass("q").addClass("q2");
 		});
 		
 		$(".q2").live('click', function() {
 			var id = $(this).attr("id");
 			$("#a"+id).fadeOut();
-			$("#arrow"+id).html("<img src="images/arrowdown.png"/>");
+			$("#arrow"+id).html("<img src=\"images/arrowdown.png\"/>");
 			$(this).removeClass("q2").addClass("q");
 		});
 	});

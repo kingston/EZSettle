@@ -6,15 +6,15 @@ $_SESSION['chatOld'] = $newOld;
 
 $_SESSION['offer_titles'] = array(	1 => "Your First Offer",
 									2 => "Casy345's First Counter Offer",
-									3 => "Your Second Offer",
-									4 => "Casey345's Second Counter Offer",
-									5 => "Your Final Offer",
-									6 => "Casey345's Final Counter Offer"
+									4 => "Your Second Offer",
+									5 => "Casey345's Second Counter Offer",
+									7 => "Your Final Offer",
+									8 => "Casey345's Final Counter Offer"
 								);
 $_SESSION['counteroffers'] = array(
 									array('No', "0", "0", "0", "0", "0"),
-									array('No', '600', '0', '0', '0', '0'),
-									array('No', '700', '0', '0', '0', '0')
+									array('No', '100', '10', '0', '0', '0'),
+									array('No', '150', '10', '0', '0', '0')
 									);			
 															
 if (!isset($_SESSION['offer_num'])) {
@@ -24,18 +24,98 @@ if (!isset($_SESSION['offer_num'])) {
 
 $step = $_SESSION['step'];
 
+print $_SESSION['offer_num'];
+
+switch($_SESSION['condition']) {
+	case 1:
+	case 2:
+	case 5:
+		$goods = "goods";
+		$ezsettle = "EZSettle";
+		$mediator = "EZSettle";
+		$ezsettle_me = "EZSettle";
+		break;
+	case 3:
+	case 4:
+	case 5:
+		$goods = "laptop";
+		$ezsettle = "I";
+		$mediator = "the mediator";
+		$ezssetle_me = "me";
+		break;
+}
+
+
 switch($_SESSION['offer_num']) {
 	case 1:
 		$_SESSION['chatNew'] = array(
 								array(	'speaker' => 'Mediator', 
 										'message' => 'Pat128, since you initiated the process, please list in the fields below your first offer on each item. Remember, you and Casey345 will be able to exchange 3 offers in order to reach an agreement.')
 								);
+		break;
 	case 2:
 		$_SESSION['chatNew'] = array(
 								array(	'speaker' => 'Mediator', 
 										'message' =>"Casey345 did not accept your first offer. Casey345 said: &quot;I don’t understand this complaint at all. I sent the laptop in a perfectly good condition, and definitely not broken. I used it for just one month before I realized it wasn't what I needed. To tell you the truth, I don't see why I should pay anything, certainly not the outrageous request for the costs of rental computer and emotional distress.&quot;")
-										);
+						);
 		break;
+		
+	case 3:
+		$_SESSION['chatNew'] = array(
+									array( 'speaker' => 'Mediator',
+										'message' =>"You reported receiving the {$goods} you bought from Casey345 in an unacceptable condition. In e-commerce deals, it is sometimes the case that someone other than the buyer or the seller could have damaged the goods. Was the package open or otherwise damaged when it was delivered to you? Did someone else receive the package on your behalf? Could something have happened to the package between the time you received it and opened it? Is it possible that someone else damaged the {$goods} before or after you began using it?"
+									),
+									array( 'speaker' => 'Mediator',
+											'style' => 'success',
+											'message' => "Please use the scale below to mark how likely it is that the {$goods} you bought was damaged after the seller shipped it. {$ezsettle} will NOT share this information with Casey345."
+											)
+								);
+		break;
+	
+	case 4:
+		$step = 0;
+		$_SESSION['chatNew'] = array(
+									array( 'speaker' => 'Mediator',
+										'message' =>"As you can see, after you and Casey345 completed one round of mediation, your offers are still quite far apart. Please give some thought to Casey345's response (see Message History), and consider whether someone else might have damaged the {$goods} and any other relevant factors that may affect your offer."
+									),
+									array( 'speaker' => 'Mediator',
+											'style' => 'success',
+											'message' => "Then, please make your second offer. You will be able to make one more offer after this one."
+											)
+								);
+		break;
+		
+	case 5:
+		$_SESSION['chatNew'] = array(
+									array( 'speaker' => 'Mediator',
+										'message' =>"Casey345 did not accept your second offer. Casey345 said: &quot;I still don’t feel that this makes any sense or that I should pay anything. I KNOW that the laptop was in perfect condition when I sent it, and I don't think that you can prove otherwise. I still don’t understand why you are asking for all this money because a lot of it has nothing to do with me. BUT, following {$mediator}'s suggestion, I'm willing to offer something because of the chance that I didn't pack the package well (which I don't think happened, but ok), and because I'm willing to split with you some of the chance that the delivery service damaged the laptop. Mainly, I just want to get this thing over with.&quot;"
+									)
+								);
+		break;
+	case 6:
+		$_SESSION['chatNew'] = array(
+									array( 'speaker' => 'Mediator',
+										'message' =>"As you can see, although you and Casey345’s have made some progress, your offers are still quite far apart. Before you make your last offer, {$ezsettle} would like you to think creatively about options you may have not considered yet. Is the disputed {$goods} of any value to you? Perhaps you can keep the {$goods} for your personal use or re-sell it yourself, and ask Casey345 for less money?"
+									),
+									array( 'speaker' => 'Mediator',
+											'style' => 'success',
+											'message' => "Please indicate here if you are willing to consider this option. {$ezsettle} will NOT share this information with Casey345. In any event, when you make your final offer, you may want to consider keeping the {$goods} and adjusting your various financial compensation requests accordingly"
+											)
+								);
+	
+		break;
+	case 7:
+	$step = 1;
+		$_SESSION['chatNew'] = array(
+									array( 'speaker' => 'Mediator',
+										'message' =>"This is your third and final opportunity to make a mediation offer to Casey345 (Casey345 will be able to make a final offer too).
+										Before making your final offer, {$ezsettle} would like to remind you that this is also your final opportunity to share information with {$ezsettle_me} or send messages to Casey345."
+									)
+								);
+
+		break;
+	case 8:
+	
 	default:
 		$_SESSION['chatNew'] = array();
 		
@@ -57,12 +137,21 @@ $smarty->assign('mediator', $mediator);
 $smarty->assign('mediator_caps', $mediator_caps);
 //var_dump($_SESSION['counteroffers'][$step]);
 //Your offer
-if($_SESSION['offer_num']%2 == 1) {
+if($_SESSION['offer_num']%3 == 1) {
 	$smarty->display('offer.tpl');
 }
 
-else {
+else if ($_SESSION['offer_num']%3 == 2){
 	$smarty->display('offer_response.tpl');
 }
+
+else if ($_SESSION['offer_num']==3) {
+	$smarty->display('damage.tpl');
+}
+
+else if ($_SESSION['offer_num']==6) {
+	$smarty->display('creative.tpl');
+}
+
 ?>
 

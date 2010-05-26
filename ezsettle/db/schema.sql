@@ -71,3 +71,6 @@ CREATE TABLE messages (
     offer_num INTEGER
     --FOREIGN KEY(page_fk) REFERENCES pages(page_id)
 );
+
+-- Could anyone else have damaged the goods?
+-- let's think creatively

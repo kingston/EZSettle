@@ -4,7 +4,7 @@
 	<div class="loud headline append-bottom">{ $offer_title}</div>
 	<div class="span-24 last">
 		{include file="chat_notice.tpl"}
-		<div class="prepend-3 span-18 last">
+		<div class="span-24 last">
 		<form id="offer" name="ofer" method="post" action="offer.php">
 			<input type="hidden" name="offer" value="{$offer}" />
 			<div class="success">
@@ -29,8 +29,8 @@
 						<input type="radio" name="issues0" value="Yes" disabled="yes" {if $offers[0]=="Yes"}checked="yes"{/if} />Yes 
 						<input type="radio" name="issues0" value="No" disabled="yes" {if $offers[0]=="No"}checked="yes"{/if} />No
 					{elseif $smarty.section.issuesIndex.index == 5}
-						<input type="radio" name="issues5" value="buyer" disabled="yes {if $counteroffers[5]=="yes"}checked="yes{/if } />Buyer
-						<input type="radio" name="issues5" value="seller">Seller
+						<input type="radio" name="issues5" value="buyer" disabled="yes" {if $offers[5]=="buyer"}checked="yes"{/if } />Buyer
+						<input type="radio" name="issues5" value="seller" disabled="yes" {if $offers[5]=="seller"}checked="yes"{/if}/>Seller
 					{else}
 						$<input type="text" size="10" maxlength="10" disabled="yes" name="issues{$smarty.section.issuesIndex.index}" value="{$offers[issuesIndex]}" />
 					{/if}
@@ -39,10 +39,10 @@
 					
 					<td width="300"><div class="float: right;"> 
 					{if $smarty.section.issuesIndex.index == 0}
-						<input type="radio" name="c_issue0" value="Yes" disabled="yes" {if $counteroffers[0]=="es"}checked{/if}>Yes 
+						<input type="radio" name="c_issue0" value="Yes" disabled="yes" {if $counteroffers[0]=="Yes"}checked{/if}>Yes 
 						<input type="radio" name="c_issue0" value="No" disabled="yes" {if $counteroffers[0]=="No"}checked{/if}>No
 					{elseif $smarty.section.issuesIndex.index == 5}
-						<input type="radio" name="issues5" value="buyer">Buyer <input type="radio" name="issues5" value="seller">Seller
+						<input type="radio" name="issues5" value="buyer" disabled="yes" {if $counteroffers[5]=="buyer"}checked="yes"{/if}/>Buyer <input type="radio" name="issues5" value="seller" disabled="yes" {if $counteroffers[5]=="seller"}checked="yes"{/if}/>Seller
 					{else}
 						$<input type="text" size="10" maxlength="10" disabled="yes" name="c_issues{$smarty.section.issuesIndex.index}" value="{$counteroffers[issuesIndex]}" />
 					{/if}
@@ -50,7 +50,7 @@
 					</td>
 					</tr>
 				{/section}
-					<tr><td colspan="3"><div style="float: right;"><input type="submit" class="super large awesome red button" name="submit" value="✓ Accept Offer" /><input type="submit" class="super large awesome black button" name="submit" value="Make Counteroffer »" /></div></td></tr>
+					<tr><td colspan="3"><div style="float: right;"><input type="submit" class="super large awesome red button" name="submit" value="✓ Accept Offer" /><input type="submit" class="super large awesome black button" name="submit" id="counteroffer" value="Make Counteroffer »" /></div></td></tr>
 			</table>
 		</form>
 		</div>
@@ -63,7 +63,15 @@
 {literal}
 	//<![CDATA[
 	 $(document).ready(function() {
-	
+		$("#counteroffer").click(function() {
+			$.post("actions/postoffer.php",
+			{offer_num: {/literal}{$offer_num}{literal}},
+			function(data) {
+				window.location = 'offer.php';
+			},
+			'json'
+			);
+		});
 	});
 	//]]>
 {/literal}
