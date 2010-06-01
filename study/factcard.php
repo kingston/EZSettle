@@ -8,7 +8,7 @@
 
 	<h1> Fact Card - Keep open for reference </h1>
 
-	<h2> Basic Info </h2>
+	<h2> Buyer's Facts for Mediation-Arbitration </h2>
 
 </head>
 
@@ -16,7 +16,7 @@
 <ul>
 	<li> You saw the delivery man carry the box to your house, and he seemed somewhat rough with it. You are not sure whether this could have caused any damage to the screen or keyboard, but it seems quite unlikely.  </li>
 
-	<li> Your friend Gabe offered to buy the laptop from you for $500 (Gabe builds things out of computer parts, and does not care that much about the cracked screen)  </li>
+	<li> Although you are not sure ,you think you might be able to sell the laptop to your friend Gabe for about $300 (Gabe builds things out of computer parts, so he should not care that much about the cracked screen)  </li>
 </ul>At your discretion, you may or may not decide to share this additional information with the mediator and/or the other party.
 
 <h2>What do you want to get out of the dispute resolution process?</h2>
