@@ -5,12 +5,6 @@
 		{literal}
 			//<![CDATA[
 		$(document).ready(function() {
-		$(".chat").each(function(index) {
-			var time = $(this).attr("id") * 4000;
-			var elem = $(this);
-			setTimeout(function() { $(elem).fadeIn(); $("#chatbox").scrollTo($(elem));}, time);
-		});
-		
 
 		$(".chatnotice").each(function(index) {
 			var time = $(this).attr("alt") * 3000;
@@ -29,10 +23,41 @@
 				}, 'json'
 			);
 		});
+		
+		
 	});
 	function closeNotice(id) {
 		$("#"+id).hide();
 	}
+	
+
+	function showLoading() {
+		$("#dark").fadeIn();
+		var left = $(window).width()/2  - $("#loading").width()/2;
+		var top = $(window).height()/2 + $(window).scrollTop() - $("#loading").height()/2;
+		$("#loading").css("left", left+"px");
+		$("#loading").css("top", top+"px");
+		$("#loading").fadeIn();
+	}
+	function hideLoading() {
+		$("#dark").fadeOut();
+		$("#loading").fadeOut();
+	}
+	function showMessageHistory() {
+		var left = $(window).width()/2  - $("#message_history").width()/2;
+		var top = $(window).height()/2 + $(window).scrollTop() - $("#message_history").height()/2;
+		$("#message_history").css("left", left+"px");
+		$("#message_history").css("top", top+"px");
+		$("#message_history").fadeIn();
+	}
+	
+	function hideMessageHistory() {
+		$("#message_history").fadeOut();
+	}
+
+	
+	
+	
 	//]]>
 	{/literal}
 	

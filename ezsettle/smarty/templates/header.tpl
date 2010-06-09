@@ -51,7 +51,6 @@
 								{/if}
 									{$conditionArr[i]} &nbsp;&nbsp;&nbsp;
 								</span>
-								
 							{/section}
 						{/if}
 							

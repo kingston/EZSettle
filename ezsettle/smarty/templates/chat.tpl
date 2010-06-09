@@ -1,5 +1,10 @@
-<div class="headline loud">Message History</div>	
-	<div class="box" id="chatbox" style="height: 150px; overflow: scroll;">
+<div id="message_history" class="hide" style="overflow: scroll;">
+<div class="headline loud">
+	<span style="float: left;">Message History</span>
+	<span id="hide_message_history">Close<span>
+</div>
+<div class="clearfix"></div>
+	<div id="chatbox" style="overflow: scroll;">
 
 	{foreach from=$chatOld item=message name=chat}
 		<div class="chat quiet">
@@ -12,7 +17,7 @@
 	{/foreach}
 
 	{foreach from=$chatNew item=message name=chat}
-		<div class="chat" id="{$smarty.foreach.chat.index}" style="display:none;">
+		<div class="chat" id="{$smarty.foreach.chat.index}">
 			<div class="span-2"><img class="profile_picture" src="{$avatar}"></div>
 			<div class="span-20 last"><span class="speaker">{ $message.speaker }:</span> 
 				{ $message.message }
@@ -22,3 +27,4 @@
 	{/foreach}
 
 	</div><!-- end box -->
+</div>

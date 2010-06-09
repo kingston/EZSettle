@@ -118,15 +118,7 @@
 			dataType: 'json'
 		});
 	});
-	
-	function showLoading() {
-		$("#dark").fadeIn();
-		var left = $(window).width()/2  - $("#loading").width()/2;
-		var top = $(window).height()/2 + $(window).scrollTop() - $("#loading").height()/2;
-		$("#loading").css("left", left+"px");
-		$("#loading").css("top", top+"px");
-		$("#loading").fadeIn();
-	}
+
 	
 	function checkOffer(formData, jqForm, options) {
 		var errors = "";
@@ -155,17 +147,11 @@
 		showLoading();
 	}
 
-	
-	function hideLoading() {
-		$("#dark").fadeOut();
-		$("#loading").fadeOut();
-	}
-	
 	function afterOffer(data) {
 		setTimeout(function() {
 			hideLoading();
 			window.location = 'offer.php';
-		}, 8000);
+		}, 3000);
 	}
 	//]]>
 {/literal}

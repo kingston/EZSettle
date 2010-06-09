@@ -8,3 +8,22 @@
 		<div class="clearfix" style="margin-bottom: 5px;"></div>
 	</div><!-- end chat -->
 {/foreach}
+
+<div style="float: right;" class="super medium awesome black button" id="view_message_history">View Mediator Message History</div>
+
+<div class="clearfix"></div>
+<hr class="space"/>
+<script type="text/javascript">
+{literal}
+	//<![CDATA[
+		$(document).ready(function() {
+			$("#view_message_history").click(function() {
+				showMessageHistory();
+			});	
+			$("#hide_message_history").click(function() {
+				hideMessageHistory();
+			});
+		});
+	//]]>
+{/literal}
+</script>

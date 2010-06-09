@@ -108,13 +108,21 @@ switch($_SESSION['offer_num']) {
 	$step = 1;
 		$_SESSION['chatNew'] = array(
 									array( 'speaker' => 'Mediator',
-										'message' =>"This is your third and final opportunity to make a mediation offer to Casey345 (Casey345 will be able to make a final offer too).
-										Before making your final offer, {$ezsettle} would like to remind you that this is also your final opportunity to share information with {$ezsettle_me} or send messages to Casey345."
+										'message' =>"This is your third and final opportunity to make a mediation offer to Casey345 (Casey345 will be able to make a final offer too). Before making your final offer, {$ezsettle} would like to remind you that this is also your final opportunity to share information with {$ezsettle_me} or send messages to Casey345."
 									)
 								);
 
 		break;
 	case 8:
+		$step = 2;
+			$_SESSION['chatNew'] = array(
+										array( 'speaker' => 'Mediator',
+											'message' =>"Casey345 did not accept your final offer. Casey345 said: “You know what, this is really ridiculous, I’m just making this final offer as an act of good faith and to get this over with. If you don’t accept it, whatever, let’s see what the arbitrator has to say.” "
+										),
+										array( 'speaker' => 'Mediator',
+											'message' =>"{$ezsettle} would like to remind you that if you reject Casey345's offer, {$ezsettle} will transfer your case to arbitration, where [the EZSettle AnaLegal professional arbitration engine will 1. 3. ] [a trained EZSettle professional arbitrator will 2. 4.] [you will be asked to choose between the services of the EZSettle professional AnaLegal arbitration engine or an EZSettle trained professional mediator, who will 5. 6.] provide you with a final binding settlement, based on [its 1. 3.] [his 2. 4.] [their 5. 6.] understanding of the situation and the preferences and offers the two parties communicated."
+										)
+									);
 	
 	default:
 		$_SESSION['chatNew'] = array();

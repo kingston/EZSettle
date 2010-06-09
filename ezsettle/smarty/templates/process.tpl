@@ -3,7 +3,7 @@
 <div class="main_body">
 	<div class="large loud headline">The EZSettle Process has 6 simple phases</div>
 	<ol class="faq">
-	<li><div class="loud q" id="1">Prepare for Mediation &nbsp;&nbsp;&nbsp;<span class="action" id="arrow1"><img src="images/arrowup.png"/></span class="action"></div>
+	<li><div class="loud q2" id="1"><span class="action" id="arrow1"><img src="images/arrow_open.png"/></span class="action">&nbsp;Prepare for Mediation</div>
 	<div class="quiet box" id="a1">
 		<ul>
 			<li>Both parties review the EZSettle procedure and accept guidelines for conduct.</li>
@@ -18,7 +18,7 @@
 		</div>
 	</li>
 	
-	<li><div class="loud q" id="2">Qualify Interests &nbsp;&nbsp;&nbsp;<span class="action" id="arrow2"><img src="images/arrowdown.png"/></span class="action"></div>
+	<li><div class="loud q" id="2"><span class="action" id="arrow2"><img src="images/arrow_closed.png"/></span class="action">&nbsp;Qualify Interests</div>
 		<div class="quiet box hide" id="a2">
 			<ul>
 				<li>{if $condition == 1 || $condition == 2 || $condition == $5}Parties are presented{else}Our Mediator presents the parties{/if} 
@@ -27,14 +27,14 @@
 			</ul>
 		</div></li>
 	
-	<li><div class="loud q" id="3">Quantify Preferences &nbsp;&nbsp;&nbsp;<span class="action" id="arrow3"><img src="images/arrowdown.png"/></span class="action"></div>
+	<li><div class="loud q" id="3"><span class="action" id="arrow3"><img src="images/arrow_closed.png"/></span class="action">&nbsp;Quantify Preferences</div>
 		<div class="quiet box hide" id="a3">
 			<ul>  
 				<li>Parties indicate the relative importance of each particular issue on the list, using a numerical scale (1-100).</li>
 				<li>These preference values are confidential and will never be revealed to the other party.</li>
 		</div></li>
 	
-	<li><div class="loud q" id="4">Mediation &nbsp;&nbsp;&nbsp;<span class="action" id="arrow4"><img src="images/arrowdown.png"/></span class="action"></div>
+	<li><div class="loud q" id="4"><span class="action" id="arrow4"><img src="images/arrow_closed.png"/></span class="action">&nbsp;Mediation</div>
 	<div class="quiet box hide" id="a4">
 		<ul> 
 			<liParties go through a maximum of 3 rounds of offers and counter offers in the mediation stage.</li>
@@ -45,7 +45,7 @@
 		</ul>
 	</div></li>
 	
-	<li><div class="loud q" id="5">Arbitration &nbsp;&nbsp;&nbsp;<span class="action" id="arrow5"><img src="images/arrowdown.png"/></span class="action"></div>
+	<li><div class="loud q" id="5"><span class="action" id="arrow5"><img src="images/arrow_closed.png"/></span class="action">&nbsp;Arbitration</div>
 	<div class="quiet box hide" id="a5">
 		<ul>
 			<li>If no agreement is reached within 3 rounds of mediation, the EZSettle process will enter the arbitration stage.</li>
@@ -53,7 +53,7 @@
 		</ul>
 	</div></li>
 	
-	<li><div class="loud q" id="6">Secure commitment &nbsp;&nbsp;&nbsp;<span class="action" id="arrow6"><img src="images/arrowdown.png"/></span class="action"></div>
+	<li><div class="loud q" id="6"><span class="action" id="arrow6"><img src="images/arrow_closed.png"/></span class="action">&nbsp;Secure commitment</div>
 	<div class="quiet box hide" id="a6">
 		<ul>
 			<li>Once a Settlement is reached, whether in mediation or arbitration, parties receive immediate notice of the terms of the settlement.</li>
@@ -74,14 +74,14 @@
 		$(".q").live('click', function() {
 			var id = $(this).attr("id");
 			$("#a"+id).fadeIn();
-			$("#arrow"+id).html("<img src='images/arrowup.png'/>");
+			$("#arrow"+id).html("<img src='images/arrow_open.png'/>");
 			$(this).removeClass("q").addClass("q2");
 		});
 		
 		$(".q2").live('click', function() {
 			var id = $(this).attr("id");
 			$("#a"+id).fadeOut();
-			$("#arrow"+id).html("<img src='images/arrowdown.png'/>");
+			$("#arrow"+id).html("<img src='images/arrow_closed.png'/>");
 			$(this).removeClass("q2").addClass("q");
 		});
 	});
