@@ -40,5 +40,6 @@ tr.rowerror td             { background:#FBE3E4; color: #8A1F11;}
 #message_history            {  width: 950px; height: 500px; padding: 10px;
                                 -moz-border-radius: 15px; -webkit-border-radiu: 15px;
                                 -moz-box-shadow: 5px 5px 7px #222; -webkit-box-shadow: 5px 5px 7px #222; position: absolute;
-                                border: 10px solid #333; background: #fff; display: none; z-index: 1000;}}
-                
+                                border: 10px solid #333; background: #fff; display: none; z-index: 1000;}
+#process_description        { border: 1px solid #ccc; height: 400px; overflow-x: hidden; overflow-y: scroll;}
+.startbutton                { float: right; margin-right: 15px; margin-top: .8em; margin-bottom:1.8em;}
