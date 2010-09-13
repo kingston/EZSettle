@@ -14,7 +14,7 @@ $_SESSION['offer_titles'] = array(	1 => "Your First Offer",
 $_SESSION['counteroffers'] = array(
 									array('No', "0", "0", "0", "0", "0"),
 									array('No', '100', '10', '0', '0', '0'),
-									array('No', '150', '10', '0', '0', '0')
+									array('No', '150', '10', '0', '0', '0'),
 									);			
 															
 if (!isset($_SESSION['offer_num'])) {
@@ -23,8 +23,6 @@ if (!isset($_SESSION['offer_num'])) {
 }
 
 $step = $_SESSION['step'];
-
-print $_SESSION['offer_num'];
 
 switch($_SESSION['condition']) {
 	case 1:
@@ -42,6 +40,25 @@ switch($_SESSION['condition']) {
 		$ezsettle = "I";
 		$mediator = "the mediator";
 		$ezssetle_me = "me";
+		break;
+}
+
+switch($_SESSION['condition']) {
+	case 1:
+	case 3:
+		$ezsettle_person = "the EZSettle AnaLegal professional arbitration engine will";
+		$ezsettle_pronoun = "its";
+		break;
+	case 2:
+	case 4:
+		$ezsettle_person = "a trained EZSettle professional arbitrator will";
+		$ezsettle_pronoun = "his";
+		break;
+	
+	case 5:
+	case 6:
+		$ezsettle_person = "you will be asked to choose between the services of the EZSettle professional AnaLegal arbitration engine or an EZSettle trained professional mediator, who will";
+		$ezsettle_pronoun = "their";
 		break;
 }
 
@@ -105,7 +122,7 @@ switch($_SESSION['offer_num']) {
 	
 		break;
 	case 7:
-	$step = 1;
+		$step = 1;
 		$_SESSION['chatNew'] = array(
 									array( 'speaker' => 'Mediator',
 										'message' =>"This is your third and final opportunity to make a mediation offer to Casey345 (Casey345 will be able to make a final offer too). Before making your final offer, {$ezsettle} would like to remind you that this is also your final opportunity to share information with {$ezsettle_me} or send messages to Casey345."
@@ -117,10 +134,10 @@ switch($_SESSION['offer_num']) {
 		$step = 2;
 			$_SESSION['chatNew'] = array(
 										array( 'speaker' => 'Mediator',
-											'message' =>"Casey345 did not accept your final offer. Casey345 said: “You know what, this is really ridiculous, I’m just making this final offer as an act of good faith and to get this over with. If you don’t accept it, whatever, let’s see what the arbitrator has to say.” "
+											'message' =>"Casey345 did not accept your final offer. Casey345 said: \"You know what, this is really ridiculous, I’m just making this final offer as an act of good faith and to get this over with. If you don’t accept it, whatever, let’s see what the arbitrator has to say.\""
 										),
 										array( 'speaker' => 'Mediator',
-											'message' =>"{$ezsettle} would like to remind you that if you reject Casey345's offer, {$ezsettle} will transfer your case to arbitration, where [the EZSettle AnaLegal professional arbitration engine will 1. 3. ] [a trained EZSettle professional arbitrator will 2. 4.] [you will be asked to choose between the services of the EZSettle professional AnaLegal arbitration engine or an EZSettle trained professional mediator, who will 5. 6.] provide you with a final binding settlement, based on [its 1. 3.] [his 2. 4.] [their 5. 6.] understanding of the situation and the preferences and offers the two parties communicated."
+											'message' =>"{$ezsettle} would like to remind you that if you reject Casey345's offer, {$ezsettle} will transfer your case to arbitration, where {$ezsettle_person} provide you with a final binding settlement, based on {$ezsettle_pronoun} understanding of the situation and the preferences and offers the two parties communicated."
 										)
 									);
 	
@@ -145,6 +162,11 @@ $smarty->assign('mediator', $mediator);
 $smarty->assign('mediator_caps', $mediator_caps);
 //var_dump($_SESSION['counteroffers'][$step]);
 //Your offer
+
+if ($_POST['accept'] && $_POST['accept'] != '') {
+	$smarty->display('accept.tpl');
+}
+
 if($_SESSION['offer_num']%3 == 1) {
 	$smarty->display('offer.tpl');
 }

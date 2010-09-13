@@ -14,7 +14,7 @@
 				<tr>
 					<th>Issues:</th>
 					<th>Your Offer</th>
-					<th>Casey's Counteroffer</th>
+					<th>Casey345's Counteroffer</th>
 				</tr>
 				{section name=issuesIndex loop=$issues}
 					{ if $smarty.section.issuesIndex.index%2 == 0}
@@ -50,7 +50,9 @@
 					</td>
 					</tr>
 				{/section}
-					<tr><td colspan="3"><div style="float: right;"><input type="submit" class="super large awesome red button" name="submit" value="✓ Accept Offer" /><input type="submit" class="super large awesome black button" name="submit" id="counteroffer" value="Make Counteroffer »" /></div></td></tr>
+					<tr><td colspan="3"><div style="float: right;">
+						<input type="submit" class="super large awesome red button" name="accept" value="✓ Accept Offer" />
+						<input type="submit" class="super large awesome black button" name="submit" id="counteroffer" value="Make Counteroffer »" /></div></td></tr>
 			</table>
 		</form>
 		</div>

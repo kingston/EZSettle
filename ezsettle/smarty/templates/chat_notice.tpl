@@ -9,7 +9,7 @@
 	</div><!-- end chat -->
 {/foreach}
 
-<div style="float: right;" class="super medium awesome black button" id="view_message_history">View Mediator Message History</div>
+<div style="float: right;" class="super medium awesome red button" id="view_message_history">View Mediator Message History</div>
 
 <div class="clearfix"></div>
 <hr class="space"/>

@@ -25,8 +25,8 @@
 .magenta.awesome:visited                 { background-color: #a9014b; } 
 .magenta.awesome:hover                   { background-color: #630030; } 
 .orange.awesome,
-.orange.awesome:visited                  { background-color: #ff5c00; } 
-.orange.awesome:hover                    { background-color: #d45500; text-decoration: underline;} 
+.orange.awesome:visited                  { background-color: #FFF6BF; color: #e33100; } 
+.orange.awesome:hover                    { background-color: #FFF6BF; color: #e33100; text-decoration: underline;} 
 .yellow.awesome,
 .yellow.awesome:visited                  { background-color: #ffb515; } 
 .yellow.awesome:hover                    { background-color: #fc9200; }

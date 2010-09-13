@@ -1,13 +1,15 @@
 
 		</div><!-- end container -->
-		<div class="footer">&copy; EZSettle 2000-2010</div>
+		<div class="footer">&copy; EZSettle 2008-2010</div>
 		<script type="text/javascript">
 		{literal}
 			//<![CDATA[
 		$(document).ready(function() {
 
 		$(".chatnotice").each(function(index) {
-			var time = $(this).attr("alt") * 3000;
+			var text = $(this).html();
+			var timeOut = text.length * 9;
+			var time = $(this).attr("alt") * timeOut;
 			var elem = $(this);
 			setTimeout(function() { $(elem).fadeIn();}, time);
 		});

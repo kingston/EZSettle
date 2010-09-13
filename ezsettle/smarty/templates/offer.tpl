@@ -41,7 +41,7 @@
 							{else}
 								$<input type="text" size="10" maxlength="10" disabled="yes" name="issues{$smarty.section.issuesIndex.index}" value="{$offers[issuesIndex]}" />
 							{/if}
-						</div>
+							</div>
 						</td>
 						
 						<td><div style="float: right;">
@@ -53,6 +53,7 @@
 							{else}
 								$<input type="text" size="10" maxlength="10" disabled="yes" name="c_issues{$smarty.section.issuesIndex.index}" value="{$counteroffers[issuesIndex]}" />
 							{/if}
+							</div>
 						</td>
 					{else}
 						<td></td>
