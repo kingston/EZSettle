@@ -7,7 +7,6 @@
 	{else}
 		<div class="loud success">Please login to get started:</div>
 	{/if}
-	
 	<div class="box">
 		<form id="signin" name="signin" method="post" action="actions/postsignin.php">
 			<fieldset>

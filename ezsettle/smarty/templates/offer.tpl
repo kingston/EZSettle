@@ -1,5 +1,4 @@
 {include file="header.tpl"}
-
 <div class="main_body">
 	<div class="loud headline append-bottom">{ $offer_title}</div>
 	<div class="span-24 last">
@@ -133,7 +132,7 @@
 			$("#row0").removeClass('rowerror');
 		}
 		for(var i=1; i<5; i++) {
-			if(!$("#issues" + i).val()) {
+			if(!$("#issues" + i).val() || isNaN($("#issues" + i).val())) {
 				$("#row"+i).addClass('rowerror');
 				errors += "issues" + i + " ";
 			}

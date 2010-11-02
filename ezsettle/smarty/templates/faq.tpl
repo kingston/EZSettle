@@ -1,6 +1,6 @@
 {include file="header.tpl"}
-
 <div class="main_body">
+	<div id="expID" style="display:none" exp_id="{$expID}"></div>
 	<div class="large loud headline">Frequenty Asked Questions</div>
 	<ol class="faq">
 	<li><div class="loud q" id="1"><span id="arrow1"><img src="images/arrow_closed.png"/></span> What is Online Dispute Resolution (ODR)?</div>
@@ -80,13 +80,16 @@
 	
 
 </ol>
-</div><!-- end main body -->
+</div>
+<!-- end main body -->
 
 {include file="footer.tpl"}
 
 <script type="text/javascript">
 {literal}
 	//<![CDATA[
+	var time_start;
+	var time_end;
 	$(document).ready(function() {
 		$(".q").live('click', function() {
 			var id = $(this).attr("id");
@@ -101,7 +104,38 @@
 			$("#arrow"+id).html("<img src=\"images/arrow_closed.png\"/>");
 			$(this).removeClass("q2").addClass("q");
 		});
+		
+		var d_s = new Date();
+		time_start = d_s.getTime();
+		
 	});
+	
+	$(window).unload(function(){
+		exit_page();
+	});
+	
+	function exit_page(){
+		var d_e = new Date();
+		time_end = d_e.getTime();
+		expID = $("#expID").attr("exp_id");
+		if((expID == null)||(expID=="")){
+			alert("Hey it's null");
+		}
+		faq = "expID="+expID+"&time_spent="+(time_end-time_start);
+		$.ajax({
+  			type: "POST",
+   			url: "db_code/insert_faq.php",
+   			data: ,
+   			success: function(msg){
+     			alert(msg);
+			//window.location = link;
+
+   			},
+   			error: function(xhr, textStatus, errorThrown){
+   				alert("fail: " + xhr+" "+textStatus + " " + errorThrown);
+   			}
+ 		});
+	}
 //]]>
 {/literal}
 </script>

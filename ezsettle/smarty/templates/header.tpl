@@ -11,7 +11,7 @@
 		<!--[if lt IE 8]><link rel="stylesheet" href="/../css/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
 		<link rel="stylesheet" href="js/jqueryui/css/blitzer/jqueryui.css" type="text/css" />
 		
-		<script type="text/javascript" src="js/jquery-1.4.js"></script>
+		<script type="text/javascript" src="js/jquery-1.4.3.js"></script>
 		<script type="text/javascript" src="js/jqueryui/js/jqueryui.js"></script>
 		<script type="text/javascript" src="js/jquery.form.js"></script>
 		<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
@@ -33,6 +33,14 @@
 					<div style="float: right;">
 						{if isset($username) && $username != "" }
 							Welcome, {$username}! | <a href="signin.php?logout=true">Logout</a>
+							<!-- for debug -->
+							{if isset($condition)}
+							<br />{$condition}
+							<br />{$conditionDescription[$condition]}
+							{else}
+							<br/> No condition has been set.
+							{/if}
+							<!-- end for debug -->
 						{else}
 							<a href="signin.php">Login</a>
 						{/if}

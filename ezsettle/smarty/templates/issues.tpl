@@ -45,6 +45,8 @@
 		});
 		
 		$("#add").click(function() {
+			//PAOTODO:remove this and put it into the database
+			alert($("#issues_text").val());
 			$("#issues_text").val("");
 			$("#issues_added").show();
 		});

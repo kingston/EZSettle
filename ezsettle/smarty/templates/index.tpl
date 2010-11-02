@@ -1,5 +1,4 @@
 {include file="header.tpl"}
-
 <div class="main_body">
 	<div class="left_graphic span-9">
 		<img class="left" src="images/justice.jpg" width="300px">
