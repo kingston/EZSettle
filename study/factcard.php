@@ -8,9 +8,12 @@
     <style type="text/css">
     	table {
     		border: 1px solid black;
+    		border-collapse: collapse;
     	}
     	td {
     	 	padding:2px;
+    	 	
+    	 	border: 1px solid black;
     	 
     	}
 	</style>
