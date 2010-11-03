@@ -44,7 +44,5 @@ tr.rowerror td             { background:#FBE3E4; color: #8A1F11;}
 #process_description        { border: 1px solid #ccc; height: 400px; overflow-x: hidden; overflow-y: scroll;}
 .startbutton                { float: right; margin-right: 15px; margin-top: .8em; margin-bottom:1.8em;}
 #arb_opt 					{border-spacing: 10px 0px;}
-#arb_opt tr td img			{margin-left:auto;
-margin-right:auto;
-width:70%;}
-#arb_opt tr td  			{ background:pink; padding:5px; width:300px; text-align:center;}
+#arb_opt tr td img			{margin-left:auto; margin-right:auto;width:70%;}
+#arb_opt tr td  			{ background:pink; padding:5px; width:350px; text-align:center;}
