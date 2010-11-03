@@ -29,7 +29,9 @@
 					
 					<td width="300"><div class="float: right;">
 					{if $smarty.section.issuesIndex.index == 0}
-						{$offers[0]}
+						{if $offers[0]=="Yes"}Yes
+						{else}No
+						{/if}
 					{elseif $smarty.section.issuesIndex.index == 5}
 						{if $offers[5] == "buyer"} Buyer
 						{elseif $offers[5] == "seller"}Seller
