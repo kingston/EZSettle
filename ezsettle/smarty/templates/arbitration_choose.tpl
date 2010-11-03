@@ -5,7 +5,7 @@
 		{include file="chat_notice.tpl"}
 		<div class="span-24 last">
 			<div class="loud headline append-bottom">Please choose your arbitrator:</div>
-			<div class="span-10 last">
+			<div class="prepend-10 span-10 last">
 				<div class="span-5">
 					<img class="profile_picture" src="images/ezsettle_human.jpg"></div>
 				</div>
