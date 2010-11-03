@@ -5,8 +5,16 @@
 		{include file="chat_notice.tpl"}
 		<div class="loud headline append-bottom">Please choose your arbitrator:</div>
 		<div class="prepend-8 span-10 last">
-			<spas class="arb_opt"><img src="images/ezsettle_human.jpg"></span>
-			<span class="arb_opt"><img src="images/ezsettle_computer.jpg"></span>
+			<table id="arb_opt">
+			<tr>
+				<td><img src="images/ezsettle_human.jpg"></td>
+				<td><img src="images/ezsettle_computer.jpg"> </td>
+			</tr>
+			<tr>
+				<td>EZSettle trained professional mediator</td>
+				<td>EZSettle professional AnaLegal arbitration engine</td>
+			</tr>
+			</table>
 		</div>
 	</div>
 	{include file="chat.tpl"}
