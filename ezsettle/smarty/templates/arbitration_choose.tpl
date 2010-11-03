@@ -23,9 +23,30 @@
 {literal}
 	//<![CDATA[
 	$(document).ready(function() {
-		$(".arb_human").live('click',function(){
-			alert("hey");
+		$(".arb_human").live('hover',function(){
 			$(".arb_human").css("background","#cccccc");
+		});
+		
+		$(".arb_human").mouseout(function(){
+			$(".arb_human").css("background","#eeeeee");
+		});
+		
+		$(".arb_human").click(function(){
+			alert("choose human arb");
+			//$(".arb_human").css("background","#eeeeee");
+		});
+		
+		$(".arb_computer").live('hover',function(){
+			$(".arb_computer").css("background","#cccccc");
+		});
+		
+		$(".arb_computer").mouseout(function(){
+			$(".arb_computer").css("background","#cccccc");
+		});
+		
+		$(".arb_computer").click(function(){
+			alert("Choose computer arb");
+			//$(".arb_computer").css("background","#cccccc");
 		});
 		
 	
