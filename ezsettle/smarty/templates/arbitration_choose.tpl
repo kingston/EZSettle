@@ -7,12 +7,12 @@
 		<div class="prepend-4 span-16 last">
 			<table id="arb_opt">
 			<tr>
-				<td><img src="images/ezsettle_human.jpg"></td>
-				<td><img src="images/ezsettle_computer.jpg"> </td>
+				<td class="arb_human"><img src="images/ezsettle_human.jpg"></td>
+				<td class="arb_computer"><img src="images/ezsettle_computer.jpg"> </td>
 			</tr>
 			<tr>
-				<td>EZSettle trained professional mediator</td>
-				<td>EZSettle professional AnaLegal arbitration engine</td>
+				<td class="arb_human">EZSettle trained professional mediator</td>
+				<td class="arb_computer">EZSettle professional AnaLegal arbitration engine</td>
 			</tr>
 			</table>
 		</div>
@@ -23,7 +23,8 @@
 {literal}
 	//<![CDATA[
 	$(document).ready(function() {
-		$("#arb_opt > tr > td").hover(function(){
+		$("#arb_opt > tr > td").click(function(){
+			alert("hey");
 			$(this).css("border","2px solid red");
 		});
 		
