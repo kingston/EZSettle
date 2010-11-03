@@ -4,7 +4,7 @@
 	<div class="span-24 last">
 		{include file="chat_notice.tpl"}
 		<div class="loud headline append-bottom">Please choose your arbitrator:</div>
-		<div class="prepend-7 span-16 last">
+		<div class="prepend-4 span-16 last">
 			<table id="arb_opt">
 			<tr>
 				<td><img src="images/ezsettle_human.jpg"></td>
