@@ -140,6 +140,29 @@ switch($_SESSION['offer_num']) {
 											'message' =>"{$ezsettle} would like to remind you that if you reject Casey345's offer, {$ezsettle} will transfer your case to arbitration, where {$ezsettle_person} provide you with a final binding settlement, based on {$ezsettle_pronoun} understanding of the situation and the preferences and offers the two parties communicated."
 										)
 									);
+	case 9:
+		if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
+			$step = 2;
+				$_SESSION['chatNew'] = array(
+												array( 'speaker' => 'Mediator',
+													'message' =>"You and Casey 345 did not reach an agreement. We will now switch to use an arbitrator."
+												),
+												array( 'speaker' => 'Mediator',
+													'message' =>"{$ezsettle_person}"
+												)
+											);	
+		}else{
+			$step = 2;
+				$_SESSION['chatNew'] = array(
+												array( 'speaker' => 'Mediator',
+													'message' =>"You and Casey 345 did not reach an agreement. We will now switch to use an arbitrator."
+												),
+												array( 'speaker' => 'Mediator',
+													'message' =>"{$ezsettle_person} will arbitrate for you"
+												)
+											);	
+		}
+	break;
 	
 	default:
 		$_SESSION['chatNew'] = array();
@@ -168,10 +191,12 @@ if ($_POST['accept'] && $_POST['accept'] != '') {
 	$smarty->display('accept.tpl');
 }
 if ($_SESSION['offer_num']== 9){
-	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6))
+	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
 		$smarty->display('arbitration_choose.tpl');
-	else
+		
+	}else{
 		$smarty->display('arbitration.tpl');	
+	}
 }else if($_SESSION['offer_num']%3 == 1) {
 	$smarty->display('offer.tpl');
 }
