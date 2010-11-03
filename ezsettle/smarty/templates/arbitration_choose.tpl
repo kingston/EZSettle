@@ -23,7 +23,11 @@
 {literal}
 	//<![CDATA[
 	$(document).ready(function() {
+		$("#arb_opt > tr > td").hover(function(){
+			$(this).css("border","2px solid red");
+		});
 		
+	
 	});
 	//]]>
 {/literal}
