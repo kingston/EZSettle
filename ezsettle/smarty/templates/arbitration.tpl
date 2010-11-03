@@ -39,14 +39,6 @@
 						{/if}
 					{else}
 						{$all_offers[0][issuesIndex]}
-						x{$all_offers[1][issuesIndex]}
-						x{$all_offers[2][issuesIndex]}
-						x{$all_offers[3][issuesIndex]}
-						x{$all_offers[4][issuesIndex]}
-						x{$all_offers[5][issuesIndex]}
-						x{$all_offers[6][issuesIndex]}
-						x{$all_offers[7][issuesIndex]}
-						x{$all_offers[8][issuesIndex]}
 						<!--$<input type="text" size="10" maxlength="10" disabled="yes" name="issues{$smarty.section.issuesIndex.index}" value="{$offers[issuesIndex]}" />-->
 					{/if}
 					</div>
