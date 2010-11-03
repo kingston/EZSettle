@@ -25,7 +25,7 @@
 	$(document).ready(function() {
 		$(".arb_human").live('click',function(){
 			alert("hey");
-			$(this).css("border","2px solid red");
+			$(".arb_human").css("background","#cccccc");
 		});
 		
 	
