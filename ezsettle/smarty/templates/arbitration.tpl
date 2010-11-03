@@ -39,40 +39,91 @@
 						{/if}
 					{else}
 						{$all_offers[0][issuesIndex]}
-						<!--$<input type="text" size="10" maxlength="10" disabled="yes" name="issues{$smarty.section.issuesIndex.index}" value="{$offers[issuesIndex]}" />-->
 					{/if}
 					</div>
 					</td>
 					
 					<td><div class="float: right;"> 
 					{if $smarty.section.issuesIndex.index == 0}
-						<input type="radio" name="c_issue0" value="Yes" disabled="yes" {if $counteroffers[0]=="Yes"}checked{/if}>Yes 
-						<input type="radio" name="c_issue0" value="No" disabled="yes" {if $counteroffers[0]=="No"}checked{/if}>No
+						{if $all_counteroffers[0][0]=="Yes"}Yes
+						{else}No
+						{/if}
 					{elseif $smarty.section.issuesIndex.index == 5}
-						<input type="radio" name="issues5" value="buyer" disabled="yes" {if $counteroffers[5]=="buyer"}checked="yes"{/if}/>Buyer <input type="radio" name="issues5" value="seller" disabled="yes" {if $counteroffers[5]=="seller"}checked="yes"{/if}/>Seller
+						{if $all_counteroffers[0][5] == "buyer"} Buyer
+						{elseif $all_counteroffers[0][5] == "seller"}Seller
+						{else} N/A
+						{/if}
 					{else}
 						{$all_counteroffers[0][issuesIndex]}
-						x{$all_counteroffers[1][issuesIndex]}
-						x{$all_counteroffers[2][issuesIndex]}
-						x{$all_counteroffers[3][issuesIndex]}
-						x{$all_counteroffers[4][issuesIndex]}
-						x{$all_counteroffers[5][issuesIndex]}
-						x{$all_counteroffers[6][issuesIndex]}
-						x{$all_counteroffers[7][issuesIndex]}
-						x{$all_counteroffers[8][issuesIndex]}
-						<!--$<input type="text" size="10" maxlength="10" disabled="yes" name="c_issues{$smarty.section.issuesIndex.index}" value="{$counteroffers[issuesIndex]}" />-->
 					{/if}
 					</div>
 					</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td><div class="float: right;">
+					{if $smarty.section.issuesIndex.index == 0}
+						{if $all_offers[1][0]=="Yes"}Yes
+						{else}No
+						{/if}
+					{elseif $smarty.section.issuesIndex.index == 5}
+						{if $all_offers[1][5] == "buyer"} Buyer
+						{elseif $all_offers[1][5] == "seller"}Seller
+						{else} N/A
+						{/if}
+					{else}
+						{$all_offers[1][issuesIndex]}
+					{/if}
+					</div>
+					</td>
+					
+					<td><div class="float: right;"> 
+					{if $smarty.section.issuesIndex.index == 0}
+						{if $all_counteroffers[1][0]=="Yes"}Yes
+						{else}No
+						{/if}
+					{elseif $smarty.section.issuesIndex.index == 5}
+						{if $all_counteroffers[1][5] == "buyer"} Buyer
+						{elseif $all_counteroffers[1][5] == "seller"}Seller
+						{else} N/A
+						{/if}
+					{else}
+						{$all_counteroffers[1][issuesIndex]}
+					{/if}
+					</div>
+					</td>
+					
+					<td><div class="float: right;">
+					{if $smarty.section.issuesIndex.index == 0}
+						{if $all_offers[3][0]=="Yes"}Yes
+						{else}No
+						{/if}
+					{elseif $smarty.section.issuesIndex.index == 5}
+						{if $all_offers[3][5] == "buyer"} Buyer
+						{elseif $all_offers[3][5] == "seller"}Seller
+						{else} N/A
+						{/if}
+					{else}
+						{$all_offers[3][issuesIndex]}
+					{/if}
+					</div>
+					</td>
+					
+					<td><div class="float: right;"> 
+					{if $smarty.section.issuesIndex.index == 0}
+						{if $all_counteroffers[2][0]=="Yes"}Yes
+						{else}No
+						{/if}
+					{elseif $smarty.section.issuesIndex.index == 5}
+						{if $all_counteroffers[2][5] == "buyer"} Buyer
+						{elseif $all_counteroffers[2][5] == "seller"}Seller
+						{else} N/A
+						{/if}
+					{else}
+						{$all_counteroffers[2][issuesIndex]}
+					{/if}
+					</div>
+					</td>
+					
 					</tr>
 				{/section}
-					<tr><td colspan="3"><div style="float: right;">
-						<input type="submit" class="super large awesome red button" name="accept" value="✓ Accept Offer" />
-						<input type="submit" class="super large awesome black button" name="submit" id="counteroffer" value="Make Counteroffer »" /></div></td></tr>
 			</table>
 		<!--</form>-->
 		</div>
