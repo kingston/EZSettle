@@ -7,8 +7,6 @@
 		<div class="prepend-10 span-10 last">
 			<div class="span-5">
 				<img class="profile_picture" src="images/ezsettle_human.jpg"></div>
-			</div>
-			<div class="span-5 last">
 				<img class="profile_picture" src="images/ezsettle_computer.jpg"></div>
 			</div>
 		</div>
