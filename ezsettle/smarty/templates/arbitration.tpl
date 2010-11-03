@@ -4,7 +4,7 @@
 	<div class="span-24 last">
 		{include file="chat_notice.tpl"}
 		<div class="span-24 last">
-		<!--<form id="offer" name="ofer" method="post" action="offer.php">-->
+		<form id="offer" name="ofer" method="post" action="offer.php">
 			<input type="hidden" name="offer" value="{$offer}" />
 			<div class="success">
 				Here is the summary of your and Casey345's offers.
@@ -128,7 +128,7 @@
 						<input type="submit" class="super large awesome red button" name="accept" value="Start Arbitration Process" />
 						</div></td></tr>
 			</table>
-		<!--</form>-->
+		</form>
 		</div>
 
 	</div>
