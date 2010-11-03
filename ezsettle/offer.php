@@ -142,15 +142,11 @@ switch($_SESSION['offer_num']) {
 									);
 	case 9:
 		if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
-			$step = 2;
+			$step = 1;
 				$_SESSION['chatNew'] = array(
 												array( 'speaker' => 'Mediator',
-													'message' =>"You and Casey 345 did not reach an agreement. We will now switch to use an arbitrator."
-												),
-												array( 'speaker' => 'Mediator',
-													'message' =>"{$ezsettle_person} arbitrate for you"
-												)
-											);	
+													'message' =>"You and Casey 345 did not reach an agreement. We will now switch to use an arbitrator.{$ezsettle_person} arbitrate for you"
+												)											);	
 		}else{
 			$step = 2;
 				$_SESSION['chatNew'] = array(
