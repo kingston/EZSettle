@@ -29,11 +29,12 @@
 					
 					<td width="300"><div class="float: right;">
 					{if $smarty.section.issuesIndex.index == 0}
-						<input type="radio" name="issues0" value="Yes" disabled="yes" {if $offers[0]=="Yes"}checked="yes"{/if} />Yes 
-						<input type="radio" name="issues0" value="No" disabled="yes" {if $offers[0]=="No"}checked="yes"{/if} />No
+						{$offers[0]}
 					{elseif $smarty.section.issuesIndex.index == 5}
-						<input type="radio" name="issues5" value="buyer" disabled="yes" {if $offers[5]=="buyer"}checked="yes"{/if } />Buyer
-						<input type="radio" name="issues5" value="seller" disabled="yes" {if $offers[5]=="seller"}checked="yes"{/if}/>Seller
+						{if $offers[5] == "buyer"} Buyer
+						{elseif $offers[5] == "seller"}Seller
+						{else} N/A
+						{/if}
 					{else}
 						$<input type="text" size="10" maxlength="10" disabled="yes" name="issues{$smarty.section.issuesIndex.index}" value="{$offers[issuesIndex]}" />
 					{/if}
@@ -51,6 +52,10 @@
 					{/if}
 					</div>
 					</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
 					</tr>
 				{/section}
 					<tr><td colspan="3"><div style="float: right;">
