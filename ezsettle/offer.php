@@ -175,6 +175,7 @@ $smarty->assign('offer_num', $_SESSION['offer_num']);
 $smarty->assign('offers', $_SESSION['offers'][$step]);
 if($_SESSION['offer_num']== 9 ){
 	$smarty->assign('all_offers', $_SESSION['offers']);	
+	$smarty->assing('all_counteroffers', $_SESSION['counteroffers']);
 }
 $smarty->assign('counteroffers', $_SESSION['counteroffers'][$step]);
 $smarty->assign('username', sessionVar('username'));
