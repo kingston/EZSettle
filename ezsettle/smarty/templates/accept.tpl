@@ -1,5 +1,5 @@
 {include file="header.tpl"}
-
+step: {$step}
 <div class="main_body">
 	<div class="large loud headline">Resolution</div>
 	<hr class="space"/>

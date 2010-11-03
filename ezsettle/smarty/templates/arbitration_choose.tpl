@@ -1,4 +1,5 @@
 {include file="header.tpl"}
+step: {$step}
 <div class="main_body">
 	<div class="loud headline append-bottom">Arbitration Process</div>
 	<div class="span-24 last">

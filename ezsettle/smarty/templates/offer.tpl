@@ -1,4 +1,5 @@
 {include file="header.tpl"}
+step: {$step}
 <div class="main_body">
 	<div class="loud headline append-bottom">{ $offer_title}</div>
 	<div class="span-24 last">
