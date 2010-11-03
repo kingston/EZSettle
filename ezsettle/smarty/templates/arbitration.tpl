@@ -29,12 +29,12 @@
 					
 					<td><div class="float: right;">
 					{if $smarty.section.issuesIndex.index == 0}
-						{if $all_offers[7][0]=="Yes"}Yes
+						{if $all_offers[0][0]=="Yes"}Yes
 						{else}No
 						{/if}
 					{elseif $smarty.section.issuesIndex.index == 5}
-						{if $all_offers[7][5] == "buyer"} Buyer
-						{elseif $all_offers[7][5] == "seller"}Seller
+						{if $all_offers[0][5] == "buyer"} Buyer
+						{elseif $all_offers[0][5] == "seller"}Seller
 						{else} N/A
 						{/if}
 					{else}
