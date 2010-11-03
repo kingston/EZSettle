@@ -148,7 +148,7 @@ switch($_SESSION['offer_num']) {
 													'message' =>"You and Casey 345 did not reach an agreement. We will now switch to use an arbitrator."
 												),
 												array( 'speaker' => 'Mediator',
-													'message' =>"{$ezsettle_person}"
+													'message' =>"{$ezsettle_person} arbitrate for you"
 												)
 											);	
 		}else{
@@ -158,7 +158,7 @@ switch($_SESSION['offer_num']) {
 													'message' =>"You and Casey 345 did not reach an agreement. We will now switch to use an arbitrator."
 												),
 												array( 'speaker' => 'Mediator',
-													'message' =>"{$ezsettle_person} will arbitrate for you"
+													'message' =>"{$ezsettle_person} arbitrate for you"
 												)
 											);	
 		}
