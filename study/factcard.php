@@ -36,11 +36,9 @@ When you contacted PC4U.com, you did not mention two facts:
 </ul>At your discretion, you <b>may or may not</b> decide to share this additional information with the mediator and/or the other party (seller).
 
 <h2>What do you want to get out of the dispute resolution process?</h2>
-
-<ul>	<li>You feel it is unfair that you are stuck with a computer you cannot really use, and you are annoyed that you wasted your money on expedited shipping. You want to return the laptop to the seller and receive a refund for the full cost of the laptop ($1000) and shipping ($20). </li>	<ul>
+	<p>You feel it is unfair that you are stuck with a computer you cannot really use, and you are annoyed that you wasted your money on expedited shipping. You want to return the laptop to the seller and receive a refund for the full cost of the laptop ($1000) and shipping ($20). </p>	<ul>
 		<li>Because you could not use the laptop you bought, you had to rent a laptop for the exam period for $150, it is only fair that the seller will bear this cost. </li>		<li>Your uncle, who is a lawyer, told you that you are entitled for compensation for the emotional distress you suffered. He estimates the standard compensation in such circumstances at $150. While you do not know how he came up with this figure, you do feel the seller should pay something for making you go through this nightmare during exam period. </li>
 	</ul>
-</ul> 
 
 <h2>Here's a summary of the topics you need to address and your expenses:</h2>
 
