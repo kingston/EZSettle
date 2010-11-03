@@ -4,9 +4,9 @@
 	<div class="span-24 last">
 		{include file="chat_notice.tpl"}
 		<div class="loud headline append-bottom">Please choose your arbitrator:</div>
-		<div class="prepend-5 span-10 last">
-			<span class="arb_opt"><img src="images/ezsettle_human.jpg"></span>
-			<span class="arb_opt"><img src="images/ezsettle_computer.jpg"></span>
+		<div class="span-10 last">
+			<spas class="span-5 arb_opt"><img src="images/ezsettle_human.jpg"></span>
+			<span class="span-5 arb_opt"><img src="images/ezsettle_computer.jpg"></span>
 		</div>
 	</div>
 	{include file="chat.tpl"}
