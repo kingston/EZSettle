@@ -38,7 +38,7 @@
 						{else} N/A
 						{/if}
 					{else}
-						{$offers[issuesIndex]}
+						x{$offers[issuesIndex]}
 						<!--$<input type="text" size="10" maxlength="10" disabled="yes" name="issues{$smarty.section.issuesIndex.index}" value="{$offers[issuesIndex]}" />-->
 					{/if}
 					</div>
