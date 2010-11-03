@@ -163,11 +163,13 @@ $smarty->assign('mediator_caps', $mediator_caps);
 //var_dump($_SESSION['counteroffers'][$step]);
 //Your offer
 
+
 if ($_POST['accept'] && $_POST['accept'] != '') {
 	$smarty->display('accept.tpl');
 }
-
-if($_SESSION['offer_num']%3 == 1) {
+if ($_SESSION['offer_num']== 10){
+	$smarty->display('arbitration.tpl');	
+}else if($_SESSION['offer_num']%3 == 1) {
 	$smarty->display('offer.tpl');
 }
 

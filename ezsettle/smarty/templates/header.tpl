@@ -33,14 +33,6 @@
 					<div style="float: right;">
 						{if isset($username) && $username != "" }
 							Welcome, {$username}! | <a href="signin.php?logout=true">Logout</a>
-							<!-- for debug -->
-							{if isset($condition)}
-							<br />{$condition}
-							<br />{$conditionDescription[$condition]}
-							{else}
-							<br/> No condition has been set.
-							{/if}
-							<!-- end for debug -->
 						{else}
 							<a href="signin.php">Login</a>
 						{/if}
