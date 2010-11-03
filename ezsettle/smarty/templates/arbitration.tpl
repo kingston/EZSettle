@@ -29,16 +29,16 @@
 					
 					<td><div class="float: right;">
 					{if $smarty.section.issuesIndex.index == 0}
-						{if $all_offers[5][0]=="Yes"}Yes
+						{if $all_offers[6][0]=="Yes"}Yes
 						{else}No
 						{/if}
 					{elseif $smarty.section.issuesIndex.index == 5}
-						{if $all_offers[5][5] == "buyer"} Buyer
-						{elseif $all_offers[5][5] == "seller"}Seller
+						{if $all_offers[6][5] == "buyer"} Buyer
+						{elseif $all_offers[6][5] == "seller"}Seller
 						{else} N/A
 						{/if}
 					{else}
-						x{$all_offers[5][issuesIndex]}
+						x{$all_offers[6][issuesIndex]}
 						<!--$<input type="text" size="10" maxlength="10" disabled="yes" name="issues{$smarty.section.issuesIndex.index}" value="{$offers[issuesIndex]}" />-->
 					{/if}
 					</div>
