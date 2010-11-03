@@ -27,7 +27,7 @@
 			$(".arb_human").css("background","#cccccc");
 		});
 		
-		$(".arb_human").mouseout(function(){
+		$(".arb_human").mouseleave(function(){
 			$(".arb_human").css("background","#eeeeee");
 		});
 		
@@ -40,7 +40,7 @@
 			$(".arb_computer").css("background","#cccccc");
 		});
 		
-		$(".arb_computer").mouseout(function(){
+		$(".arb_computer").mouseleave(function(){
 			$(".arb_computer").css("background","#cccccc");
 		});
 		
