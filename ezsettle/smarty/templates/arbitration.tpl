@@ -38,6 +38,7 @@
 						{else} N/A
 						{/if}
 					{else}
+						{$all_offers[0][issuesIndex]}
 						x{$all_offers[1][issuesIndex]}
 						x{$all_offers[2][issuesIndex]}
 						x{$all_offers[3][issuesIndex]}
