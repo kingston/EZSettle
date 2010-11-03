@@ -27,7 +27,7 @@
 					{/if}
 					<td width="250">{ $issues[issuesIndex] }</td>
 					
-					<td width="300"><div class="float: right;">
+					<td width="100"><div class="float: right;">
 					{if $smarty.section.issuesIndex.index == 0}
 						{if $offers[0]=="Yes"}Yes
 						{else}No
@@ -38,12 +38,13 @@
 						{else} N/A
 						{/if}
 					{else}
-						$<input type="text" size="10" maxlength="10" disabled="yes" name="issues{$smarty.section.issuesIndex.index}" value="{$offers[issuesIndex]}" />
+						{$offers[issuesIndex]}
+						<!--$<input type="text" size="10" maxlength="10" disabled="yes" name="issues{$smarty.section.issuesIndex.index}" value="{$offers[issuesIndex]}" />-->
 					{/if}
 					</div>
 					</td>
 					
-					<td width="300"><div class="float: right;"> 
+					<td width="100"><div class="float: right;"> 
 					{if $smarty.section.issuesIndex.index == 0}
 						<input type="radio" name="c_issue0" value="Yes" disabled="yes" {if $counteroffers[0]=="Yes"}checked{/if}>Yes 
 						<input type="radio" name="c_issue0" value="No" disabled="yes" {if $counteroffers[0]=="No"}checked{/if}>No
