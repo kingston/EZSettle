@@ -23,7 +23,7 @@
 {literal}
 	//<![CDATA[
 	$(document).ready(function() {
-		$("#arb_opt > tr > td").click(function(){
+		$("#arb_opt > tr").click(function(){
 			alert("hey");
 			$(this).css("border","2px solid red");
 		});
