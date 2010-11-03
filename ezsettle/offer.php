@@ -188,9 +188,10 @@ $smarty->assign('mediator_caps', $mediator_caps);
 
 
 if ($_POST['accept'] && $_POST['accept'] != '') {
+	$smarty->assign('all_offers', $_SESSION['offers']);	
+	$smarty->assign('all_counteroffers', $_SESSION['counteroffers']);
 	$smarty->display('accept.tpl');
-}
-if ($_SESSION['offer_num']== 9){
+}else if ($_SESSION['offer_num']== 9){
 	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
 		$smarty->display('arbitration_choose.tpl');
 		
