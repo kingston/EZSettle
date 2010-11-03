@@ -1,6 +1,6 @@
 {include file="header.tpl"}
 <div class="main_body">
-	<div class="loud headline append-bottom">Arbitration process</div>
+	<div class="loud headline append-bottom">Arbitration Process</div>
 	<div class="span-24 last">
 		{include file="chat_notice.tpl"}
 		<div class="span-24 last">
@@ -124,12 +124,51 @@
 					
 					</tr>
 				{/section}
+				<tr><td colspan="3"><div style="float: right;">
+						<input type="submit" class="super large awesome red button" name="accept" value="Start Arbitration Process" />
+						</div></td></tr>
 			</table>
 		<!--</form>-->
 		</div>
 
 	</div>
 	{include file="chat.tpl"}
+	<div class="loading" id="loading">
+		<div class="loud headline"><img class="loader" id="loader" src="images/loader_big.gif" />Thanks for waiting...</div>
+		Please wait while {$ezsettle_person} makes a decision.<br/>
+		
+		<br/><div style="clear:both; height: 1px;"></div>
+		{if $condition == 1 || $condition == 2 || $condition == 5}
+		<img id="diagram" src="images/diagram-computer.jpg"/>
+		{else}
+		<img id="diagram" src="images/diagram-human.jpg"/>
+		{/if}
+		<div style="clear:both; height: 1px;"></div>
+	</div><!-- end loading -->
 </div><!-- end main body -->
+<script type="text/javascript">
+{literal}
+	//<![CDATA[
+	 $(document).ready(function() {
+		$("#offer").ajaxForm({
+			beforeSubmit:checkOffer,
+			success:afterOffer,
+			dataType: 'json'
+		});
+	});
 
+	
+	function checkOffer(formData, jqForm, options) {
+		showLoading();
+	}
+
+	function afterOffer(data) {
+		setTimeout(function() {
+			hideLoading();
+			window.location = 'offer.php';
+		}, 3000);
+	}
+	//]]>
+{/literal}
+</script>
 {include file="footer.tpl"}
