@@ -31,7 +31,7 @@ switch($_SESSION['condition']) {
 	case 5:
 		$goods = "goods";
 		$ezsettle = "EZSettle";
-		$mediator = "EZSettle";
+		$mediator = "the system";
 		$ezsettle_me = "EZSettle";
 		break;
 	case 3:
@@ -68,7 +68,7 @@ switch($_SESSION['offer_num']) {
 	case 1:
 		$_SESSION['chatNew'] = array(
 								array(	'speaker' => 'Mediator', 
-										'message' => 'Pat128, since you initiated the process, please list in the fields below your first offer on each item. Remember, you and Casey345 will be able to exchange 3 offers in order to reach an agreement.')
+										'message' => 'Pat128, since you initiated the process, please list in the fields below your first offer on each item. Remember, you and Casey345 will each be able to exchange 3 offers (total of 6) in order to reach an agreement.')
 								);
 		break;
 	case 2:
