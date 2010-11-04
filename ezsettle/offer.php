@@ -84,7 +84,7 @@ switch($_SESSION['offer_num']) {
 		$_SESSION['chatNew'] = array(
 								array(	'speaker' => 'Mediator', 
 										'message' =>"Casey345 did not accept your first offer. Casey345 has a message for you." ),
-								array('speaker' => 'Casey345',
+								array('speaker' => 'Message from Casey345',
 									'style'=>'second_party',
 								'message' =>'I don’t understand this complaint at all. The computer was not broken when I packed it. I used it for just one month before I realized it wasn\'t what I needed. Honestly, I don\'t see why I should pay anything, especially not the costs of the rental computer and "emotional distress," which seem to me like an outrageous request')
 						);
@@ -117,7 +117,7 @@ switch($_SESSION['offer_num']) {
 									array( 'speaker' => 'Mediator',
 										'message' =>"Casey345 did not accept your second offer. Casey345 has a message for you."
 									),
-									array('speaker' => 'Casey345',
+									array('speaker' => 'Message from Casey345',
 									'style'=>'second_party',
 								'message' =>"This just doesn’t make sense. I mean, really, the laptop was in perfect condition when I sent it, and I don't think that you can prove otherwise. (The emotional distress really has nothing to do with me, much like the rental computer). BUT, following {$mediator}'s suggestion, I'm willing to offer something because of the (slim!) chance that I didn't pack the package well (which I don't think happened, but ok), and because I'm willing to split with you the chance that the delivery service damaged the laptop. Mainly, I just want to get this thing over with.")
 								);
@@ -153,7 +153,7 @@ switch($_SESSION['offer_num']) {
 										array( 'speaker' => 'Mediator',
 											'message' =>"Casey345 did not accept your final offer. Casey345 has a message for you."
 										),
-										array('speaker' => 'Casey345',
+										array('speaker' => 'Message from Casey345',
 									'style'=>'second_party',
 								'message' =>"I hope you realize how ridiculous the is the situation from my perspective. I’m making this final offer as an act of good faith and to get this over with. If you don’t accept it, whatever, let’s see what the arbitrator has to say."),
 										array( 'speaker' => 'Mediator',
