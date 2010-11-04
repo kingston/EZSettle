@@ -205,6 +205,7 @@
 	});
 
 	function afterOffer(data) {
+		alert("afterOffer");
 		setTimeout(function() {
 			hideLoading();
 			window.location = 'offer.php';
