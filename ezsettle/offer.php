@@ -155,6 +155,7 @@ switch($_SESSION['offer_num']) {
 											'message' =>"{$ezsettle} would like to remind you that if you reject Casey345's offer, {$ezsettle} will transfer your case to arbitration, where {$ezsettle_person} review information exchanged in the mediation and provide you with a final binding settlement."
 										)
 									);
+	  	break;
 	case 9:
 		if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
 				$_SESSION['chatNew'] = array(
