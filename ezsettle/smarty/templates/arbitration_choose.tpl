@@ -36,6 +36,16 @@
 			//$(".arb_human").css("background","#eeeeee");
 		});
 		
+		$(".arb_human").click(function() {
+			$.post("actions/postoffer.php",
+			{offer_num: {/literal}{$offer_num}{literal}},
+			function(data) {
+				window.location = 'offer.php';
+			},
+			'json'
+			);
+		});
+		
 		$(".arb_computer").hover(function(){
 			$(".arb_computer").css("background","#cccccc");
 		});
@@ -48,6 +58,32 @@
 			alert("Choose computer arb");
 			//$(".arb_computer").css("background","#cccccc");
 		});
+		
+		$(".arb_computer").click(function() {
+			$.ajax({
+  			type: "POST",
+   			url: "actions/postchoosearb.php",
+   			data: ,
+   			success: function(msg){
+     			alert(msg);
+				window.location = "arbitration_result.php";
+
+   			},
+   			error: function(xhr, textStatus, errorThrown){
+   				alert("fail: " + xhr+" "+textStatus + " " + errorThrown);
+   			}
+ 		});
+			/*$.post("actions/postoffer.php",
+			{offer_num: {/literal}{$offer_num}{literal}},
+			function(data) {
+				window.location = 'offer.php';
+			},
+			'json'
+			);*/
+		});
+		
+
+
 		
 	
 	});
