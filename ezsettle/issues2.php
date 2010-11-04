@@ -13,6 +13,18 @@ if(($_SESSION['condition']==1) || ($_SESSION['condition']==3)){
 	$med_message=$med_message.'arbitrator';
 }
 $med_message=$med_message.' will take into account which issues are more important to you when determining the final settlement.';
+switch($_SESSION['condition']) {
+	case 1:
+	case 2:
+	case 5:
+		$typing = "The system is generating text ...";
+		break;
+	case 3:
+	case 4:
+	case 5:
+		$typing = "The mediator is typing ... ";
+		break;
+}
 $_SESSION['chatNew'] = array(
 							array('speaker' => 'EZSettle Mediator says', 
 								'message' => $med_message)
@@ -23,6 +35,7 @@ $smarty->assign('chatNew', $_SESSION['chatNew']);
 $smarty->assign('chatOld', $_SESSION['chatOld']);
 $smarty->assign('condition', $_SESSION['condition']);
 $smarty->assign('avatar', $avatar);
+$smarty->assign('typing',$typing);
 $smarty->display('issues_rank.tpl');
 
 ?>
