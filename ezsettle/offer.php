@@ -201,8 +201,9 @@ if ($_POST['accept'] && $_POST['accept'] != '') {
 	}
 }else if($_SESSION['offer_num']== 10){
 	$smarty->display('arbitration.tpl');
+}else if($_SESSION['offer_num']== 11){
+	$smarty->display('arbitration_result.tpl');
 }
-
 else if($_SESSION['offer_num']%3 == 1) {
 	$smarty->display('offer.tpl');
 }
