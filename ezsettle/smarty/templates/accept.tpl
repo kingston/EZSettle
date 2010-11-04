@@ -54,70 +54,72 @@
 					{/if}
 					</div>
 					</td>
-					<td><div class="float: right;">
-					{if $smarty.section.issuesIndex.index == 0}
-						{if $all_offers[1][0]=="Yes"}Yes
-						{else}No
+					{if $step > 0}
+						<td><div class="float: right;">
+						{if $smarty.section.issuesIndex.index == 0}
+							{if $all_offers[1][0]=="Yes"}Yes
+							{else}No
+							{/if}
+						{elseif $smarty.section.issuesIndex.index == 5}
+							{if $all_offers[1][5] == "buyer"} Buyer
+							{elseif $all_offers[1][5] == "seller"}Seller
+							{else} N/A
+							{/if}
+						{else}
+							{$all_offers[1][issuesIndex]}
 						{/if}
-					{elseif $smarty.section.issuesIndex.index == 5}
-						{if $all_offers[1][5] == "buyer"} Buyer
-						{elseif $all_offers[1][5] == "seller"}Seller
-						{else} N/A
+						</div>
+						</td>
+						
+						<td><div class="float: right;"> 
+						{if $smarty.section.issuesIndex.index == 0}
+							{if $all_counteroffers[1][0]=="Yes"}Yes
+							{else}No
+							{/if}
+						{elseif $smarty.section.issuesIndex.index == 5}
+							{if $all_counteroffers[1][5] == "buyer"} Buyer
+							{elseif $all_counteroffers[1][5] == "seller"}Seller
+							{else} N/A
+							{/if}
+						{else}
+							{$all_counteroffers[1][issuesIndex]}
 						{/if}
-					{else}
-						{$all_offers[1][issuesIndex]}
+						</div>
+						</td>
 					{/if}
-					</div>
-					</td>
-					
-					<td><div class="float: right;"> 
-					{if $smarty.section.issuesIndex.index == 0}
-						{if $all_counteroffers[1][0]=="Yes"}Yes
-						{else}No
+					{if $step > 1}
+						<td><div class="float: right;">
+						{if $smarty.section.issuesIndex.index == 0}
+							{if $all_offers[3][0]=="Yes"}Yes
+							{else}No
+							{/if}
+						{elseif $smarty.section.issuesIndex.index == 5}
+							{if $all_offers[3][5] == "buyer"} Buyer
+							{elseif $all_offers[3][5] == "seller"}Seller
+							{else} N/A
+							{/if}
+						{else}
+							{$all_offers[3][issuesIndex]}
 						{/if}
-					{elseif $smarty.section.issuesIndex.index == 5}
-						{if $all_counteroffers[1][5] == "buyer"} Buyer
-						{elseif $all_counteroffers[1][5] == "seller"}Seller
-						{else} N/A
+						</div>
+						</td>
+						
+						<td><div class="float: right;"> 
+						{if $smarty.section.issuesIndex.index == 0}
+							{if $all_counteroffers[2][0]=="Yes"}Yes
+							{else}No
+							{/if}
+						{elseif $smarty.section.issuesIndex.index == 5}
+							{if $all_counteroffers[2][5] == "buyer"} Buyer
+							{elseif $all_counteroffers[2][5] == "seller"}Seller
+							{else} N/A
+							{/if}
+						{else}
+							{$all_counteroffers[2][issuesIndex]}
 						{/if}
-					{else}
-						{$all_counteroffers[1][issuesIndex]}
+						</div>
+						</td>
 					{/if}
-					</div>
-					</td>
-					
-					<td><div class="float: right;">
-					{if $smarty.section.issuesIndex.index == 0}
-						{if $all_offers[3][0]=="Yes"}Yes
-						{else}No
-						{/if}
-					{elseif $smarty.section.issuesIndex.index == 5}
-						{if $all_offers[3][5] == "buyer"} Buyer
-						{elseif $all_offers[3][5] == "seller"}Seller
-						{else} N/A
-						{/if}
-					{else}
-						{$all_offers[3][issuesIndex]}
-					{/if}
-					</div>
-					</td>
-					
-					<td><div class="float: right;"> 
-					{if $smarty.section.issuesIndex.index == 0}
-						{if $all_counteroffers[2][0]=="Yes"}Yes
-						{else}No
-						{/if}
-					{elseif $smarty.section.issuesIndex.index == 5}
-						{if $all_counteroffers[2][5] == "buyer"} Buyer
-						{elseif $all_counteroffers[2][5] == "seller"}Seller
-						{else} N/A
-						{/if}
-					{else}
-						{$all_counteroffers[2][issuesIndex]}
-					{/if}
-					</div>
-					</td>
-					
 					</tr>
 				{/section}
 				<tr><td colspan="3"><div style="float: right;">

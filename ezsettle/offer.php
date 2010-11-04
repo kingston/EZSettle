@@ -183,6 +183,7 @@ $smarty->assign('condition', $_SESSION['condition']);
 $smarty->assign('avatar', $avatar);
 $smarty->assign('mediator', $mediator);
 $smarty->assign('mediator_caps', $mediator_caps);
+$smarty->assign('step', $step);
 //var_dump($_SESSION['counteroffers'][$step]);
 //Your offer
 
