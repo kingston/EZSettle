@@ -68,13 +68,7 @@
 				window.location = 'offer.php';
 			},
 			'json'
-			);			/*$.post("actions/postoffer.php",
-			{offer_num: {/literal}{$offer_num}{literal}},
-			function(data) {
-				window.location = 'offer.php';
-			},
-			'json'
-			);*/
+			);			
 		});
 		
 
