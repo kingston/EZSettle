@@ -23,7 +23,7 @@
 {literal}
 	//<![CDATA[
 	$(document).ready(function() {
-		$(".arb_human").live('hover',function(){
+		$(".arb_human").hover(function(){
 			$(".arb_human").css("background","#cccccc");
 		});
 		
@@ -36,7 +36,7 @@
 			//$(".arb_human").css("background","#eeeeee");
 		});
 		
-		$(".arb_computer").live('hover',function(){
+		$(".arb_computer").hover(unction(){
 			$(".arb_computer").css("background","#cccccc");
 		});
 		
