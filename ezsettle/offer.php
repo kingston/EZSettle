@@ -128,10 +128,6 @@ switch($_SESSION['offer_num']) {
 										'message' =>"You and Casey345 made some good progress, but your offers are still quite far apart. Before you make your last offer, {$ezsettle} would like you to think creatively about options you may have not considered yet. {$present_v2be_cap}the disputed {$goods} of any value to you? Perhaps you can keep the {$goods} for your personal use or re-sell it yourself, and ask Casey345 for less money?"
 									),
 									array( 'speaker' => 'Mediator',
-											'style' => 'success',
-											'message' => "Please indicate here if you are willing to consider this option. {$ezsettle} will NOT share this information with Casey345."
-											),
-									array( 'speaker' => 'Mediator',
 											'message' => "When you make your final offer, consider keeping the {$goods} and adjusting the financial compensation you are requesting accordingly"
 											)
 								);
