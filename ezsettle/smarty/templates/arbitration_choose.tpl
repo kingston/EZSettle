@@ -48,6 +48,7 @@
    			error: function(xhr, textStatus, errorThrown){
    				alert("fail: " + xhr+" "+textStatus + " " + errorThrown);
    			}
+			});
 
 		});
 		
@@ -76,7 +77,7 @@
    			error: function(xhr, textStatus, errorThrown){
    				alert("fail: " + xhr+" "+textStatus + " " + errorThrown);
    			}
- 		});
+ 			});
 			/*$.post("actions/postoffer.php",
 			{offer_num: {/literal}{$offer_num}{literal}},
 			function(data) {
