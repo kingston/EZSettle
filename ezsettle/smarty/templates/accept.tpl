@@ -10,10 +10,14 @@
 					<th>Issues:</th>
 					<th>Your 1st Offer</th>
 					<th>Casey345's 1st Counteroffer</th>
+					{if $step > 0}
 					<th>Your 2nd Offer</th>
 					<th>Casey345's 2nd Counteroffer</th>
+					{/if}
+					{if $step > 1}
 					<th>Your 3rd Offer</th>
 					<th>Casey345's 3rd Counteroffer</th>
+					{/if}
 				</tr>
 				{section name=issuesIndex loop=$issues}
 					{ if $smarty.section.issuesIndex.index%2 == 0}
