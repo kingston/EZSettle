@@ -162,8 +162,7 @@ switch($_SESSION['offer_num']) {
 	case 10:
 		if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
 				$_SESSION['chatNew'] = array(
-												array( 'speaker' => 'Mediator',
-													'style' => 'success',
+												array( 'speaker' => 'System text',
 													'message' =>"Please choose whether you would like the case to be arbitrated by one of EZSettle's staff arbitrators or by EZSettle’s AnaLegal™ arbitration software. If you and Casey345 do not make the same choice, you will be directed to discuss your options and reach agreement on the matter."
 												)											);	
 		}
@@ -178,7 +177,15 @@ switch($_SESSION['offer_num']) {
 											);	
 		}*/
 	break;
-	
+	case 11:
+		if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
+				$_SESSION['chatNew'] = array(
+												array( 'speaker' => 'System text',
+													'message' =>"Good news, you and Casey345 made the same choice. Click 'Next' to move to arbitration."
+												)											
+												);	
+		}
+	break;
 	default:
 		$_SESSION['chatNew'] = array();
 		
@@ -231,15 +238,16 @@ if ($_POST['accept'] && $_POST['accept'] != '') {
 	}
 }else if($_SESSION['offer_num']== 11){
 	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
-		$smarty->display('arbitration.tpl');
+		$smarty->display('choose_pre_arbitration.tpl');
 		
 	}else{
 		$smarty->display('arbitration_result.tpl');	
 	}
 }else if($_SESSION['offer_num']== 12){
-	$smarty->display('arbitration_result.tpl');
-}
-else if($_SESSION['offer_num']%3 == 1) {
+	$smarty->display('arbitration.tpl');
+}else if($_SESSION['offer_num']== 13){
+		$smarty->display('arbitration_result.tpl');
+}else if($_SESSION['offer_num']%3 == 1) {
 	$smarty->display('offer.tpl');
 }
 
