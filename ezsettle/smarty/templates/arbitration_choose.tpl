@@ -68,7 +68,7 @@
 		$(".arb_computer").click(function() {
 			$.ajax({
   			type: "POST",
-   			url: "actions/postchoosearb.php",
+   			url: "actions/postoffer.php",
    			success: function(msg){
      			alert(msg);
 				window.location = "offer.php";
