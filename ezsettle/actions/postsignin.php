@@ -11,7 +11,7 @@ if($_SESSION['experimental_id'] == "ezsettle") {
 	$_SESSION['condition'] = 1;
 }
 else {
-	$_SESSION['condition'] = $_SESSION['experimental_id'] % 6 + 1; //conditions 1-6
+	$_SESSION['condition'] = $_SESSION['experimental_id'];// % 6 + 1; //conditions 1-6
 }
 $result = array('success' => true);
 
