@@ -25,6 +25,12 @@ switch ($_SESSION['offer_num']){
 		$step = 2;
 		break;
 }
+
+if($_SESSION['offer_num'] == 6) {
+ 	$_SESSION['creative_likeliness'] = $_POST['creative_likeliness'];
+	
+}
+
 $_SESSION['offer_num']++;
 //$step = $_SESSION['offer_num']/2-1;
 

@@ -12,7 +12,7 @@
 				the final settlement of the case.
 			</div>
 			<div class="span-24 last">
-				<div class = "span-12">
+				<div class = "span-10">
 					<div class="loud headline">The issues to settle and your preferences</div>
 					<table>
 						<tr> 
@@ -49,7 +49,7 @@
 
 					</table>	
 				</div>
-				<div class = "span-12 last">
+				<div class = "span-14 last">
 					<div class="loud headline">Your indication regarding relevant factors: </div>
 					<table>
 						<tr>
@@ -58,7 +58,7 @@
 						</tr>
 						<tr>
 							<td>How likely it is that you can keep the laptop for your personal user or re-sell if yourself
-							<td>xxx</td>
+							<td>{$creative_likeliness}</td>
 						</tr>
 					</table>
 				</div>
