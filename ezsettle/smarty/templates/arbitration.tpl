@@ -51,14 +51,14 @@
 				</div>
 				<div class = "span-12 last">
 					<div class="loud headline">Your indication regarding relevant factors: </div>
-					<table style="vertical-align:top;">
+					<table >
 						<tr>
 							<td>How likely it is that the laptop you bought was damaged after the seller shipped it</td>
-							<td>{$damage_likeliness}/100</td>
+							<td style="vertical-align:top;">{$damage_likeliness}/100</td>
 						</tr>
 						<tr>
 							<td>How likely it is that you can keep the laptop for your personal user or re-sell if yourself
-							<td>{$creative_likeliness}/100</td>
+							<td style="vertical-align:top;">{$creative_likeliness}/100</td>
 						</tr>
 					</table>
 				</div>
