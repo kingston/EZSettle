@@ -63,7 +63,6 @@
 			$.ajax({
   			type: "POST",
    			url: "actions/postchoosearb.php",
-   			data: ,
    			success: function(msg){
      			alert(msg);
 				window.location = "arbitration_result.php";
