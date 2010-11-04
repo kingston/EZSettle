@@ -42,14 +42,14 @@
 					<div class="loud headline">Your indication regarding relevant factors: </div>
 					<table >
 						<tr>
-							<th>Relevant Factors</th>
+							<th>Factors</th>
 							<th>Likelihood</th>
 						</tr>
-						<tr>
+						<tr class="even">
 							<td>How likely it is that the laptop you bought was damaged after the seller shipped it</td>
 							<td style="vertical-align:top;">{$damage_likeliness}/100</td>
 						</tr>
-						<tr class="even">
+						<tr>
 							<td>How likely it is that you can keep the laptop for your personal user or re-sell if yourself
 							<td style="vertical-align:top;" >{$creative_likeliness}/100</td>
 						</tr>
