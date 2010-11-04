@@ -31,6 +31,7 @@ switch($_SESSION['condition']) {
 	case 5:
 		$goods = "goods";
 		$past_v2be = "were";
+		$present_v2be_cap = "Are";
 		$ezsettle = "The system";
 		$mediator = "the system";
 		$ezsettle_me = "EZSettle";
@@ -40,6 +41,7 @@ switch($_SESSION['condition']) {
 	case 5:
 		$goods = "laptop";
 		$past_v2be = "was";
+		$present_v2be_cap = "Is";
 		$ezsettle = "I";
 		$mediator = "the mediator";
 		$ezssetle_me = "me";
@@ -86,7 +88,10 @@ switch($_SESSION['offer_num']) {
 	case 3:
 		$_SESSION['chatNew'] = array(
 									array( 'speaker' => 'Mediator',
-										'message' =>"You reported receiving the {$goods} you bought from Casey345 in an unacceptable condition. In e-commerce deals, it is sometimes the case that someone other than the buyer or the seller could have damaged the goods. Try recalling whether the package was open or otherwise damaged when you received it or if someone else received the package on your behalf. Consider whether something might have happened to the package between the time you received it and opened it or before or after you began using it. Use the scale below to mark how likely it is that the {$goods} {$past_v2be} damaged AFTER the seller has shipped it. {$ezsettle} will NOT share this information with Casey345"
+										'message' =>"You reported receiving the {$goods} you bought from Casey345 in an unacceptable condition. In e-commerce deals, it is sometimes the case that someone other than the buyer or the seller could have damaged the goods. Try recalling whether the package was open or otherwise damaged when you received it or if someone else received the package on your behalf. Consider whether something might have happened to the package between the time you received it and opened it or before or after you began using it."
+									),
+									array( 'speaker' => 'Mediator',
+										'message' =>"Use the scale below to mark how likely it is that the {$goods} {$past_v2be} damaged AFTER the seller has shipped it. {$ezsettle} will NOT share this information with Casey345"
 									)
 								);
 		break;
@@ -94,8 +99,11 @@ switch($_SESSION['offer_num']) {
 	case 4:
 		$_SESSION['chatNew'] = array(
 									array( 'speaker' => 'Mediator',
-										'message' =>"As you may have noticed, after one mediation round the offers that you and Casey345 exchanged are still quite far apart. Please give some thought to Casey345's response, and consider whether someone else might have damaged the {$goods} as well as any other relevant factors. <br />Then, please make your second offer. You will be able to make one more offer later on."
+										'message' =>"As you may have noticed, after one mediation round the offers that you and Casey345 exchanged are still quite far apart. Please give some thought to Casey345's response, and consider whether someone else might have damaged the {$goods} as well as any other relevant factors."
 									),
+									array( 'speaker' => 'Mediator',
+										'message' =>"Then, please make your second offer. You will be able to make one more offer later on."
+									)
 								);
 		break;
 		
@@ -112,11 +120,14 @@ switch($_SESSION['offer_num']) {
 	case 6:
 		$_SESSION['chatNew'] = array(
 									array( 'speaker' => 'Mediator',
-										'message' =>"As you can see, although you and Casey345’s have made some progress, your offers are still quite far apart. Before you make your last offer, {$ezsettle} would like you to think creatively about options you may have not considered yet. Is the disputed {$goods} of any value to you? Perhaps you can keep the {$goods} for your personal use or re-sell it yourself, and ask Casey345 for less money?"
+										'message' =>"You and Casey345 made some good progress, but your offers are still quite far apart. Before you make your last offer, {$ezsettle} would like you to think creatively about options you may have not considered yet. {$present_v2be_cap}the disputed {$goods} of any value to you? Perhaps you can keep the {$goods} for your personal use or re-sell it yourself, and ask Casey345 for less money?"
 									),
 									array( 'speaker' => 'Mediator',
 											'style' => 'success',
-											'message' => "Please indicate here if you are willing to consider this option. {$ezsettle} will NOT share this information with Casey345. In any event, when you make your final offer, you may want to consider keeping the {$goods} and adjusting your various financial compensation requests accordingly"
+											'message' => "Please indicate here if you are willing to consider this option. {$ezsettle} will NOT share this information with Casey345."
+											),
+									array( 'speaker' => 'Mediator',
+											'message' => "When you make your final offer, consider keeping the {$goods} and adjusting the financial compensation you are requesting accordingly"
 											)
 								);
 	
@@ -185,6 +196,7 @@ $smarty->assign('avatar', $avatar);
 $smarty->assign('mediator', $mediator);
 $smarty->assign('mediator_caps', $mediator_caps);
 $smarty->assign('past_v2be',$past_v2be);
+$smarty->assign('present_v2be_cap',$present_v2be_cap);
 $smarty->assign('step', $step);
 //var_dump($_SESSION['counteroffers'][$step]);
 //Your offer
