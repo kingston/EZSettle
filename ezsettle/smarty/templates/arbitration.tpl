@@ -10,7 +10,7 @@
 				The arbitrator will use this information to determine 
 				the final settlement of the case.
 			</div>
-			<div class="arb_loading" id="loading">
+			<div class="arb_loading" id="loading" style="display:none">
 				<div class="loud headline"><img class="loader" id="loader" src="images/loader_big.gif" />Thanks for waiting...</div>
 				Please wait while {$ezsettle_person} makes a decision.<br/>
 				<br/><div style="clear:both; height: 1px;"></div>
@@ -206,7 +206,7 @@
 		setTimeout(function() {
 			$("#loading").fadeOut();
 			window.location = 'offer.php';
-		}, 1000);
+		}, 3000);
 	}
 	/*
 	function showLoading() {
