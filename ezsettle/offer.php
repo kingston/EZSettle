@@ -51,18 +51,18 @@ switch($_SESSION['condition']) {
 switch($_SESSION['condition']) {
 	case 1:
 	case 3:
-		$ezsettle_person = "the EZSettle AnaLegal professional arbitration engine will";
+		$ezsettle_person = "the professional AnaLegal™ arbitration software will";
 		$ezsettle_pronoun = "its";
 		break;
 	case 2:
 	case 4:
-		$ezsettle_person = "a trained EZSettle professional arbitrator will";
+		$ezsettle_person = "a professional staff arbitrator will";
 		$ezsettle_pronoun = "his";
 		break;
 	
 	case 5:
 	case 6:
-		$ezsettle_person = "you will be asked to choose between the services of the EZSettle professional AnaLegal arbitration engine or an EZSettle trained professional mediator, who will";
+		$ezsettle_person = "you will be asked to choose between the services of EZSettle’s AnaLegal™ arbitration software or an EZSettle staff mediator, that will";
 		$ezsettle_pronoun = "their";
 		break;
 }
@@ -135,7 +135,7 @@ switch($_SESSION['offer_num']) {
 	case 7:
 		$_SESSION['chatNew'] = array(
 									array( 'speaker' => 'Mediator',
-										'message' =>"This is your third and final opportunity to make a mediation offer to Casey345 (Casey345 will be able to make a final offer too). Before making your final offer, remember that this is also your final opportunity to share information with {$ezsettle_me} or send messages to Casey345."
+										'message' =>"This is your third and final opportunity to make a mediation offer to Casey345 (Casey345 will be able to make a final offer too)."
 									),
 									array( 'speaker' => 'Mediator',
 										'message' =>"Before making your final offer, remember that this is also your final opportunity to share information with {$ezsettle_me} or send messages to Casey345."
@@ -146,10 +146,13 @@ switch($_SESSION['offer_num']) {
 	case 8:
 			$_SESSION['chatNew'] = array(
 										array( 'speaker' => 'Mediator',
-											'message' =>"Casey345 did not accept your final offer. Casey345 said: \"You know what, this is really ridiculous, I’m just making this final offer as an act of good faith and to get this over with. If you don’t accept it, whatever, let’s see what the arbitrator has to say.\""
+											'message' =>"Casey345 did not accept your final offer."
 										),
+										array('speaker' => 'Casey345 said',
+									'style'=>'second_party',
+								'message' =>"I hope you realize how ridiculous the is the situation from my perspective. I’m making this final offer as an act of good faith and to get this over with. If you don’t accept it, whatever, let’s see what the arbitrator has to say."),
 										array( 'speaker' => 'Mediator',
-											'message' =>"{$ezsettle} would like to remind you that if you reject Casey345's offer, {$ezsettle} will transfer your case to arbitration, where {$ezsettle_person} provide you with a final binding settlement, based on {$ezsettle_pronoun} understanding of the situation and the preferences and offers the two parties communicated."
+											'message' =>"{$ezsettle} would like to remind you that if you reject Casey345's offer, {$ezsettle} will transfer your case to arbitration, where {$ezsettle_person} review information exchanged in the mediation and provide you with a final binding settlement."
 										)
 									);
 	case 9:
