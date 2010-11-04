@@ -18,8 +18,8 @@
 	//<![CDATA[
 	$(document).ready(function() {
 
-		$(".arb_computer").click(function() {
-			$.post("actions/postchoosearb.php",
+		$("#send_to_arbitration").click(function() {
+			$.post("actions/postoffer.php",
 			{offer_num: {/literal}{$offer_num}{literal}}, //Add info about choice here
 			function(data) {
 				window.location = 'offer.php';
