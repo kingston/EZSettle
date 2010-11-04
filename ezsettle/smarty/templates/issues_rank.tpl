@@ -43,9 +43,6 @@
 			});
 			$('.issues > .ui-slider-handle').html("50");
 			
-			creative_likeliness: $( "#damage_slider" ).slider( "option", "value" )},
-
-			
 			$("#submit_ranking").click(function() {
 			$.post("actions/postrank.php",
 			{issue_rank0: $( "#issue_rank0" ).slider( "option", "value" ),
