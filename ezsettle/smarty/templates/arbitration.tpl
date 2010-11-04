@@ -47,11 +47,11 @@
 						</tr>
 						<tr>
 							<td>How likely it is that the laptop you bought was damaged after the seller shipped it</td>
-							<td style="vertical-align:top;" class="even">{$damage_likeliness}/100</td>
+							<td style="vertical-align:top;">{$damage_likeliness}/100</td>
 						</tr>
-						<tr>
+						<tr class="even">
 							<td>How likely it is that you can keep the laptop for your personal user or re-sell if yourself
-							<td style="vertical-align:top;" class="even">{$creative_likeliness}/100</td>
+							<td style="vertical-align:top;" >{$creative_likeliness}/100</td>
 						</tr>
 					</table>
 				</div>
