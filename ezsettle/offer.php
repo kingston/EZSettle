@@ -30,7 +30,7 @@ switch($_SESSION['condition']) {
 	case 2:
 	case 5:
 		$goods = "goods";
-		$ezsettle = "EZSettle";
+		$ezsettle = "The system";
 		$mediator = "the system";
 		$ezsettle_me = "EZSettle";
 		break;
@@ -84,7 +84,7 @@ switch($_SESSION['offer_num']) {
 	case 3:
 		$_SESSION['chatNew'] = array(
 									array( 'speaker' => 'Mediator',
-										'message' =>"You reported receiving the {$goods} you bought from Casey345 in an unacceptable condition. In e-commerce deals, it is sometimes the case that someone other than the buyer or the seller could have damaged the goods. Try recalling whether the package was open or otherwise damaged when you received it or if someone else received the package on your behalf. Consider whether something might have happened to the package between the time you received it and opened it or before or after you began using it. Use the scale below to mark how likely it is that the {$goods} vtobe damaged AFTER the seller has shipped it. cap will NOT share this information with Casey345"
+										'message' =>"You reported receiving the {$goods} you bought from Casey345 in an unacceptable condition. In e-commerce deals, it is sometimes the case that someone other than the buyer or the seller could have damaged the goods. Try recalling whether the package was open or otherwise damaged when you received it or if someone else received the package on your behalf. Consider whether something might have happened to the package between the time you received it and opened it or before or after you began using it. Use the scale below to mark how likely it is that the {$goods} vtobe damaged AFTER the seller has shipped it. {$ezsettle} will NOT share this information with Casey345"
 									)
 								);
 		break;
@@ -169,6 +169,7 @@ $smarty->assign('offer_title', $_SESSION['offer_titles'][$_SESSION['offer_num']]
 $smarty->assign('offer_num', $_SESSION['offer_num']);
 $smarty->assign('offers', $_SESSION['offers'][$step]);
 $smarty->assign('issues_rank',$_SESSION['issues_rank']);
+$smarty->assign('ezsettle',$ezsettle);
 
 if($_SESSION['offer_num']>= 9 ){
 	$smarty->assign('all_offers', $_SESSION['offers']);	
