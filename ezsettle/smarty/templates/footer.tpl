@@ -5,14 +5,20 @@
 		{literal}
 			//<![CDATA[
 		$(document).ready(function() {
-
+		max_time = 0;
 		$(".chatnotice").each(function(index) {
 			var text = $(this).html();
 			var timeOut = text.length * 9;
 			var time = $(this).attr("alt") * timeOut;
+			if(time > max_time){
+				max_time = time;	
+			}
 			var elem = $(this);
 			setTimeout(function() { $(elem).fadeIn();}, time);
 		});
+		
+		setTimeout(function() {	$("#typing").hide();},max_time);
+
 		
 		$(".condition").live('click', function() {
 			var id = $(this).attr('id');
