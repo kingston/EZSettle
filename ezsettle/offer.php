@@ -94,12 +94,8 @@ switch($_SESSION['offer_num']) {
 	case 4:
 		$_SESSION['chatNew'] = array(
 									array( 'speaker' => 'Mediator',
-										'message' =>"As you can see, after you and Casey345 completed one round of mediation, your offers are still quite far apart. Please give some thought to Casey345's response (see Message History), and consider whether someone else might have damaged the {$goods} and any other relevant factors that may affect your offer."
-									),
-									array( 'speaker' => 'Mediator',
-											'style' => 'success',
-											'message' => "Then, please make your second offer. You will be able to make one more offer after this one."
-											)
+										'message' =>"As you may have noticed, after one mediation round the offers that you and Casey345 exchanged are still quite far apart. Please give some thought to Casey345's response, and consider whether someone else might have damaged the {$goods} as well as any other relevant factors. <br />Then, please make your second offer. You will be able to make one more offer later on."
+									)
 								);
 		break;
 		
