@@ -77,7 +77,7 @@ switch($_SESSION['offer_num']) {
 										'message' =>"Casey345 did not accept your first offer." ),
 								array('speaker' => 'Casey345 said',
 									'style'=>'second_party',
-								'message' =>"I don’t understand this complaint at all. I sent the laptop in a perfectly good condition, and definitely not broken. I used it for just one month before I realized it wasn't what I needed. To tell you the truth, I don't see why I should pay anything, certainly not the outrageous request for the costs of rental computer and emotional distress")
+								'message' =>'I don’t understand this complaint at all. The computer was not broken when I packed it. I used it for just one month before I realized it wasn\'t what I needed. Honestly, I don\'t see why I should pay anything, especially not the costs of the rental computer and "emotional distress," which seem to me like an outrageous request')
 						);
 		break;
 		
