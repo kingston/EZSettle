@@ -17,7 +17,7 @@
 	{/foreach}
 
 	{foreach from=$chatNew item=message name=chat}
-		<div class="chat {if( isset($message.style)&&($message.style=="second_party"))}{$message.style}{else}notice{/if}" id="{$smarty.foreach.chat.index}">
+		<div class="chat" id="{$smarty.foreach.chat.index}">
 			<div class="span-2"><img class="profile_picture" src="{$avatar}"></div>
 			<div class="span-20 last"><span class="speaker">{ $message.speaker }:</span> 
 				{ $message.message }
