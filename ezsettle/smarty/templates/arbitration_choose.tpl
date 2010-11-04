@@ -41,7 +41,7 @@
 		});
 		
 		$(".arb_computer").mouseleave(function(){
-			$(".arb_computer").css("background","#cccccc");
+			$(".arb_computer").css("background","#eeeeee");
 		});
 		
 		$(".arb_computer").click(function(){
