@@ -194,6 +194,9 @@
 			$(".success").hide();
 			$("#send_to_arbitration").hide();
 			var left = $(window).width()/2  - $("#loading").width()/2;
+			//var top = $(window).height()/2 + $(window).scrollTop() - $("#message_history").height()/2;
+			$("#loading").css("top","50px");
+
 			$("#loading").css("left", left+"px");
 			$("#loading").fadeIn();
 			$.post("actions/postoffer.php",
