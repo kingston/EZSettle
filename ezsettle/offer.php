@@ -53,17 +53,20 @@ switch($_SESSION['condition']) {
 	case 3:
 		$ezsettle_person = "the professional AnaLegal™ arbitration software will";
 		$ezsettle_pronoun = "its";
+		$ezsettle_arbitrating = "The EZSettle AnaLegal™ professional arbitration software is considering the";
 		break;
 	case 2:
 	case 4:
 		$ezsettle_person = "a professional staff arbitrator will";
 		$ezsettle_pronoun = "his";
+		$ezsettle_arbitrating = "An EZSettle professional staff arbitrator is considering the";
 		break;
 	
 	case 5:
 	case 6:
 		$ezsettle_person = "you will be asked to choose between the services of EZSettle’s AnaLegal™ arbitration software or an EZSettle staff mediator, that will";
 		$ezsettle_pronoun = "their";
+		$ezsettle_arbitrating  = "The facts of the";
 		break;
 }
 
@@ -206,6 +209,7 @@ $smarty->assign('past_v2be',$past_v2be);
 $smarty->assign('present_v2be_cap',$present_v2be_cap);
 $smarty->assign('ezsettle_me',$ezsettle_me);
 $smarty->assign('step', $step);
+$smarty->assign('ezsettle_arbitrating',$ezsettle_arbitrating);
 //var_dump($_SESSION['counteroffers'][$step]);
 //Your offer
 

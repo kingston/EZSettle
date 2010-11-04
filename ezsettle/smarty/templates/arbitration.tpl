@@ -175,7 +175,8 @@
 			</table>
 			<div class="arb_loading" id="loading" style="display:none">
 				<div class="loud headline"><img class="loader" id="loader" src="images/loader_big.gif" />Thanks for waiting...</div>
-				Please wait while {$ezsettle_person} makes a decision.<br/>
+				Please wait for your arbitration Settlement.{$ezsettle_arbitrating} case and the information that was shared in the mediation process{if isset($ezsettle_being_considered)} {$ezsettle_being_considered} {/if}.<br/>
+				The review and analysis process may take a few minutes, please wait for a pop-up window with the terms of the binding arbitration settlement to appear here.
 				<br/><div style="clear:both; height: 1px;"></div>
 				<div style="clear:both; height: 1px;"></div>
 			</div><!-- end loading -->
