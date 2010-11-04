@@ -41,10 +41,10 @@
 				<div class = "span-12 last">
 					<div class="loud headline">Your indication regarding relevant factors: </div>
 					<table >
-						<th>
-							<td>Relevant Factors</td>
-							<td>Likelihood</td>
-						</th>
+						<tr>
+							<th>Relevant Factors</th>
+							<th>Likelihood</th>
+						</tr>
 						<tr>
 							<td>How likely it is that the laptop you bought was damaged after the seller shipped it</td>
 							<td style="vertical-align:top;" class="even">{$damage_likeliness}/100</td>
