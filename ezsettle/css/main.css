@@ -28,7 +28,7 @@ tr.rowerror td             { background:#FBE3E4; color: #8A1F11;}
                                 -moz-box-shadow: 5px 5px 7px #222; -webkit-box-shadow: 5px 5px 7px #222; position: absolute;
                                 border: 10px solid #333; background: #fff; display: none; z-index: 1000;}
 .loader                     { clear: both; position: relative; width: 32px; height: 32px;}
-.arb_loading			{ width: 500px; height: 250px; padding: 10px;
+.arb_loading				{ width: 500px; height: 400px; padding: 10px;
                                 -moz-box-shadow: 5px 5px 7px #222; -webkit-box-shadow: 5px 5px 7px #222; position: absolute;
                                 border: 10px solid #333; background: #fff; display: none; z-index: 1000;}
 #diagram                    { clear: both; position: relative; width: 219px; margin-left: 140px;}
@@ -40,7 +40,7 @@ tr.rowerror td             { background:#FBE3E4; color: #8A1F11;}
 #view_message_history:hover {  }
 #hide_message_history       { float: right; cursor: pointer; color: #e33100;}
 #hide_message_history:hover { text-decoration: underline; color: #;}
-#message_history            {  width: 950px; height: 250px; padding: 10px;
+#message_history            {  width: 950px; height: 150px; padding: 10px;
                                 -moz-border-radius: 15px; -webkit-border-radiu: 15px;
                                 -moz-box-shadow: 5px 5px 7px #222; -webkit-box-shadow: 5px 5px 7px #222; position: absolute;
                                 border: 10px solid #333; background: #fff; display: none; z-index: 1000;}

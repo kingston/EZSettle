@@ -217,6 +217,7 @@ $smarty->assign('mediator_caps', $mediator_caps);
 $smarty->assign('past_v2be',$past_v2be);
 $smarty->assign('present_v2be_cap',$present_v2be_cap);
 $smarty->assign('ezsettle_me',$ezsettle_me);
+$smarty->assign('ezsettle', $ezsettle);
 $smarty->assign('step', $step);
 $smarty->assign('ezsettle_arbitrating',$ezsettle_arbitrating);
 //var_dump($_SESSION['counteroffers'][$step]);

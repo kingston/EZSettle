@@ -32,7 +32,7 @@
 		});
 		
 		$(".arb_human").click(function(){
-			alert("choose human arb");
+			//alert("choose human arb");
 			//$(".arb_human").css("background","#eeeeee");
 		});
 		
@@ -56,7 +56,7 @@
 		});
 		
 		$(".arb_computer").click(function(){
-			alert("Choose computer arb");
+			//alert("Choose computer arb");
 			//$(".arb_computer").css("background","#cccccc");
 		});
 	
