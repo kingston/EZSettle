@@ -74,7 +74,10 @@ switch($_SESSION['offer_num']) {
 	case 2:
 		$_SESSION['chatNew'] = array(
 								array(	'speaker' => 'Mediator', 
-										'message' =>"Casey345 did not accept your first offer. Casey345 said: &quot;I don’t understand this complaint at all. I sent the laptop in a perfectly good condition, and definitely not broken. I used it for just one month before I realized it wasn't what I needed. To tell you the truth, I don't see why I should pay anything, certainly not the outrageous request for the costs of rental computer and emotional distress.&quot;")
+										'message' =>"Casey345 did not accept your first offer." ),
+								array('speaker' => 'Casey345 said',
+									'style'=>'second_party',
+								'message' =>"I don’t understand this complaint at all. I sent the laptop in a perfectly good condition, and definitely not broken. I used it for just one month before I realized it wasn't what I needed. To tell you the truth, I don't see why I should pay anything, certainly not the outrageous request for the costs of rental computer and emotional distress")
 						);
 		break;
 		
@@ -91,7 +94,6 @@ switch($_SESSION['offer_num']) {
 		break;
 	
 	case 4:
-		$step = 0;
 		$_SESSION['chatNew'] = array(
 									array( 'speaker' => 'Mediator',
 										'message' =>"As you can see, after you and Casey345 completed one round of mediation, your offers are still quite far apart. Please give some thought to Casey345's response (see Message History), and consider whether someone else might have damaged the {$goods} and any other relevant factors that may affect your offer."
@@ -123,7 +125,6 @@ switch($_SESSION['offer_num']) {
 	
 		break;
 	case 7:
-		$step = 1;
 		$_SESSION['chatNew'] = array(
 									array( 'speaker' => 'Mediator',
 										'message' =>"This is your third and final opportunity to make a mediation offer to Casey345 (Casey345 will be able to make a final offer too). Before making your final offer, {$ezsettle} would like to remind you that this is also your final opportunity to share information with {$ezsettle_me} or send messages to Casey345."
@@ -132,7 +133,6 @@ switch($_SESSION['offer_num']) {
 
 		break;
 	case 8:
-		$step = 2;
 			$_SESSION['chatNew'] = array(
 										array( 'speaker' => 'Mediator',
 											'message' =>"Casey345 did not accept your final offer. Casey345 said: \"You know what, this is really ridiculous, I’m just making this final offer as an act of good faith and to get this over with. If you don’t accept it, whatever, let’s see what the arbitrator has to say.\""
@@ -143,13 +143,11 @@ switch($_SESSION['offer_num']) {
 									);
 	case 9:
 		if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
-			$step = 1;
 				$_SESSION['chatNew'] = array(
 												array( 'speaker' => 'Mediator',
 													'message' =>"You and Casey 345 did not reach an agreement. We will now switch to use an arbitrator.{$ezsettle_person} arbitrate for you"
 												)											);	
 		}else{
-			$step = 2;
 				$_SESSION['chatNew'] = array(
 												array( 'speaker' => 'Mediator',
 													'message' =>"You and Casey 345 did not reach an agreement. We will now switch to use an arbitrator."

@@ -192,6 +192,8 @@
 		$("#send_to_arbitration").click(function() {
 			$(".success").hide();
 			$("#send_to_arbitration").hide();
+			var left = $(window).width()/2  - $("#loading").width()/2;
+			$("#loading").css("left", left+"px");
 			$("#loading").fadeIn();
 			$.post("actions/postoffer.php",
 			{offer_num: {/literal}{$offer_num}{literal}},
@@ -210,6 +212,7 @@
 			window.location = 'offer.php';
 		}, 3000);
 	}
+	
 	
 	//]]>
 {/literal}
