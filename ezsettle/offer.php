@@ -174,6 +174,7 @@ $smarty->assign('chatOld', $_SESSION['chatOld']);
 $smarty->assign('offer_title', $_SESSION['offer_titles'][$_SESSION['offer_num']]);
 $smarty->assign('offer_num', $_SESSION['offer_num']);
 $smarty->assign('offers', $_SESSION['offers'][$step]);
+$smarty->assign('issues_rank',$_SESSION['issues_rank']);
 
 if($_SESSION['offer_num']>= 9 ){
 	$smarty->assign('all_offers', $_SESSION['offers']);	

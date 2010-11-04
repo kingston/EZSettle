@@ -28,18 +28,7 @@
 						<td width="250">{ $issues[issuesIndex] }</td>
 						
 						<td><div class="float: right;">
-						{if $smarty.section.issuesIndex.index == 0}
-							{if $all_offers[0][0]=="Yes"}Yes
-							{else}No
-							{/if}
-						{elseif $smarty.section.issuesIndex.index == 5}
-							{if $all_offers[0][5] == "buyer"} Buyer
-							{elseif $all_offers[0][5] == "seller"}Seller
-							{else} N/A
-							{/if}
-						{else}
-							{$all_offers[0][issuesIndex]}
-						{/if}
+							{$issues_rank[issuesIndex]}
 						</div>
 						</td>
 

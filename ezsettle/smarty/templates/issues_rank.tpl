@@ -22,7 +22,7 @@
 			{/section}
 		</table>
 		</div>
-		<div class="prepend-20 span-4 last"><a href="offer.php" class="super large awesome red button">Next »</a></div>
+		<div class="prepend-20 span-4 last" ><div id="submit_ranking" href="offer.php" class="super large awesome red button">Next »</div></div>
 
 	</div>
 	{include file="chat.tpl"}
@@ -42,6 +42,26 @@
 			}
 			});
 			$('.issues > .ui-slider-handle').html("50");
+			
+			creative_likeliness: $( "#damage_slider" ).slider( "option", "value" )},
+
+			
+			$("#submit_ranking").click(function() {
+			$.post("actions/postrank.php",
+			{issue_rank0: $( "#issue_rank0" ).slider( "option", "value" ),
+			 issue_rank1: $( "#issue_rank1" ).slider( "option", "value" ),
+			 issue_rank2: $( "#issue_rank2" ).slider( "option", "value" ),
+			 issue_rank3: $( "#issue_rank3" ).slider( "option", "value" ),
+			 issue_rank4: $( "#issue_rank4" ).slider( "option", "value" ),
+			 issue_rank5: $( "#issue_rank5" ).slider( "option", "value" ),	
+			
+			}, //Add info about choice here
+			function(data) {
+				window.location = 'offer.php';
+			},
+			'json'
+			);			
+		});
 	});
 	//]]>
 {/literal}
