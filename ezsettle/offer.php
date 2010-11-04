@@ -35,6 +35,7 @@ switch($_SESSION['condition']) {
 		$ezsettle = "The system";
 		$mediator = "the system";
 		$ezsettle_me = "EZSettle";
+		$typing = "The system is generating text ...";
 		break;
 	case 3:
 	case 4:
@@ -45,6 +46,7 @@ switch($_SESSION['condition']) {
 		$ezsettle = "I";
 		$mediator = "the mediator";
 		$ezssetle_me = "me";
+		$typing = "The mediator is typing ... ";
 		break;
 }
 
@@ -220,6 +222,7 @@ $smarty->assign('ezsettle_me',$ezsettle_me);
 $smarty->assign('ezsettle', $ezsettle);
 $smarty->assign('step', $step);
 $smarty->assign('ezsettle_arbitrating',$ezsettle_arbitrating);
+$smarty->assign('typing',$typing);
 //var_dump($_SESSION['counteroffers'][$step]);
 //Your offer
 

@@ -8,7 +8,7 @@
 		<div class="clearfix" style="margin-bottom: 5px;"></div>
 	</div><!-- end chat -->
 {/foreach}
-{$mediator} is typing ...
+{$typing}
 <div style="float: right;" class="super medium awesome red button" id="view_message_history">View Mediator Message History</div>
 
 <div class="clearfix"></div>
