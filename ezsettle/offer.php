@@ -196,7 +196,7 @@ if ($_POST['accept'] && $_POST['accept'] != '') {
 	$smarty->assign('all_offers', $_SESSION['offers']);	
 	$smarty->assign('all_counteroffers', $_SESSION['counteroffers']);
 	$smarty->display('accept.tpl');
-}else if($_SESSION['offer_num']== ){
+}else if($_SESSION['offer_num']== 9){
 	$smarty->display('arbitration_instruction.tpl');
 }else if ($_SESSION['offer_num']== 10){
 	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
