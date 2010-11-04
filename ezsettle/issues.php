@@ -9,9 +9,7 @@ $_SESSION['chatNew'] = array(
 Casey345 raised. We combined the issues that the two of you included in your correspondence
 with PC4U.com into a single list. You may not recognize all the issues in the list, if the other
 party raised an issue that you did not address. After reviewing the list, please click “yes” to
-confirm that these are the issues or “no” to add another issue.'), 
-	
-	array('speaker' => 'Mediator', 'message' => 'You may not recognize all the issues in the list, if the other party has raised an issue that you did not include in your list. After reviewing the list, please click “yes” to confirm that these are the issues or “no” to add another issue.'),
+confirm that these are the issues or “no” to add another issue.')
 	);
 $_SESSION['chatOld'] = array();
 $smarty->assign('username', sessionVar('username'));
