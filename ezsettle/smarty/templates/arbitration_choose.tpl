@@ -8,12 +8,12 @@
 			<table id="arb_opt">
 			<tr>
 				<td class="arb_human"><img src="images/ezsettle_human.jpg"></td>
-				<td width="50px"></td>
+				<td width="20px" style="background:white;"></td>
 				<td class="arb_computer"><img src="images/ezsettle_computer.jpg"> </td>
 			</tr>
 			<tr>
 				<td class="arb_human">EZSettle trained professional mediator</td>
-				<td width="50px"></td>
+				<td width="20px" style="background:white;"></td>
 				<td class="arb_computer">EZSettle professional AnaLegal arbitration engine</td>
 			</tr>
 			</table>
