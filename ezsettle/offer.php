@@ -20,6 +20,7 @@ $_SESSION['counteroffers'] = array(
 if (!isset($_SESSION['offer_num'])) {
 	$_SESSION['offer_num'] = 1;
 	$_SESSION['offers'] = array();
+	
 }
 
 $step = $_SESSION['step'];
