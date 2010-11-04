@@ -37,7 +37,7 @@
 		});
 		
 		$(".arb_human").click(function() {
-			$.post("actions/postoffer.php",
+			$.post("actions/postchoosearb.php",
 			{offer_num: {/literal}{$offer_num}{literal}},
 			function(data) {
 				window.location = 'offer.php';
@@ -62,7 +62,7 @@
 	
 
 		$(".arb_computer").click(function() {
-			$.post("actions/postoffer.php",
+			$.post("actions/postchoosearb.php",
 			{offer_num: {/literal}{$offer_num}{literal}},
 			function(data) {
 				window.location = 'offer.php';
