@@ -36,7 +36,7 @@
 			//$(".arb_human").css("background","#eeeeee");
 		});
 		
-		$(".arb_computer").hover(unction(){
+		$(".arb_computer").hover(function(){
 			$(".arb_computer").css("background","#cccccc");
 		});
 		
