@@ -84,7 +84,7 @@ switch($_SESSION['offer_num']) {
 	case 3:
 		$_SESSION['chatNew'] = array(
 									array( 'speaker' => 'Mediator',
-										'message' =>"You reported receiving the {$goods} you bought from Casey345 in an unacceptable condition. In e-commerce deals, it is sometimes the case that someone other than the buyer or the seller could have damaged the goods. Was the package open or otherwise damaged when it was delivered to you? Did someone else receive the package on your behalf? Could something have happened to the package between the time you received it and opened it? Is it possible that someone else damaged the {$goods} before or after you began using it?"
+										'message' =>"You reported receiving the {$goods} you bought from Casey345 in an unacceptable condition. In e-commerce deals, it is sometimes the case that someone other than the buyer or the seller could have damaged the goods. Try recalling whether the package was open or otherwise damaged when you received it or if someone else received the package on your behalf. Consider whether something might have happened to the package between the time you received it and opened it or before or after you began using it. Use the scale below to mark how likely it is that the {$goods} vtobe damaged AFTER the seller has shipped it. cap will NOT share this information with Casey345"
 									)
 								);
 		break;
