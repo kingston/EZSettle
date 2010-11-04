@@ -125,7 +125,7 @@
 					</tr>
 				{/section}
 				<tr><td colspan="3"><div style="float: right;">
-						<input type="submit" class="super large awesome red button" name="accept" value="Start Arbitration Process" />
+						<input type="submit" class="super large awesome red button" name="accept" value="Send to Arbitration" />
 						</div></td></tr>
 			</table>
 		</form>
