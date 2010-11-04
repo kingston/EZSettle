@@ -39,7 +39,7 @@ switch($_SESSION['condition']) {
 		break;
 	case 3:
 	case 4:
-	case 5:
+	case 6:
 		$goods = "laptop";
 		$past_v2be = "was";
 		$present_v2be_cap = "Is";

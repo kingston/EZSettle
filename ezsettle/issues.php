@@ -20,7 +20,7 @@ switch($_SESSION['condition']) {
 		break;
 	case 3:
 	case 4:
-	case 5:
+	case 6:
 		$typing = "The mediator is typing ... ";
 		break;
 }
