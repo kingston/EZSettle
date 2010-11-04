@@ -7,7 +7,7 @@ $result = array('success' => true);
 
 //write offer to db
 
-$_SESSION['offer_num'] = 9;
+$_SESSION['offer_num'] = 10;
 switch ($_SESSION['offer_num']){
 	case 1:
 	case 2:

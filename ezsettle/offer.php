@@ -196,16 +196,23 @@ if ($_POST['accept'] && $_POST['accept'] != '') {
 	$smarty->assign('all_offers', $_SESSION['offers']);	
 	$smarty->assign('all_counteroffers', $_SESSION['counteroffers']);
 	$smarty->display('accept.tpl');
-}else if ($_SESSION['offer_num']== 9){
+}else if($_SESSION['offer_num']== ){
+	$smarty->display('arbitration_instruction.tpl');
+}else if ($_SESSION['offer_num']== 10){
 	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
 		$smarty->display('arbitration_choose.tpl');
 		
 	}else{
 		$smarty->display('arbitration.tpl');	
 	}
-}else if($_SESSION['offer_num']== 10){
-	$smarty->display('arbitration.tpl');
 }else if($_SESSION['offer_num']== 11){
+	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
+		$smarty->display('arbitration.tpl');
+		
+	}else{
+		$smarty->display('arbitration_result.tpl');	
+	}
+}else if($_SESSION['offer_num']== 12){
 	$smarty->display('arbitration_result.tpl');
 }
 else if($_SESSION['offer_num']%3 == 1) {
