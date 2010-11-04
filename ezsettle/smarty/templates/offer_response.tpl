@@ -51,6 +51,7 @@
 				{/section}
 					<tr><td colspan="3"><div style="float: right;">
 						<input type="submit" class="super large awesome red button" name="accept" value="✓ Accept Offer" />
+						
 						<input type="submit" class="super large awesome black button" name="submit" id="counteroffer" 
 							{if $offer_num==8}value="Go to Arbitration Process »"{else}value="Make Counteroffer »"{/if} /></div></td></tr>
 			</table>

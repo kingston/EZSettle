@@ -5,7 +5,7 @@
 		{literal}
 			//<![CDATA[
 		$(document).ready(function() {
-		$('.button').attr('disabled', 'disabled');
+		//$('.button').attr('disabled', 'disabled');
 		max_time = 0;
 		$(".chatnotice").each(function(index) {
 			var text = $(this).html();
@@ -20,7 +20,7 @@
 		
 		setTimeout(function() {	
 			$("#typing").hide();
-			$('.button').removeAttr('disabled');
+			//$('.button').removeAttr('disabled');
 
 			},max_time);
 		
