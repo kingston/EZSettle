@@ -3,9 +3,7 @@
 	<div class="loud headline append-bottom">Arbitration Process</div>
 	<div class="span-24 last">
 		{include file="chat_notice.tpl"}
-		<div class="span-24 last">
-		<form id="offer" name="ofer" method="post" action="offer.php">
-			<input type="hidden" name="offer" value="{$offer}" />
+		<div class="span-24 last">			
 			<div class="success">
 				Here is the information that you provided in the mediation. 
 				The arbitrator will use this information to determine 
@@ -169,10 +167,9 @@
 					</tr>
 				{/section}
 				<tr><td colspan="3"><div style="float: right;">
-						<input type="submit" class="super large awesome red button" name="accept" value="Send to Arbitration" />
+						<div id="send_to_arbitration" class="super large awesome red button" name="accept" value="Send to Arbitration" />
 						</div></td></tr>
 			</table>
-		</form>
 		</div>
 
 	</div>
@@ -194,17 +191,18 @@
 {literal}
 	//<![CDATA[
 	 $(document).ready(function() {
-		$("#offer").ajaxForm({
-			beforeSubmit:checkOffer,
-			success:afterOffer,
-			dataType: 'json'
+		$("#send_to_arbitration").click(function() {
+			showLoading();
+			$.post("actions/postoffer.php",
+			{{offer_num: {/literal}{$offer_num}{literal}}, 
+			function(data) {
+				afterOffer(data)
+			},
+			'json'
+			);			
 		});
-	});
 
-	
-	function checkOffer(formData, jqForm, options) {
-		showLoading();
-	}
+	});
 
 	function afterOffer(data) {
 		setTimeout(function() {
