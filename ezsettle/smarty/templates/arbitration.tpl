@@ -6,7 +6,7 @@
 		{include file="chat_notice.tpl"}
 		<div class="span-24 last">			
 			<div class="success">
-				Here is the information that you provided in the mediation. 
+				Here is the information that you provided to EZSettle. 
 				The arbitrator will use this information to determine 
 				the final settlement of the case.
 			</div>
@@ -41,13 +41,17 @@
 				<div class = "span-12 last">
 					<div class="loud headline">Your indication regarding relevant factors: </div>
 					<table >
+						<th>
+							<td>Relevant Factors</td>
+							<td>Likelihood</td>
+						</th>
 						<tr>
 							<td>How likely it is that the laptop you bought was damaged after the seller shipped it</td>
-							<td style="vertical-align:top;">{$damage_likeliness}/100</td>
+							<td style="vertical-align:top;" class="even">{$damage_likeliness}/100</td>
 						</tr>
 						<tr>
 							<td>How likely it is that you can keep the laptop for your personal user or re-sell if yourself
-							<td style="vertical-align:top;">{$creative_likeliness}/100</td>
+							<td style="vertical-align:top;" class="even">{$creative_likeliness}/100</td>
 						</tr>
 					</table>
 				</div>
