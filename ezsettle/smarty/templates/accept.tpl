@@ -126,9 +126,9 @@
 					{/if}
 					</tr>
 				{/section}
-				<tr><td colspan="3"><div style="float: right;">
+				<!--<tr><td colspan="3"><div style="float: right;">
 						<input type="submit" class="super large awesome red button" name="accept" value="Start Arbitration Process" />
-						</div></td></tr>
+						</div></td></tr>-->
 			</table>
 	
 	<div class="prepend-20 span-4 last"><a href="javascript:window.close()" id="close_window" href="javascript:void(0)" class="super medium awesome red button">Print Agreement</a></div>
