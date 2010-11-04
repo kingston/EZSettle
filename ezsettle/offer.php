@@ -159,13 +159,15 @@ switch($_SESSION['offer_num']) {
 										)
 									);
 	  	break;
-	case 9:
+	case 10:
 		if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
 				$_SESSION['chatNew'] = array(
 												array( 'speaker' => 'Mediator',
-													'message' =>"You and Casey 345 did not reach an agreement. We will now switch to use an arbitrator.{$ezsettle_person} arbitrate for you"
+													'style' => 'success',
+													'message' =>"Please choose whether you would like the case to be arbitrated by one of EZSettle's staff arbitrators or by EZSettle’s AnaLegal™ arbitration software. If you and Casey345 do not make the same choice, you will be directed to discuss your options and reach agreement on the matter."
 												)											);	
-		}else{
+		}
+		/*else{
 				$_SESSION['chatNew'] = array(
 												array( 'speaker' => 'Mediator',
 													'message' =>"You and Casey 345 did not reach an agreement. We will now switch to use an arbitrator."
@@ -174,7 +176,7 @@ switch($_SESSION['offer_num']) {
 													'message' =>"{$ezsettle_person} arbitrate for you"
 												)
 											);	
-		}
+		}*/
 	break;
 	
 	default:
