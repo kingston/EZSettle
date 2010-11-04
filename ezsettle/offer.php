@@ -179,6 +179,7 @@ if($_SESSION['offer_num']>= 9 ){
 	$smarty->assign('all_offers', $_SESSION['offers']);	
 	$smarty->assign('all_counteroffers', $_SESSION['counteroffers']);
 	$smarty->assign('creative_likeliness',$_SESSION['creative_likeliness']);
+	$smarty->assign('damage_likeliness',$_SESSION['damage_likeliness']);
 }
 $smarty->assign('counteroffers', $_SESSION['counteroffers'][$step]);
 $smarty->assign('username', sessionVar('username'));

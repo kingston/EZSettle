@@ -54,11 +54,11 @@
 					<table>
 						<tr>
 							<td>How likely it is that the laptop you bought was damaged after the seller shipped it</td>
-							<td>xxx</td>
+							<td>{$damage_likeliness}/100</td>
 						</tr>
 						<tr>
 							<td>How likely it is that you can keep the laptop for your personal user or re-sell if yourself
-							<td>{$creative_likeliness}</td>
+							<td>{$creative_likeliness}/100</td>
 						</tr>
 					</table>
 				</div>

@@ -31,7 +31,8 @@
 	
 	$("#next").click(function() { 
 		$.post("actions/postoffer.php",
-		{offer_num: {/literal}{$offer_num}{literal}},
+		{offer_num: {/literal}{$offer_num}{literal},
+		damage_likeliness: $( "#damage_slider" ).slider( "option", "value" )},
 		function(data) {
 			window.location = 'offer.php';
 		},

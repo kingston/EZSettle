@@ -28,7 +28,10 @@ switch ($_SESSION['offer_num']){
 
 if($_SESSION['offer_num'] == 6) {
  	$_SESSION['creative_likeliness'] = $_POST['creative_likeliness'];
-	
+}
+
+if($_SESSION['offer_num'] == 3) {
+ 	$_SESSION['damage_likeliness'] = $_POST['damage_likeliness'];
 }
 
 $_SESSION['offer_num']++;
