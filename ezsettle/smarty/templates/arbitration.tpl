@@ -167,7 +167,8 @@
 					</tr>
 				{/section}
 				<tr><td colspan="3"><div style="float: right;">
-						<div id="send_to_arbitration" class="super large awesome red button" name="accept" value="Send to Arbitration" />
+						<div id="send_to_arbitration" class="super large awesome red button" />
+						Send to Arbitration
 						</div></td></tr>
 			</table>
 		</div>
@@ -194,7 +195,7 @@
 		$("#send_to_arbitration").click(function() {
 			showLoading();
 			$.post("actions/postoffer.php",
-			{{offer_num: {/literal}{$offer_num}{literal}}, 
+			{offer_num: {/literal}{$offer_num}{literal}},
 			function(data) {
 				afterOffer(data)
 			},
