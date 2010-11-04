@@ -1,6 +1,7 @@
 {include file="header.tpl"}
 <div class="main_body">
 	<div class="loud headline append-bottom">Arbitration Process</div>
+	
 	<div class="span-24 last">
 		{include file="chat_notice.tpl"}
 		<div class="span-24 last">			
@@ -9,6 +10,12 @@
 				The arbitrator will use this information to determine 
 				the final settlement of the case.
 			</div>
+			<div class="loading" id="loading">
+				<div class="loud headline"><img class="loader" id="loader" src="images/loader_big.gif" />Thanks for waiting...</div>
+				Please wait while {$ezsettle_person} makes a decision.<br/>
+				<br/><div style="clear:both; height: 1px;"></div>
+				<div style="clear:both; height: 1px;"></div>
+			</div><!-- end loading -->
 			<div class="span-24 last">
 				<div class = "span-12">
 					<div class="loud headline">The issues to settle and your preferences</div>
@@ -175,25 +182,15 @@
 
 	</div>
 	{include file="chat.tpl"}
-	<div class="loading" id="loading">
-		<div class="loud headline"><img class="loader" id="loader" src="images/loader_big.gif" />Thanks for waiting...</div>
-		Please wait while {$ezsettle_person} makes a decision.<br/>
-		
-		<br/><div style="clear:both; height: 1px;"></div>
-		{if $condition == 1 || $condition == 2 || $condition == 5}
-		<img id="diagram" src="images/diagram-computer.jpg"/>
-		{else}
-		<img id="diagram" src="images/diagram-human.jpg"/>
-		{/if}
-		<div style="clear:both; height: 1px;"></div>
-	</div><!-- end loading -->
+	
 </div><!-- end main body -->
 <script type="text/javascript">
 {literal}
 	//<![CDATA[
 	 $(document).ready(function() {
 		$("#send_to_arbitration").click(function() {
-			showLoading();
+			$(".success").hide();
+			$("#loading").fadeIn();
 			$.post("actions/postoffer.php",
 			{offer_num: {/literal}{$offer_num}{literal}},
 			function(data) {
@@ -206,12 +203,25 @@
 	});
 
 	function afterOffer(data) {
-		alert("afterOffer");
 		setTimeout(function() {
-			hideLoading();
+			$("#loading").fadeOut();
 			window.location = 'offer.php';
-		}, 3000);
+		}, 1000);
 	}
+	/*
+	function showLoading() {
+		$("#dark").fadeIn();
+		var left = $(window).width()/2  - $("#loading").width()/2;
+		var top = $(window).height()/2 + $(window).scrollTop() - $("#loading").height()/2;
+		$("#loading").css("left", left+"px");
+		$("#loading").css("top", top+"px");
+		$("#loading").fadeIn();
+	}
+	function hideLoading() {
+		$("#dark").fadeOut();
+		$("#loading").fadeOut();
+	}*/
+	
 	//]]>
 {/literal}
 </script>
