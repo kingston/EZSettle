@@ -88,8 +88,7 @@ switch($_SESSION['offer_num']) {
 	case 3:
 		$_SESSION['chatNew'] = array(
 									array( 'speaker' => 'Mediator',
-										'message' =>'You reported receiving the {$goods} you bought from Casey345 in an unacceptable condition. In e-commerce deals, it is sometimes the case that someone other than the buyer or the seller could have damaged the goods. Try recalling whether the package was open or otherwise damaged when you received it or if someone else received the package on your behalf. Consider whether something might have happened to the package between the time you received it and opened it or before or after you began using it. Use the scale below to mark how likely it is that the {$goods} {$past_to_be} damaged after the seller has shipped it. {$mediator_cap} will NOT share this information with Casey345.'
-									)
+										'message' =>'You reported receiving the {$goods} you bought from Casey345 in an unacceptable condition. In e-commerce deals, it is sometimes the case that someone other than the buyer or the seller could have damaged the goods. Try recalling whether the package was open or otherwise damaged when you received it or if someone else received the package on your behalf. Consider whether something might have happened to the package between the time you received it and opened it or before or after you began using it. Use the scale below to mark how likely it is that the {$goods} {$past_to_be} damaged after the seller has shipped it. {$mediator_cap} will NOT share this information with Casey345.')
 								);
 		break;
 	
@@ -186,6 +185,7 @@ $smarty->assign('condition', $_SESSION['condition']);
 $smarty->assign('avatar', $avatar);
 $smarty->assign('mediator', $mediator);
 $smarty->assign('mediator_caps', $mediator_caps);
+$smarty->assign('goods', $goods);
 $smarty->assign('step', $step);
 //var_dump($_SESSION['counteroffers'][$step]);
 //Your offer
