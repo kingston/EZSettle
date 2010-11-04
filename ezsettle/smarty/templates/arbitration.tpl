@@ -92,16 +92,16 @@
 					
 					<td><div class="float: right;">
 					{if $smarty.section.issuesIndex.index == 0}
-						{if $all_offers[3][0]=="Yes"}Yes
+						{if $all_offers[2][0]=="Yes"}Yes
 						{else}No
 						{/if}
 					{elseif $smarty.section.issuesIndex.index == 5}
-						{if $all_offers[3][5] == "buyer"} Buyer
-						{elseif $all_offers[3][5] == "seller"}Seller
+						{if $all_offers[2][5] == "buyer"} Buyer
+						{elseif $all_offers[2][5] == "seller"}Seller
 						{else} N/A
 						{/if}
 					{else}
-						{$all_offers[3][issuesIndex]}
+						{$all_offers[2][issuesIndex]}
 					{/if}
 					</div>
 					</td>
