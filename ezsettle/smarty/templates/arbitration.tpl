@@ -7,8 +7,11 @@
 		<form id="offer" name="ofer" method="post" action="offer.php">
 			<input type="hidden" name="offer" value="{$offer}" />
 			<div class="success">
-				Here is the summary of your and Casey345's offers.
+				Here is the information that you and Casey345 provides in the mediation. 
+				The arbitrator will use this information to determine 
+				the final settlement of the case.
 			</div>
+			<div class="loud headline append-bottom">The offers exchanged</div>
 			<table>
 				<tr>
 					<th>Issues:</th>
