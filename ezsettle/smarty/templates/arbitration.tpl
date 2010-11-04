@@ -10,12 +10,7 @@
 				The arbitrator will use this information to determine 
 				the final settlement of the case.
 			</div>
-			<div class="arb_loading" id="loading" style="display:none">
-				<div class="loud headline"><img class="loader" id="loader" src="images/loader_big.gif" />Thanks for waiting...</div>
-				Please wait while {$ezsettle_person} makes a decision.<br/>
-				<br/><div style="clear:both; height: 1px;"></div>
-				<div style="clear:both; height: 1px;"></div>
-			</div><!-- end loading -->
+			
 			<div class="span-24 last">
 				<div class = "span-12">
 					<div class="loud headline">The issues to settle and your preferences</div>
@@ -178,6 +173,12 @@
 						Send to Arbitration
 						</div></td></tr>
 			</table>
+			<div class="arb_loading" id="loading" style="display:none">
+				<div class="loud headline"><img class="loader" id="loader" src="images/loader_big.gif" />Thanks for waiting...</div>
+				Please wait while {$ezsettle_person} makes a decision.<br/>
+				<br/><div style="clear:both; height: 1px;"></div>
+				<div style="clear:both; height: 1px;"></div>
+			</div><!-- end loading -->
 		</div>
 
 	</div>
@@ -190,6 +191,7 @@
 	 $(document).ready(function() {
 		$("#send_to_arbitration").click(function() {
 			$(".success").hide();
+			$("#send_to_arbitration").hide();
 			$("#loading").fadeIn();
 			$.post("actions/postoffer.php",
 			{offer_num: {/literal}{$offer_num}{literal}},
@@ -208,19 +210,6 @@
 			window.location = 'offer.php';
 		}, 3000);
 	}
-	/*
-	function showLoading() {
-		$("#dark").fadeIn();
-		var left = $(window).width()/2  - $("#loading").width()/2;
-		var top = $(window).height()/2 + $(window).scrollTop() - $("#loading").height()/2;
-		$("#loading").css("left", left+"px");
-		$("#loading").css("top", top+"px");
-		$("#loading").fadeIn();
-	}
-	function hideLoading() {
-		$("#dark").fadeOut();
-		$("#loading").fadeOut();
-	}*/
 	
 	//]]>
 {/literal}
