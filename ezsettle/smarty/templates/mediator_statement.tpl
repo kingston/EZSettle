@@ -35,9 +35,12 @@
 		arbitration settlement compared to the last mediation offer by the other party.
 	</p>
 	
+	<p>
+		Click &quot;Next&quot; to continue to the mediation process.
+	</p>
 	<div class="prepend-20 span-4 last">
 		<div style="float: right;">
-		<a href="issues.php" class="large super awesome red button">Continue to the Mediation Process »</a>
+		<a href="issues.php" class="large super awesome red button">Next »</a>
 		</div>
 		</div>
 
