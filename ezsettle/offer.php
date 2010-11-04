@@ -135,7 +135,10 @@ switch($_SESSION['offer_num']) {
 	case 7:
 		$_SESSION['chatNew'] = array(
 									array( 'speaker' => 'Mediator',
-										'message' =>"This is your third and final opportunity to make a mediation offer to Casey345 (Casey345 will be able to make a final offer too). Before making your final offer, {$ezsettle} would like to remind you that this is also your final opportunity to share information with {$ezsettle_me} or send messages to Casey345."
+										'message' =>"This is your third and final opportunity to make a mediation offer to Casey345 (Casey345 will be able to make a final offer too). Before making your final offer, remember that this is also your final opportunity to share information with {$ezsettle_me} or send messages to Casey345."
+									),
+									array( 'speaker' => 'Mediator',
+										'message' =>"Before making your final offer, remember that this is also your final opportunity to share information with {$ezsettle_me} or send messages to Casey345."
 									)
 								);
 
@@ -197,6 +200,7 @@ $smarty->assign('mediator', $mediator);
 $smarty->assign('mediator_caps', $mediator_caps);
 $smarty->assign('past_v2be',$past_v2be);
 $smarty->assign('present_v2be_cap',$present_v2be_cap);
+$smarty->assign('ezsettle_me',$ezsettle_me);
 $smarty->assign('step', $step);
 //var_dump($_SESSION['counteroffers'][$step]);
 //Your offer
