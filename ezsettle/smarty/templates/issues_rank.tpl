@@ -43,6 +43,7 @@
 			});
 			$('.issues > .ui-slider-handle').html("50");
 			
+			
 			$("#submit_ranking").click(function() {
 			$.post("actions/postrank.php",
 			{issue_rank0: $( "#issue_rank0" ).slider( "option", "value" ),
