@@ -95,7 +95,7 @@ switch($_SESSION['offer_num']) {
 		$_SESSION['chatNew'] = array(
 									array( 'speaker' => 'Mediator',
 										'message' =>"As you may have noticed, after one mediation round the offers that you and Casey345 exchanged are still quite far apart. Please give some thought to Casey345's response, and consider whether someone else might have damaged the {$goods} as well as any other relevant factors. <br />Then, please make your second offer. You will be able to make one more offer later on."
-									)
+									),
 								);
 		break;
 		
@@ -103,7 +103,10 @@ switch($_SESSION['offer_num']) {
 		$_SESSION['chatNew'] = array(
 									array( 'speaker' => 'Mediator',
 										'message' =>"Casey345 did not accept your second offer. Casey345 said: &quot;I still don’t feel that this makes any sense or that I should pay anything. I KNOW that the laptop was in perfect condition when I sent it, and I don't think that you can prove otherwise. I still don’t understand why you are asking for all this money because a lot of it has nothing to do with me. BUT, following {$mediator}'s suggestion, I'm willing to offer something because of the chance that I didn't pack the package well (which I don't think happened, but ok), and because I'm willing to split with you some of the chance that the delivery service damaged the laptop. Mainly, I just want to get this thing over with.&quot;"
-									)
+									),
+									array('speaker' => 'Casey345 said',
+									'style'=>'second_party',
+								'message' =>"This just doesn’t make sense. I mean, really, the laptop was in perfect condition when I sent it, and I don't think that you can prove otherwise. (The emotional distress really has nothing to do with me, much like the rental computer). BUT, following {$mediator}'s suggestion, I'm willing to offer something because of the (slim!) chance that I didn't pack the package well (which I don't think happened, but ok), and because I'm willing to split with you the chance that the delivery service damaged the laptop. Mainly, I just want to get this thing over with.")
 								);
 		break;
 	case 6:
