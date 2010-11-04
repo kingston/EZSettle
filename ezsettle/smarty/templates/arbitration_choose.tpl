@@ -37,18 +37,13 @@
 		});
 		
 		$(".arb_human").click(function() {
-			$.ajax({
-  			type: "POST",
-   			url: "actions/postchoosearb.php",
-   			success: function(msg){
-     			alert(msg);
-				window.location = "offer.php";
-
-   			},
-   			error: function(xhr, textStatus, errorThrown){
-   				alert("fail: " + xhr+" "+textStatus + " " + errorThrown);
-   			}
-			});
+			$.post("actions/postoffer.php",
+			{offer_num: {/literal}{$offer_num}{literal}},
+			function(data) {
+				window.location = 'offer.php';
+			},
+			'json'
+			);
 
 		});
 		
@@ -64,21 +59,16 @@
 			alert("Choose computer arb");
 			//$(".arb_computer").css("background","#cccccc");
 		});
-		
-		$(".arb_computer").click(function() {
-			$.ajax({
-  			type: "POST",
-   			url: "actions/postoffer.php",
-   			success: function(msg){
-     			alert(msg);
-				window.location = "offer.php";
+	
 
-   			},
-   			error: function(xhr, textStatus, errorThrown){
-   				alert("fail: " + xhr+" "+textStatus + " " + errorThrown);
-   			}
- 			});
-			/*$.post("actions/postoffer.php",
+		$(".arb_computer").click(function() {
+			$.post("actions/postoffer.php",
+			{offer_num: {/literal}{$offer_num}{literal}},
+			function(data) {
+				window.location = 'offer.php';
+			},
+			'json'
+			);			/*$.post("actions/postoffer.php",
 			{offer_num: {/literal}{$offer_num}{literal}},
 			function(data) {
 				window.location = 'offer.php';
