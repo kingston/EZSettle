@@ -12,7 +12,7 @@
 				the final settlement of the case.
 			</div>
 			<div class="span-24 last">
-				<div class = "span-10">
+				<div class = "span-12">
 					<div class="loud headline">The issues to settle and your preferences</div>
 					<table>
 						<tr> 
@@ -49,9 +49,9 @@
 
 					</table>	
 				</div>
-				<div class = "span-14 last">
+				<div class = "span-12 last">
 					<div class="loud headline">Your indication regarding relevant factors: </div>
-					<table>
+					<table style="vertical-align:top;">
 						<tr>
 							<td>How likely it is that the laptop you bought was damaged after the seller shipped it</td>
 							<td>{$damage_likeliness}/100</td>
