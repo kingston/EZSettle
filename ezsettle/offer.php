@@ -54,30 +54,40 @@ switch($_SESSION['condition']) {
 	case 1:
 	case 3:
 		$ezsettle_person = "the professional AnaLegal™ arbitration software will";
-		$ezsettle_pronoun = "its";
+		$ezsettle_person_long_cap = "The EZSettle AnaLegal™ professional arbitration software";
+		$ezsettle_pronoun = "the system's";
+		$ezsettle_pronoun_short_big = "The system";
 		$ezsettle_arbitrating = "The EZSettle AnaLegal™ professional arbitration software is considering the";
 		$will_arbitrate = "the EZSettle AnaLegal™ professional arbitration software will serve as the arbitrator for your case";
 		$ezsettle_arbitrator = "The arbitration engine";
+		$ezsettle_arbitrator_result = "the AnaLegal™ arbitration engine";
 		$ezsettle_small = "the system";
 		break;
 	case 2:
 	case 4:
 		$ezsettle_person = "a professional staff arbitrator will";
-		$ezsettle_pronoun = "his";
+		$ezsettle_person_long_cap = "I, an EZSettle professional staff arbitrator,";
+		$ezsettle_pronoun_short_big = "I";
+		$ezsettle_pronoun = "my";
 		$ezsettle_arbitrating = "An EZSettle professional staff arbitrator is considering the";
 		$will_arbitrate = "I am an EZSettle professional staff arbitrator and I will serve as an arbitrator for your case";
 		$ezsettle_arbitrator = "I";
+		$ezsettle_arbitrator_result = "I";
 		$ezsettle_small = "I";
 		break;
 	
 	case 5:
 	case 6:
 		$ezsettle_person = "you will be asked to choose between the services of EZSettle’s AnaLegal™ arbitration software or an EZSettle staff mediator, that will";
-		$ezsettle_pronoun = "their";
+		$ezsettle_pronoun = "the arbitrator's";
+		$ezsettle_person_long_cap = "The EZSettle arbitrator";
 		$ezsettle_arbitrating  = "The facts of the";
 		$will_arbitrate = "the EZSettle AnaLegal™ professional arbitration software or an EZSettle professional staff arbitrator will serve as the arbitrator for your case, according to the choice you have made";
 		$ezsettle_arbitrator = "Your chosen arbitrator ";
 		$ezsettle_small = "you chosen arbitrator";
+		$ezsettle_being_considered = "are being considered in arbitration";
+		$ezsettle_arbitrator_result = "the arbitrator";
+		$ezsettle_pronoun_short_big = "The arbitrator";
 		break;
 }
 
@@ -218,6 +228,10 @@ if($_SESSION['offer_num']>= 9 ){
 	$smarty->assign('creative_likeliness',$_SESSION['creative_likeliness']);
 	$smarty->assign('damage_likeliness',$_SESSION['damage_likeliness']);
 }
+if(($_SESSION['condition'] == 5)||($_SESSION['condition'] == 6)){
+	$smarty->assign('ezsettle_being_considered',$ezsettle_being_considered);	
+}
+
 $smarty->assign('counteroffers', $_SESSION['counteroffers'][$step]);
 $smarty->assign('username', sessionVar('username'));
 $smarty->assign('condition', $_SESSION['condition']);
@@ -234,6 +248,9 @@ $smarty->assign('typing',$typing);
 $smarty->assign('will_arbitrate', $will_arbitrate);
 $smarty->assign('$ezsettle_arbitrator',$ezsettle_arbitrator);
 $smarty->assign('ezsettle_small',$ezsettle_small);
+$smarty->assign('ezsettle_person_long_cap',$ezsettle_person_long_cap);
+$smarty->assign('ezsettle_pronoun_short_big', $ezsettle_pronoun_short_big );
+$smarty->assign('ezsettle_pronoun',$ezsettle_pronoun);
 //var_dump($_SESSION['counteroffers'][$step]);
 //Your offer
 
