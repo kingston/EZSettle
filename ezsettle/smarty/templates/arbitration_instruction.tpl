@@ -12,7 +12,7 @@
 	<div  class="super large awesome red button" />
 						Send to Arbitration
 						</div>
-	<div id="send_to_arbitration" class="prepend-20 span-4 last">
+	<div id="send_to_arbitration" class="prepend-20 span-4 last super large awesome red button" style="float:right;">
 		
 		Send to Arbitration
 		
