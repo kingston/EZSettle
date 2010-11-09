@@ -1,11 +1,11 @@
 {include file="header.tpl"}
 
 <div class="main_body">
-	<div class="loud headline append-bottom">Could the damage have been caused by someone else?</div>
+	<div class="loud headline append-bottom">Alternative Potential Causes for Damage</div>
 	<div class="span-24 last">
 {include file="chat_notice.tpl"}
 		<div class="prepend-2 span-20 append-2 last">
-		<div class="span-3"><strong>Highly Unlikely</strong></div><div id="damage_slider" class="span-11" style="width: 400px;"></div><div class="span-3"><strong>Extremely Likely</strong></div>
+		<div class="span-3"><strong>Highly Unlikely</strong></div><div id="damage_slider" class="span-11" style="width: 400px;"></div><div class="span-3"><strong>Highly Likely</strong></div>
 		<div class="span-3 last"><a id="next" class="super large awesome red button">Next »</a></div>
 		 </div>
 		<div class="clearfix append-bottom"></div>

@@ -46,7 +46,7 @@
 							<th>Likelihood</th>
 						</tr>
 						<tr class="even">
-							<td>How likely it is that the laptop you bought was damaged after the seller shipped it</td>
+							<td>Alternative Potential Causes for Damage</td>
 							<td style="vertical-align:top;">{$damage_likeliness}/100</td>
 						</tr>
 						<tr>
