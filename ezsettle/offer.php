@@ -56,12 +56,16 @@ switch($_SESSION['condition']) {
 		$ezsettle_person = "the professional AnaLegal™ arbitration software will";
 		$ezsettle_pronoun = "its";
 		$ezsettle_arbitrating = "The EZSettle AnaLegal™ professional arbitration software is considering the";
+		$will_arbitrate = "the EZSettle AnaLegal™ professional arbitration software will serve as the arbitrator for your case";
+		$ezsettle_arbitrator = "The arbitration engine";
 		break;
 	case 2:
 	case 4:
 		$ezsettle_person = "a professional staff arbitrator will";
 		$ezsettle_pronoun = "his";
 		$ezsettle_arbitrating = "An EZSettle professional staff arbitrator is considering the";
+		$will_arbitrate = "I am an EZSettle professional staff arbitrator and I will serve as an arbitrator for your case";
+		$ezsettle_arbitrator = "I";
 		break;
 	
 	case 5:
@@ -69,6 +73,8 @@ switch($_SESSION['condition']) {
 		$ezsettle_person = "you will be asked to choose between the services of EZSettle’s AnaLegal™ arbitration software or an EZSettle staff mediator, that will";
 		$ezsettle_pronoun = "their";
 		$ezsettle_arbitrating  = "The facts of the";
+		$will_arbitrate = "the EZSettle AnaLegal™ professional arbitration software or an EZSettle professional staff arbitrator will serve as the arbitrator for your case, according to the choice you have made";
+		$ezsettle_arbitrator = "Your chosen arbitrator ";
 		break;
 }
 
@@ -157,6 +163,9 @@ switch($_SESSION['offer_num']) {
 										)
 									);
 	  	break;
+	case 9:
+	
+	break;
 	case 10:
 		if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
 				$_SESSION['chatNew'] = array(
@@ -219,6 +228,8 @@ $smarty->assign('ezsettle', $ezsettle);
 $smarty->assign('step', $step);
 $smarty->assign('ezsettle_arbitrating',$ezsettle_arbitrating);
 $smarty->assign('typing',$typing);
+$smarty->assign('will_arbitrate', $will_arbitrate);
+$smarty->assign('$ezsettle_arbitrator',$ezsettle_arbitrator);
 //var_dump($_SESSION['counteroffers'][$step]);
 //Your offer
 

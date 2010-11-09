@@ -1,15 +1,21 @@
 {include file="header.tpl"}
 <div class="main_body">
-	<div class="loud headline append-bottom">Arbitration Instruction</div>
-	THE  TEXT GOES HERE<br />
-	<div id="arb_instruction">Go back to offer</div>
+	<div class="loud headline append-bottom">Welcome to the EZSettle Arbitration Process</div>
+	<div class="span-24 last">
+	<p>
+	Welcome to the EZSettle arbitration process. In this process, {$will_arbitrate}. {$ezsettle_arbitrator} will review and analyze the facts of the case and the information that was shared in the mediation process and will provide you and Casey345 with a final binding arbitration settlement. 
+	</p>
+	</div>
+	<div id="send_to_arbitration" class="super large awesome red button" />
+						Send to Arbitration
+						</div>
 </div><!-- end main body -->
 <script type="text/javascript">
 {literal}
 	//<![CDATA[
 	$(document).ready(function() {	
 
-		$("#arb_instruction").click(function() {
+		$("#send_to_arbitration").click(function() {
 			$.post("actions/postoffer.php",
 			{offer_num: {/literal}{$offer_num}{literal}}, //Add info about choice here
 			function(data) {
