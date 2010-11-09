@@ -4,7 +4,7 @@
 	
 	<div class="span-24 last">
 		{include file="chat_notice.tpl"}
-		<div class="span-24 last">			
+		<div class="span-20 last">			
 			<div class="success">
 				Here is the information that you provided to EZSettle. 
 				The arbitrator will use this information to determine 
