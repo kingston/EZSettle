@@ -39,12 +39,12 @@
 		<li>Read the fact sheet</li>
 		<li>Use EZSettle</li>
 		<li>Fill out the feedback questionnaire</li>
-	<ol>	
+	</ol>	
 	<p>
 	The study is expected to take a total of 90 minutes, and you will receive 2 hours of credit for it.
 	</p>
 	<br/>
-	<div style="border:1px solid black;">
+	<div style="border:1px solid black; padding:10px;">
 	<h3>IMPORTANT</h3>
 		<p>
 			To simulate a real case, we ask that you carefully read the fact sheet. You should use EZSettle in
