@@ -9,9 +9,12 @@
 	In the next page, you will be able to review a summary of the information that {$ezsettle_small} will consider in the process.
 	</p>
 	</div>
-	<div id="send_to_arbitration" class="super large awesome red button" />
-						Send to Arbitration
-						</div>
+	<div id="send_to_arbitration" class="prepend-20 span-4 last">
+		<div style="float: right;">
+		Send to Arbitration
+		</div>
+		</div>
+
 </div><!-- end main body -->
 <script type="text/javascript">
 {literal}
