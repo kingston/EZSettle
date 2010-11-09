@@ -1,7 +1,7 @@
 {include file="header.tpl"}
 <div class="main_body">
 	<div class="loud headline append-bottom">Final Arbitration Settlement</div>
-	<div class="span-24 last">
+	
 	<p>
 	{$ezsettle_person_long_cap} reviewed your case and concluded that based on the available information the terms of settlement that are presented below would bring this 		dispute to its fair conclusion. 
 	</p>
@@ -12,7 +12,7 @@
 	Please be reminded that {$ezsettle_pronoun} decision is final. A binding legal settlement document will be sent to you and Casey345 via post mail. The money will be posted to your credit card. 
 	</p>
 	</div>
-	<div class="success">
+	<div class="span-24 last">
 		Summary of The Terms of the Settlement
 	</div>
 	<table >
@@ -44,7 +44,7 @@
 			<td>If relevant, Pay cost of return shipment</td>
 			<td style="vertical-align:top;" >Irrelevant</td>
 		</tr>
-		<tr style="border-top: 1px solid black">
+		<tr class="even" style="border-top: 1px solid black">
 			<td>Total Settlement Amount</td>
 			<td>$600</td>
 		</tr>
