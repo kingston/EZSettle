@@ -11,7 +11,7 @@
 	<p>
 	Please be reminded that {$ezsettle_pronoun} decision is final. A binding legal settlement document will be sent to you and Casey345 via post mail. The money will be posted to your credit card. 
 	</p>
-	</div>
+	
 	<div class="span-24 last">
 		Summary of The Terms of the Settlement
 	</div>
