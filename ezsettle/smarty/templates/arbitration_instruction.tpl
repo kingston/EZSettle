@@ -5,6 +5,9 @@
 	<p>
 	Welcome to the EZSettle arbitration process. In this process, {$will_arbitrate}. {$ezsettle_arbitrator} will review and analyze the facts of the case and the information that was shared in the mediation process and will provide you and Casey345 with a final binding arbitration settlement. 
 	</p>
+	<p>
+	In the next page, you will be able to review a summary of the information that {$ezsettle_small} will consider in the process.
+	</p>
 	</div>
 	<div id="send_to_arbitration" class="super large awesome red button" />
 						Send to Arbitration
