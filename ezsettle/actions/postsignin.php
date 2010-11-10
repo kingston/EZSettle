@@ -18,7 +18,7 @@ $result = array('success' => true);
 try {
     	$db = new PDO("sqlite:../db/ezsettle.db" );
     	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    	//echo "PDO connection object created";
+    	echo "PDO connection object created";
     } catch(PDOException $e){
     	echo $e->getMessage();
     }
