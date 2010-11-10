@@ -100,7 +100,7 @@ switch($_SESSION['offer_num']) {
 								array(	'speaker' => 'Mediator', 
 										'message' => 'Pat128, since you initiated the process, please list in the fields below your first offer on each item. Remember, you and Casey345 will each be able to exchange 3 offers (total of 6) in order to reach an agreement.'),
 								array('speaker' => 'Mediator',
-									'message' => 'After you submit your offer,'.$ezsettle_i_small. 'will communicate it to Casey345. Please wait patiently until '.$ezsettle_i_small.' will communicate Casey345’s response back to you.'
+									'message' => 'After you submit your offer,'.$ezsettle_i_small.' will communicate it to Casey345. Please wait patiently until '.$ezsettle_i_small.' communicate Casey345’s response back to you.'
 								
 								)
 								);
@@ -228,7 +228,6 @@ $smarty->assign('offer_num', $_SESSION['offer_num']);
 $smarty->assign('offers', $_SESSION['offers'][$step]);
 $smarty->assign('issues_rank',$_SESSION['issues_rank']);
 $smarty->assign('ezsettle',$ezsettle);
-$smarty->assign('ezsettle_i_small', $ezsettle_i_small);
 if($_SESSION['offer_num']>= 9 ){
 	$smarty->assign('all_offers', $_SESSION['offers']);	
 	$smarty->assign('all_counteroffers', $_SESSION['counteroffers']);

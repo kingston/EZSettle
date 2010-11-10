@@ -7,10 +7,12 @@
 		$(document).ready(function() {
 		//$('.button').attr('disabled', 'disabled');
 		max_time = 0;
+		accumulated_time = 0;
 		$(".chatnotice").each(function(index) {
 			var text = $(this).html();
 			var timeOut = text.length * 9;
-			var time = $(this).attr("alt") * timeOut;
+			accumulated_time += timeOut;
+			var time = accumulated_time;//$(this).attr("alt") * timeOut;
 			if(time > max_time){
 				max_time = time;	
 			}
