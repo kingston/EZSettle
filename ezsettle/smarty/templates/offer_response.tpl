@@ -4,7 +4,7 @@
 	<div class="span-24 last">
 		{include file="chat_notice.tpl"}
 		<div class="span-24 last">
-		<form id="offer" name="ofer" method="post" action="offer.php">
+		
 			<input type="hidden" name="offer" value="{$offer}" />
 			<div class="success">
 				Here is Casey345’s counter offer. You may accept the offer or make a new counter offer.
@@ -55,7 +55,7 @@
 						<input type="submit" class="super large awesome black button" name="submit" id="counteroffer" 
 							{if $offer_num==8}value="Go to Arbitration Process »"{else}value="Make Counteroffer »"{/if} /></div></td></tr>
 			</table>
-		</form>
+		
 		</div>
 
 	</div>
