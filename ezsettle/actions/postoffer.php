@@ -6,14 +6,13 @@ require_once(dirname(__FILE__) . '/../utils.php');
 $result = array('success' => true);
 
 //write offer to db
+$offer_trial = 0;
 if($_SESSION['offern_num'] == 1){
 	$offer_trial = 1;	
 }else if($_SESSION['offern_num'] == 4){
 	$offer_trial = 2;	
 }else if($_SESSION['offern_num'] == 7){
 	$offer_trial = 3;	
-}else{
-	$offer_trial = 0;	
 }
 
 if($offer_trial > 0){
