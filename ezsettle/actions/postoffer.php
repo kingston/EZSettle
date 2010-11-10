@@ -6,7 +6,7 @@ require_once(dirname(__FILE__) . '/../utils.php');
 $result = array('success' => true);
 $_SESSION['offer_num'] = $_POST['offer_num'];
 //write offer to db
-$offer_trial = 0;
+/*$offer_trial = 0;
 if($_SESSION['offern_num'] == 1){
 	$offer_trial = 1;	
 }else if($_SESSION['offern_num'] == 4){
@@ -15,7 +15,7 @@ if($_SESSION['offern_num'] == 1){
 	$offer_trial = 3;	
 }
 
-if($offer_trial > 0){
+if($offer_trial > 0){*/
 	try {
 			$db = new PDO("sqlite:../db/ezsettle.db" );
 	    	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -39,7 +39,7 @@ if($offer_trial > 0){
 		
 	}
 	
-}
+//}
 
 
 
