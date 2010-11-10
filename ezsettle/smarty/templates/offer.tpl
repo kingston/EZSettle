@@ -118,6 +118,7 @@
 			dataType: 'json'
 		});
 		setTimeout(function() {	
+			alert($("#make_offer").attr("disabled"));
 			$("#make_offer").attr("disabled","false");
 		
 		},max_time);
