@@ -266,7 +266,7 @@ $smarty->assign('ezsettle_pronoun',$ezsettle_pronoun);
 //Your offer
 
 
-if ($$_SESSION['accept'] && $_SESSION['accept'] == true) {
+if ($_POST['accept'] && $_POST['accept'] != '') {
 	$smarty->assign('all_offers', $_SESSION['offers']);	
 	$smarty->assign('all_counteroffers', $_SESSION['counteroffers']);
 	$smarty->display('accept.tpl');

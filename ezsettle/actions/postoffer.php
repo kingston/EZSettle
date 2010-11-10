@@ -34,9 +34,6 @@ if($_SESSION['offer_num'] == 3) {
  	$_SESSION['damage_likeliness'] = $_POST['damage_likeliness'];
 }
 
-if($_POST['accept'] == 'yes'){
-	$_SESSION['accept'] = true;
-}
 
 $_SESSION['offer_num']++;
 //$step = $_SESSION['offer_num']/2-1;
