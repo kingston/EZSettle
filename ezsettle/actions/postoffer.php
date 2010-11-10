@@ -15,7 +15,7 @@ if($_SESSION['offern_num'] == 1){
 }else{
 	$offer_trial = 0;	
 }
-/*
+
 if($offer_trial > 0){
 	try {
 		$db = new PDO("sqlite:../db/ezsettle.db" );
@@ -24,7 +24,7 @@ if($offer_trial > 0){
 	    } catch(PDOException $e){
 	      echo $e->getMessage();
 	    }
-	  //  $sql = "INSERT INTO users (user_id, condition, login_time) VALUES (".$_SESSION['experimental_id'].", ".$_SESSION['condition'].", '".$now."')";
+/*	  //  $sql = "INSERT INTO users (user_id, condition, login_time) VALUES (".$_SESSION['experimental_id'].", ".$_SESSION['condition'].", '".$now."')";
 	  //nae = 'casey' name = 'mediator'
 	  $sql = "INSERT INTO offers VALUES (202, 1, 'yes', 20,20,20,20,'seller','you jerk!','nth to say' )";
 	//		postVar('issues2').", ".postVar('issues3').", ".postVar('issues4').", '".postVar('issues5')."', '".postVar('casey')."', '".postVar('mediator')."')";
@@ -36,13 +36,13 @@ if($offer_trial > 0){
 	      echo $e->getMessage();
 	    }
 	
-		
+*/		
 		
 	}
 	
 }
 
-*/
+
 
 
 $_SESSION['offer_num'] = $_POST['offer_num'];
