@@ -15,7 +15,7 @@ if($_SESSION['offern_num'] == 1){
 }else{
 	$offer_trial = 0;	
 }
-
+/*
 if($offer_trial > 0){
 	try {
 		$db = new PDO("sqlite:../db/ezsettle.db" );
@@ -42,7 +42,7 @@ if($offer_trial > 0){
 	
 }
 
-
+*/
 
 
 $_SESSION['offer_num'] = $_POST['offer_num'];
