@@ -78,10 +78,10 @@
 			});
 			
 			$("#accept_offer").click(function() {
-				alert("yo");
-				$.post("offer.php",
+				
+				$.post("actions/postoffer.php",
 				{offer_num: {/literal}{$offer_num}{literal},
-				accept: "yes"},
+				accept:"yes"},
 				function(data) {
 					window.location = 'offer.php';
 				},
