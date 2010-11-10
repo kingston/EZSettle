@@ -51,6 +51,9 @@
 		</tr>
 		
 	</table>
+	<div id="done" class="super large awesome red button" />
+		<a href="http://chimestudies.com/sela/instructions.php">Done</a>
+	</div>
 	
 </div><!-- end main body -->
 
