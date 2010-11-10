@@ -50,7 +50,7 @@
 					</tr>
 				{/section}
 					<tr><td colspan="3"><div style="float: right;">
-						<input type="submit" class="super large awesome red button wait" name="accept" value="✓ Accept Offer" />
+						<input type="submit" class="super large awesome red button wait" name="accept" id="accept_offer" value="✓ Accept Offer" />
 						
 						<input type="submit" class="super large awesome black button wait" name="submit" id="counteroffer" 
 							{if $offer_num==8}value="Go to Arbitration Process »"{else}value="Make Counteroffer »"{/if} /></div></td></tr>
@@ -68,14 +68,24 @@
 	 $(document).ready(function() {
 	 	setTimeout(function() {	
 			$("#counteroffer").click(function() {
-			$.post("actions/postoffer.php",
-			{offer_num: {/literal}{$offer_num}{literal}},
-			function(data) {
-				window.location = 'offer.php';
-			},
-			'json'
-			);
-		});
+				$.post("actions/postoffer.php",
+				{offer_num: {/literal}{$offer_num}{literal}},
+				function(data) {
+					window.location = 'offer.php';
+				},
+				'json'
+				);
+			});
+			
+			$("#accept_offer").click(function() {
+				$.post("actions/postoffer.php",
+				{offer_num: {/literal}{$offer_num}{literal}},
+				function(data) {
+					window.location = 'offer.php';
+				},
+				'json'
+				);
+			});
 		},max_time);
 		
 	});
