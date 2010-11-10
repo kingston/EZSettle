@@ -4,6 +4,7 @@
 		<!--{include file="chat_notice.tpl"}-->
 		<div class="loud headline append-bottom">Choose Arbitration Service</div>
 		Please choose whether you would like the case to be arbitrated by one of EZSettle's staff arbitrators or by EZSettle’s AnaLegal™ arbitration software. If you and Casey345 do not make the same choice, you will be directed to discuss your options and reach agreement on the matter.
+		<br/><br/>
 		<div class="prepend-4 span-16 last">
 			<table id="arb_opt">
 			<tr>
