@@ -15,25 +15,6 @@ else {
 }
 $result = array('success' => true);
 
-//connect to db
-try {
-    	$db = new PDO("sqlite:db/ezsettle.db" );
-    	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    	//echo "PDO connection object created";
-    } catch(PDOException $e){
-    	echo $e->getMessage();
-    }
-/*
-	$sql = "INSERT INTO users (user_id, condition, login_time,)".
-		" VALUES (".$_SESSION['experimental_id'].", ".$_SESSION['condition'].",".date('y-m-d H:i:s',time()) .")";
-
-	try {
-    	$count = $db->exec($sql);
-    } catch(PDOException $e){
-    	echo $e->getMessage();
-    }
-*/
-
 echo json_encode($result);
 
 ?>
