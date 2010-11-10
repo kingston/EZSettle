@@ -9,9 +9,10 @@
 	In the next page, you will be able to review a summary of the information that {$ezsettle_small} will consider in the process.
 	</p>
 	</div>
-	<div id="send_to_arbitration" class="super large awesome red button" />
-						Send to Arbitration
-						</div>
+	
+	<div {if $condition==5 || $condition==6}id="send_to_study"{else}id="send_to_arbitration"{/if} class="super large awesome red button" />
+		Send to Arbitration
+	</div>
 	<!--<div id="send_to_arbitration" class="prepend-20 span-4 last super large awesome red button" style="float:right;">
 		
 		Send to Arbitration
@@ -32,6 +33,17 @@
 			},
 			'json'
 			);			
+		});
+		
+		$("#send_to_study").click(function() {
+			alert("Go to study website");
+			/*$.post("actions/postoffer.php",
+			{offer_num: {/literal}{$offer_num}{literal}}, //Add info about choice here
+			function(data) {
+				window.location = 'offer.php';
+			},
+			'json'
+			);*/		
 		});
 		
 
