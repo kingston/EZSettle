@@ -31,14 +31,11 @@
 			$(".arb_human").css("background","#eeeeee");
 		});
 		
-		$(".arb_human").click(function(){
-			//alert("choose human arb");
-			//$(".arb_human").css("background","#eeeeee");
-		});
 		
 		$(".arb_human").click(function() {
 			$.post("actions/postchoosearb.php",
-			{offer_num: {/literal}{$offer_num}{literal}},
+			{offer_num: {/literal}{$offer_num}{literal},
+			 arb_choice: "human"},
 			function(data) {
 				window.location = 'offer.php';
 			},
@@ -55,15 +52,12 @@
 			$(".arb_computer").css("background","#eeeeee");
 		});
 		
-		$(".arb_computer").click(function(){
-			//alert("Choose computer arb");
-			//$(".arb_computer").css("background","#cccccc");
-		});
 	
 
 		$(".arb_computer").click(function() {
 			$.post("actions/postchoosearb.php",
-			{offer_num: {/literal}{$offer_num}{literal}}, //Add info about choice here
+			{offer_num: {/literal}{$offer_num}{literal},
+				arb_choice:"computer"}, //Add info about choice here
 			function(data) {
 				window.location = 'offer.php';
 			},

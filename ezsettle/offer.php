@@ -277,6 +277,7 @@ if ($_POST['accept'] && $_POST['accept'] != '') {
 	}
 }else if($_SESSION['offer_num']== 11){
 	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
+		$smarty->assign('arb_choice',$_SESSION['arb_choice']);
 		$smarty->display('choose_pre_arbitration.tpl');
 		
 	}else{

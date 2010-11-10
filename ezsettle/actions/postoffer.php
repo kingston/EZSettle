@@ -34,6 +34,12 @@ if($_SESSION['offer_num'] == 3) {
  	$_SESSION['damage_likeliness'] = $_POST['damage_likeliness'];
 }
 
+if ($_SESSION['offer_num']== 10){
+ 	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
+ 		$_SESSION['arb_choice'] = $_POST['arb_choice'];	
+ 	}
+}
+
 $_SESSION['offer_num']++;
 //$step = $_SESSION['offer_num']/2-1;
 
