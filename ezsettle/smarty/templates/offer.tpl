@@ -119,8 +119,8 @@
 		});
 		setTimeout(function() {	
 			alert($("#make_offer").attr("disabled"));
-			$("#make_offer").attr("disabled","false");
-		
+			$("#make_offer").attr("disabled",false);
+			alert($("#make_offer").attr("disabled"));
 		},max_time);
 	});
 
