@@ -6,7 +6,7 @@
 			//<![CDATA[
 		$(document).ready(function() {
 		//$('.wait.button').attr('disabled', 'disabled');
-		$('.wait.button').click(null);
+		//$('.wait.button').click(null);
 		$('.wait.button').addClass('disabled');
 		max_time = 0;
 		accumulated_time = 0;
