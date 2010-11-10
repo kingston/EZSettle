@@ -22,29 +22,19 @@
 			{/section}
 		</table>
 		</div>
-		<div class="prepend-20 span-4 last" ><div id="submit_ranking" href="offer.php" class="super large awesome red button">Next »</div></div>
+		<div class="prepend-20 span-4 last" ><div id="submit_ranking" href="offer.php" class="super large awesome red button wait">Next »</div></div>
 
 	</div>
 	{include file="chat.tpl"}
 </div><!-- end main body -->
 
 <script type="text/javascript">
+{include file="footer.tpl"}
 {literal}
 	//<![CDATA[
 	 $(document).ready(function() {
-		$(".issues").slider({
-			min: 0,
-			max: 100,
-			value: 50,
-			slide: function(event, ui) {
-				var handle = $('.ui-slider-handle', this);
-				handle.html(ui.value);
-			}
-			});
-			$('.issues > .ui-slider-handle').html("50");
-			
-			
-			$("#submit_ranking").click(function() {
+	 	setTimeout(function() {	
+		$("#submit_ranking").click(function() {
 			$.post("actions/postrank.php",
 			{issue_rank0: $( "#issue_rank0" ).slider( "option", "value" ),
 			 issue_rank1: $( "#issue_rank1" ).slider( "option", "value" ),
@@ -59,9 +49,22 @@
 			},
 			'json'
 			);			
-		});
+		});		
+		},max_time);
+		$(".issues").slider({
+			min: 0,
+			max: 100,
+			value: 50,
+			slide: function(event, ui) {
+				var handle = $('.ui-slider-handle', this);
+				handle.html(ui.value);
+			}
+			});
+			$('.issues > .ui-slider-handle').html("50");
+			
+			
+			
 	});
 	//]]>
 {/literal}
 </script>
-{include file="footer.tpl"}
