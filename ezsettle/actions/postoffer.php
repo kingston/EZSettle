@@ -4,41 +4,10 @@ ini_set('display_errors', 1);
 session_start();
 require_once(dirname(__FILE__) . '/../utils.php');
 $result = array('success' => true);
-$_SESSION['offer_num'] = $_POST['offer_num'];
+
 //write offer to db
-/*$offer_trial = 0;
-if($_SESSION['offern_num'] == 1){
-	$offer_trial = 1;	
-}else if($_SESSION['offern_num'] == 4){
-	$offer_trial = 2;	
-}else if($_SESSION['offern_num'] == 7){
-	$offer_trial = 3;	
-}
 
-if($offer_trial > 0){*/
-
-/*	  //  $sql = "INSERT INTO users (user_id, condition, login_time) VALUES (".$_SESSION['experimental_id'].", ".$_SESSION['condition'].", '".$now."')";
-	  //nae = 'casey' name = 'mediator'
-	  $sql = "INSERT INTO offers VALUES (202, 1, 'yes', 20,20,20,20,'seller','you jerk!','nth to say' )";
-	//		postVar('issues2').", ".postVar('issues3').", ".postVar('issues4').", '".postVar('issues5')."', '".postVar('casey')."', '".postVar('mediator')."')";
-	//	$sql = "INSERT INTO offers VALUES (".$_SESSION['experimental_id'].", ".$offer_trial.", '".postVar('issues0')."', ".postVar('issues1').", ".
-	//		postVar('issues2').", ".postVar('issues3').", ".postVar('issues4').", '".postVar('issues5')."', '".postVar('casey')."', '".postVar('mediator')."')";
-	    try {
-	    	$count = $db->exec($sql);
-	    } catch(PDOException $e){
-	      echo $e->getMessage();
-	    }
-	
-*/		
-		
-	}
-	
-//}
-
-
-
-
-
+$_SESSION['offer_num'] = $_POST['offer_num'];
 switch ($_SESSION['offer_num']){
 	case 1:
 	case 2:
