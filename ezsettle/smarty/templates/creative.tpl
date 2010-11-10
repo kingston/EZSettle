@@ -8,7 +8,7 @@
 				Please indicate here if you are willing to consider this option.{$ezsettle} will
 NOT share this information with Casey345.
 			</div>
-		<div class="span-3">Completely Unwilling </div><div id="damage_slider" class="span-11" style="width: 400px;"></div><div class="span-4"> Extremely Willing</div>
+		<div class="span-3">Completely Unwilling&nbsp;&nbsp;&nbsp;</div><div id="damage_slider" class="span-11" style="width: 400px;"></div><div class="span-4">&nbsp;&nbsp;&nbsp;Extremely Willing</div>
 		<div class="span-4 last"><a id="next" class="super large awesome red button">Next »</a></div>
 		 </div>
 		<div class="clearfix append-bottom"></div>

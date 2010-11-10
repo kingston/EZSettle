@@ -17,7 +17,7 @@
 					<tr>
 				{/if}
 				<td width="300">{ $issues[issuesIndex] }</td>
-				<td width="400"><span style="float: left;">0&nbsp;&nbsp;&nbsp;&nbsp;</span><div id="issue_rank{$smarty.section.issuesIndex.index}" class="issues"></div><span style="float: left;">&nbsp;&nbsp;&nbsp;&nbsp;100</span></td>
+				<td width="400"><span style="float: left;">0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><div id="issue_rank{$smarty.section.issuesIndex.index}" class="issues"></div><span style="float: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100</span></td>
 				</tr>
 			{/section}
 		</table>
