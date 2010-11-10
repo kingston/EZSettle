@@ -40,10 +40,8 @@
 {literal}
 	//<![CDATA[
 	 $(document).ready(function() {
-	 	alert(max_time);
-	 	//setTimeout(function() {	
-			
-		//	},max_time);
+	 	
+	 	setTimeout(function() {	
 		$("#add_issue").click(function() {
 			$("#more_issues").fadeIn('slow');
 		});
@@ -53,7 +51,9 @@
 			//alert($("#issues_text").val());
 			$("#issues_text").val("");
 			$("#issues_added").show();
-		});
+		});	
+		},max_time);
+		
 	});
 	//]]>
 {/literal}
