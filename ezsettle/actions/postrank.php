@@ -24,6 +24,10 @@ try {
     try {
     	$count = $db->exec($sql1);
     	$count = $db->exec($sql2);
+    	$count = $db->exec($sql3);
+    	$count = $db->exec($sql4);
+    	$count = $db->exec($sql5);
+    	$count = $db->exec($sql6);
     } catch(PDOException $e){
       echo $e->getMessage();
     }
