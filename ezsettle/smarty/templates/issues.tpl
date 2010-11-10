@@ -40,7 +40,10 @@
 {literal}
 	//<![CDATA[
 	 $(document).ready(function() {
-	 	
+	 	alert(max_time);
+	 	//setTimeout(function() {	
+			
+		//	},max_time);
 		$("#add_issue").click(function() {
 			$("#more_issues").fadeIn('slow');
 		});
