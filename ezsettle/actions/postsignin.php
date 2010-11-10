@@ -11,7 +11,11 @@ if($_SESSION['experimental_id'] == "ezsettle") {
 	$_SESSION['condition'] = 1;
 }
 else {
-	$_SESSION['condition'] = $_SESSION['experimental_id'];// % 6 + 1; //conditions 1-6
+	if($_SESSION['experimental_id'] %6 == 0){
+			$_SESSION['condition'] = 6;
+	}else{
+		$_SESSION['condition'] = $_SESSION['experimental_id']%6;// % 6 + 1; //conditions 1-6
+	}
 }
 $result = array('success' => true);
 //connect to db
