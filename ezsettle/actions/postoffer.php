@@ -16,13 +16,7 @@ if($_SESSION['offern_num'] == 1){
 }
 
 if($offer_trial > 0){*/
-	try {
-			$db = new PDO("sqlite:../db/ezsettle.db" );
-	    	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	    	//echo "PDO connection object created";
-	    } catch(PDOException $e){
-	      echo $e->getMessage();
-	    }
+
 /*	  //  $sql = "INSERT INTO users (user_id, condition, login_time) VALUES (".$_SESSION['experimental_id'].", ".$_SESSION['condition'].", '".$now."')";
 	  //nae = 'casey' name = 'mediator'
 	  $sql = "INSERT INTO offers VALUES (202, 1, 'yes', 20,20,20,20,'seller','you jerk!','nth to say' )";
