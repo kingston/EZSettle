@@ -100,7 +100,7 @@ switch($_SESSION['offer_num']) {
 								array(	'speaker' => 'Mediator', 
 										'message' => 'Pat128, since you initiated the process, please list in the fields below your first offer on each item. Remember, you and Casey345 will each be able to exchange 3 offers (total of 6) in order to reach an agreement.'),
 								array('speaker' => 'Mediator',
-									'message' => 'After you submit your offer, {$ezsettle_i_small} will communicate it to Casey345. Please wait patiently until {$ezsettle_i_small} will communicate Casey345’s response back to you.'
+									'message' => 'After you submit your offer,'.$ezsettle_i_small. 'will communicate it to Casey345. Please wait patiently until '.$ezsettle_i_small.' will communicate Casey345’s response back to you.'
 								
 								)
 								);
