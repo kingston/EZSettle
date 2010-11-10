@@ -1,6 +1,6 @@
 {include file="header.tpl"}
 <div class="main_body">
-	<div class="loud headline append-bottom">Let's think creatively!</div>
+	<div class="loud headline append-bottom">Additional Ideas for Settlement</div>
 	<div class="span-24 last">
 {include file="chat_notice.tpl"}
 		<div class="span-24 last">

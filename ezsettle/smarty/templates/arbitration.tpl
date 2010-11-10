@@ -50,7 +50,7 @@
 							<td style="vertical-align:top;">{$damage_likeliness}/100</td>
 						</tr>
 						<tr>
-							<td>How likely it is that you can keep the laptop for your personal user or re-sell if yourself
+							<td>Additional Ideas for Settlement</td>
 							<td style="vertical-align:top;" >{$creative_likeliness}/100</td>
 						</tr>
 					</table>
