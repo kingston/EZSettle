@@ -24,7 +24,7 @@
 		<div style="height: 75px; width:1px;">&nbsp:</div>
 		Do you agree that these are the issues that need to be addressed in this process:<br/>
 		<span id="go_to_rank_issue" class="super large awesome red button wait">Yes</span>
-		<a id="add_issue" class="super large awesome black button wait">No&nbsp;</a>
+		<span id="add_issue" class="super large awesome black button wait">No&nbsp;</span>
 		<div style="display:none;" id="more_issues">
 			Add additional issues:
 			<input type="text" id="issues_text"/>
