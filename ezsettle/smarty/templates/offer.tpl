@@ -76,7 +76,7 @@
 					<tr><td colspan="2">Comments for {$mediator}:<br/>
 					<span class="quiet">(These will not be shown to Casey345)</span></td>
 					<td colspan="2"><div style="float: right;"><textarea rows="3" cols="40" name="mediator" value="" ></textarea></div></td></tr>
-					<tr><td colspan="4"><div style="float: right;"><input type="submit" class="super large awesome red button wait" name="submit" disabled="true" value="Make offer" /></div></td></tr>
+					<tr><td colspan="4"><div style="float: right;"><input id="make_offer" type="submit" class="super large awesome red button wait" name="submit" disabled="true" value="Make offer" /></div></td></tr>
 			</table>
 		</form>
 		</div>
@@ -117,6 +117,10 @@
 			success:afterOffer,
 			dataType: 'json'
 		});
+		setTimeout(function() {	
+			$("#make_offer").attr("disabled","false");
+		
+		},max_time);
 	});
 
 	
