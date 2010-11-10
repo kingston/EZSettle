@@ -78,6 +78,7 @@
 			});
 			
 			$("#accept_offer").click(function() {
+				alert("yo");
 				$.post("actions/offer.php",
 				{offer_num: {/literal}{$offer_num}{literal},
 				accept: "yes"},
