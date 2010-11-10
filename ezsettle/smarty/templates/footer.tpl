@@ -10,7 +10,7 @@
 		$(".chatnotice").each(function(index) {
 			var text = $(this).html();
 			var timeOut = text.length * 9;
-			var time = ($(this).attr("alt")+1) * timeOut;
+			var time = $(this).attr("alt") * timeOut;
 			if(time > max_time){
 				max_time = time;	
 			}
