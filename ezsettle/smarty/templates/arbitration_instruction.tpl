@@ -38,13 +38,13 @@
 		$("#send_to_study").click(function() {
 			alert("Please complete the mediation questionnaire and then return to the EZSettle website to complete the arbitration.");
 			window.open("http://chimestudies.com/sela/instructions.php" );
-			/*$.post("actions/postoffer.php",
+			$.post("actions/postoffer.php",
 			{offer_num: {/literal}{$offer_num}{literal}}, //Add info about choice here
 			function(data) {
 				window.location = 'offer.php';
 			},
 			'json'
-			);*/		
+			);		
 		});
 		
 
