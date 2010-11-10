@@ -18,8 +18,8 @@
 	//<![CDATA[
 	 $(document).ready(function() {
 		$("#damage_slider").slider({
-			min: 1,
-			max: 99,
+			min: 0,
+			max: 100,
 			value: 50,
 			slide: function(event, ui) {
 				var handle = $('.ui-slider-handle', this);
