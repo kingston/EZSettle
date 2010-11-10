@@ -34,6 +34,7 @@ switch($_SESSION['condition']) {
 		$present_v2be_cap = "Are";
 		$ezsettle = "The system";
 		$mediator = "the system";
+		$ezsettle_i_small = "the system";
 		$ezsettle_me = "EZSettle";
 		$typing = "The system is generating text ...";
 		break;
@@ -45,6 +46,7 @@ switch($_SESSION['condition']) {
 		$present_v2be_cap = "Is";
 		$ezsettle = "I";
 		$mediator = "the mediator";
+		$ezsettle_i_small = "I";
 		$ezssetle_me = "me";
 		$typing = "The mediator is typing ... ";
 		break;
@@ -96,7 +98,11 @@ switch($_SESSION['offer_num']) {
 	case 1:
 		$_SESSION['chatNew'] = array(
 								array(	'speaker' => 'Mediator', 
-										'message' => 'Pat128, since you initiated the process, please list in the fields below your first offer on each item. Remember, you and Casey345 will each be able to exchange 3 offers (total of 6) in order to reach an agreement.')
+										'message' => 'Pat128, since you initiated the process, please list in the fields below your first offer on each item. Remember, you and Casey345 will each be able to exchange 3 offers (total of 6) in order to reach an agreement.'),
+								array('speaker' => 'Mediator',
+									'message' => 'After you submit your offer, {$ezsettle_i_small} will communicate it to Casey345. Please wait patiently until {$ezsettle_i_small} will communicate Casey345’s response back to you:'
+								
+								)
 								);
 		break;
 	case 2:
@@ -159,7 +165,7 @@ switch($_SESSION['offer_num']) {
 										'message' =>"This is your third and final opportunity to make a mediation offer to Casey345 (Casey345 will be able to make a final offer too)."
 									),
 									array( 'speaker' => 'Mediator',
-										'message' =>"Before making your final offer, remember that this is also your final opportunity to share information with {$ezsettle_me} or send messages to Casey345."
+										'message' =>"When you make your final offer, consider keeping the laptop and adjusting the financial compensation you are requesting accordingly. Remember that this is also your final opportunity to share information with {$ezsettle_me} or send messages to Casey345."
 									)
 								);
 
@@ -252,6 +258,7 @@ $smarty->assign('ezsettle_small',$ezsettle_small);
 $smarty->assign('ezsettle_person_long_cap',$ezsettle_person_long_cap);
 $smarty->assign('ezsettle_pronoun_short_big', $ezsettle_pronoun_short_big );
 $smarty->assign('ezsettle_pronoun',$ezsettle_pronoun);
+$smarty->assign('ezsettle_i_small', $ezsettle_i_small);
 //var_dump($_SESSION['counteroffers'][$step]);
 //Your offer
 
