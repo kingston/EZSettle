@@ -3,7 +3,7 @@
 <div class="main_body">
 	<div class="large loud headline">Mediator Introduction</div>
 	<hr class="space"/>
-	<p>Dear Pat128 and Casey345,</p>
+	<p>Dear Jessie128 and Casey345,</p>
 	<p>
 		Thank you for joining the EZSettle process. {if $condition == 1 || $condition == 2 || $condition == 5}The EZSettle software is{else}I will be your
 		mediator, and I'm{/if} here to help you solve this case. {if $condition == 1 || $condition == 2 || $condition == 5}Here is a quick explanation on{else}
