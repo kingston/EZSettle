@@ -5,14 +5,15 @@
 	<div class="span-24 last">
 {include file="chat_notice.tpl"}
 		<div class="prepend-2 span-20 append-2 last">
-		<div class="span-3"><strong>Highly Unlikely&nbsp;&nbsp;&nbsp;</strong></div><div id="damage_slider" class="span-11" style="width: 400px;"></div><div class="span-3"><strong>&nbsp;&nbsp;&nbsp;Highly Likely</strong></div>
-		<div class="span-3 last"><a id="next" class="super large awesome red button">Next »</a></div>
+		<div class="span-3"><strong>Highly Unlikely&nbsp;&nbsp;</strong></div><div id="damage_slider" class="span-11" style="width: 400px;"></div><div class="span-3"><strong>&nbsp;&nbsp;Highly Likely</strong></div>
+		<div class="span-3 last"><a id="next" class="super large awesome red button wait">Next »</a></div>
 		 </div>
 		<div class="clearfix append-bottom"></div>
 		<hr class="space"/>
 	{include file="chat.tpl"}
 </div><!-- end main body -->
 
+{include file="footer.tpl"}
 <script type="text/javascript">
 {literal}
 	//<![CDATA[
@@ -27,9 +28,8 @@
 			}
 			});
 			$('#damage_slider > .ui-slider-handle').html("50");
-	});
-	
-	$("#next").click(function() { 
+				setTimeout(function() {	
+		$("#next").click(function() { 
 		$.post("actions/postoffer.php",
 		{offer_num: {/literal}{$offer_num}{literal},
 		damage_likeliness: $( "#damage_slider" ).slider( "option", "value" )},
@@ -39,7 +39,11 @@
 		'json'
 		);
 	});
+	},max_time);
+	});
+
+	
+	
 	//]]>
 {/literal}
 </script>
-{include file="footer.tpl"}
