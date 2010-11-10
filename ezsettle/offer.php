@@ -251,7 +251,11 @@ $smarty->assign('ezsettle', $ezsettle);
 $smarty->assign('step', $step);
 $smarty->assign('ezsettle_arbitrating',$ezsettle_arbitrating);
 $smarty->assign('typing',$typing);
-$smarty->assign('will_arbitrate', $will_arbitrate);
+if(($_SESSION['offer_num']== 10) &&(($_SESSION['condition']==5) || ($_SESSION['condition']==6))){
+	$smarty->assign('arb_choice',$_SESSION['arb_choice']);
+}else{
+	$smarty->assign('will_arbitrate', $will_arbitrate);
+}
 $smarty->assign('$ezsettle_arbitrator',$ezsettle_arbitrator);
 $smarty->assign('ezsettle_small',$ezsettle_small);
 $smarty->assign('ezsettle_person_long_cap',$ezsettle_person_long_cap);
@@ -277,7 +281,7 @@ if ($_POST['accept'] && $_POST['accept'] != '') {
 	}
 }else if($_SESSION['offer_num']== 11){
 	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
-		$smarty->assign('arb_choice',$_SESSION['arb_choice']);
+		
 		$smarty->display('choose_pre_arbitration.tpl');
 		
 	}else{
