@@ -9,15 +9,13 @@
     	echo $e->getMessage();
     }
 
-	$sql = "INSERT INTO offers (user_fk, offer_num) VALUES (202, 1)";
+	$sql = "INSERT INTO faqs (user_fk, time_spent) VALUES (".$_POST['user'].", ".$_POST['time_spent'].")";
 
 	try {
     	$count = $db->exec($sql);
     } catch(PDOException $e){
     	echo $e->getMessage();
     }
-    
-    
 
 	//echo $count;
 ?>
