@@ -16,7 +16,7 @@ NOT share this information with Casey345.
 		<hr class="space"/>
 	{include file="chat.tpl"}
 </div><!-- end main body -->
-
+{include file="footer.tpl"}
 <script type="text/javascript">
 {literal}
 	//<![CDATA[
@@ -32,20 +32,19 @@ NOT share this information with Casey345.
 			});
 			$('#damage_slider > .ui-slider-handle').html("50");
 			setTimeout(function() {	
-			$("#next").click(function() { 
-				$.post("actions/postoffer.php",
-				{offer_num: {/literal}{$offer_num}{literal},
-				creative_likeliness: $( "#damage_slider" ).slider( "option", "value" )},
-				function(data) {
-					window.location = 'offer.php';
-				},
-				'json'
-				);
-			});
-		},max_time);
+				$("#next").click(function() { 
+					$.post("actions/postoffer.php",
+					{offer_num: {/literal}{$offer_num}{literal},
+					creative_likeliness: $( "#damage_slider" ).slider( "option", "value" )},
+					function(data) {
+						window.location = 'offer.php';
+					},
+					'json'
+					);
+				});
+			},max_time);
 	});
 	
 	//]]>
 {/literal}
 </script>
-{include file="footer.tpl"}
