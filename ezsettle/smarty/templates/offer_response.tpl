@@ -82,7 +82,7 @@
 				{offer_num: {/literal}{$offer_num}{literal},
 				accept: "yes"},
 				function(data) {
-					//window.location = 'offer.php';
+					window.location = 'offer.php';
 				},
 				'json'
 				);
