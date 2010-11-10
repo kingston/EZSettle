@@ -5,7 +5,7 @@
 		{literal}
 			//<![CDATA[
 		$(document).ready(function() {
-		//$('.button').attr('disabled', 'disabled');
+		$('.button').attr('disabled', 'disabled');
 		$('.button').addClass('disabled');
 		max_time = 0;
 		accumulated_time = 0;
@@ -23,7 +23,7 @@
 		
 		setTimeout(function() {	
 			$("#typing").hide();
-			//$('.button').removeAttr('disabled');
+			$('.button').removeAttr('disabled');
 			$('.button').removeClass('disabled');
 			},max_time);
 		
