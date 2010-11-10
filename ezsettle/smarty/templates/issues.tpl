@@ -49,8 +49,15 @@
 		$("#add").click(function() {
 			//PAOTODO:remove this and put it into the database
 			//alert($("#issues_text").val());
-			$("#issues_text").val("");
-			$("#issues_added").show();
+     		$.post("actions/add_additional_issues.php",
+     		{added:$("#issues_text").val()},
+     		function(data){
+     			$("#issues_text").val("");
+				$("#issues_added").show();
+     		},
+     		'json
+     		);
+			
 		});	
 		
 		$("#go_to_rank_issue").click(function(){
