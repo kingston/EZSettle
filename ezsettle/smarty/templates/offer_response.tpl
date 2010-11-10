@@ -79,7 +79,7 @@
 			
 			$("#accept_offer").click(function() {
 				
-				$.post("offer.php",
+				$.post("actions/postoffer.php",
 				{offer_num: {/literal}{$offer_num}{literal},
 				accept:"yes"},
 				function(data) {
