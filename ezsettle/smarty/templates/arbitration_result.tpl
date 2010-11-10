@@ -53,11 +53,27 @@
 	</table>
 	<div class="prepend-20 span-4 last">
 		<div style="float: right;">
-		<a href="http://chimestudies.com/sela/instructions.php" class="large super awesome red button">Exit EZSettle</a>
+		<div id="go_to_study" class="large super awesome red button">Exit EZSettle</a>
 		</div>
 	</div>
 
 	
 </div><!-- end main body -->
+<script type="text/javascript">
+{literal}
+	//<![CDATA[
+	 $(document).ready(function() {
+		$("#go_to_study").click(function() {
+				window.open("http://chimestudies.com/sela/instructions.php" );	
+		});
+
+	});
+
+	
+	
+	
+	//]]>
+{/literal}
+</script>
 
 {include file="footer.tpl"}
