@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 session_start();
 require_once(dirname(__FILE__) . '/../utils.php');
 $result = array('success' => true);
-
+$_SESSION['offer_num'] = $_POST['offer_num'];
 //write offer to db
 $offer_trial = 0;
 if($_SESSION['offern_num'] == 1){
@@ -17,7 +17,7 @@ if($_SESSION['offern_num'] == 1){
 
 if($offer_trial > 0){
 	try {
-		$db = new PDO("sqlite:../db/ezsettle.db" );
+			$db = new PDO("sqlite:../db/ezsettle.db" );
 	    	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	    	//echo "PDO connection object created";
 	    } catch(PDOException $e){
@@ -44,7 +44,7 @@ if($offer_trial > 0){
 
 
 
-$_SESSION['offer_num'] = $_POST['offer_num'];
+
 switch ($_SESSION['offer_num']){
 	case 1:
 	case 2:
