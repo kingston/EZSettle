@@ -35,7 +35,7 @@
 	</div>
 	{include file="chat.tpl"}
 </div><!-- end main body -->
-
+{include file="footer.tpl"}
 <script type="text/javascript">
 {literal}
 	//<![CDATA[
@@ -58,4 +58,3 @@
 	//]]>
 {/literal}
 </script>
-{include file="footer.tpl"}
