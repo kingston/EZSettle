@@ -55,7 +55,7 @@
      			$("#issues_text").val("");
 				$("#issues_added").show();
      		},
-     		'json
+     		'json'
      		);
 			
 		});	
