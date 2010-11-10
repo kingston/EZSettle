@@ -5,8 +5,8 @@
 		{literal}
 			//<![CDATA[
 		$(document).ready(function() {
-		$('.button').attr('disabled', 'disabled');
-		$('.button').addClass('disabled');
+		//$('.button').attr('disabled', 'disabled');
+		$('.wait.button').addClass('disabled');
 		max_time = 0;
 		accumulated_time = 0;
 		$(".chatnotice").each(function(index) {
@@ -23,8 +23,8 @@
 		
 		setTimeout(function() {	
 			$("#typing").hide();
-			$('.button').removeAttr('disabled');
-			$('.button').removeClass('disabled');
+			//$('.button').removeAttr('disabled');
+			$('.wait.button').removeClass('disabled');
 			},max_time);
 		
 		

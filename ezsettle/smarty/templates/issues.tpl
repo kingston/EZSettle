@@ -23,8 +23,8 @@
 	<div class="prepend-1 span-8 append-2 last">
 		<div style="height: 75px; width:1px;">&nbsp:</div>
 		Do you agree that these are the issues that need to be addressed in this process:<br/>
-		<a href="issues2.php" class="super large awesome red button">Yes</a>
-		<a id="add_issue" class="super large awesome black button">No&nbsp;</a>
+		<a href="issues2.php" class="super large awesome red button wait">Yes</a>
+		<a id="add_issue" class="super large awesome black button wait">No&nbsp;</a>
 		<div style="display:none;" id="more_issues">
 			Add additional issues:
 			<input type="text" id="issues_text"/>
