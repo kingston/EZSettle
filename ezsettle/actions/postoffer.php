@@ -16,7 +16,7 @@ if($_SESSION['offern_num'] == 1){
 	$offer_trial = 0;	
 }
 
-if($offer_trial > 0{
+if($offer_trial > 0){
 	try {
 		$db = new PDO("sqlite:../db/ezsettle.db" );
 	    	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
