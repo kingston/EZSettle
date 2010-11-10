@@ -3,11 +3,15 @@ CREATE TABLE users (
     user_id INTEGER PRIMARY KEY,
     condition INTEGER,
     login_time DATETIME,
-    try_additional_issue INTEGER,
+    try_additional_issue INTEGER, --no = 0, yes = 1
     additional_issue TEXT,
-
-
-);
+	return_laptop INTEGER,
+	pay_back_computer INTEGER,
+	pay_original_ship INTEGER,
+	pay_cost_rental INTEGER,
+	pay_emo_damage INTEGER,
+	pay_return_ship INTEGER
+	);
 
 CREATE TABLE conditions (
     condition_id INTEGER PRIMARY KEY,
@@ -20,16 +24,15 @@ CREATE TABLE pages (
 );
 
 CREATE TABLE times (
-    time_id INTEGER PRIMARY KEY,
-    
     page_fk INTEGER,
     --FOREIGN KEY(page_fk) REFERENCES pages(page_id),
     
     user_fk INTEGER,
     --FOREIGN KEY(user_fk) REFERENCES users(user_id),
     
-    time_spent INTEGER
-);
+    time_spent INTEGER,
+    PRIMARY KEY(page_fk, user_fk)
+    );
 
 CREATE TABLE issues (
     issue_id INTEGER PRIMARY KEY,
