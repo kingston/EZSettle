@@ -23,7 +23,7 @@
 	<div class="prepend-1 span-8 append-2 last">
 		<div style="height: 75px; width:1px;">&nbsp:</div>
 		Do you agree that these are the issues that need to be addressed in this process:<br/>
-		<a href="issues2.php" class="super large awesome red button wait">Yes</a>
+		<div id="go_to_rank_issue" class="super large awesome red button wait">Yes</a>
 		<a id="add_issue" class="super large awesome black button wait">No&nbsp;</a>
 		<div style="display:none;" id="more_issues">
 			Add additional issues:
@@ -52,6 +52,11 @@
 			$("#issues_text").val("");
 			$("#issues_added").show();
 		});	
+		
+		$("#go_to_rank_issue").click(function(){
+			window.location = "issues2.php";
+		});
+		
 		},max_time);
 		
 	});
