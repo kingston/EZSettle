@@ -22,14 +22,14 @@
 			{/section}
 		</table>
 		</div>
-		<div class="prepend-20 span-4 last" ><div id="submit_ranking" href="offer.php" class="super large awesome red button wait">Next »</div></div>
+		<div class="prepend-20 span-4 last" ><div id="submit_ranking" class="super large awesome red button wait">Next »</div></div>
 
 	</div>
 	{include file="chat.tpl"}
 </div><!-- end main body -->
-
-<script type="text/javascript">
 {include file="footer.tpl"}
+<script type="text/javascript">
+
 {literal}
 	//<![CDATA[
 	 $(document).ready(function() {
