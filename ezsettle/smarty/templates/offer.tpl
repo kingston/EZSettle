@@ -76,7 +76,7 @@
 					<tr><td colspan="2">Comments for {$mediator}:<br/>
 					<span class="quiet">(These will not be shown to Casey345)</span></td>
 					<td colspan="2"><div style="float: right;"><textarea rows="3" cols="40" name="mediator" value="" ></textarea></div></td></tr>
-					<tr><td colspan="4"><div style="float: right;"><input type="submit" class="super large awesome red button" name="submit" value="Make offer" /></div></td></tr>
+					<tr><td colspan="4"><div style="float: right;"><input type="submit" class="super large awesome red button wait" name="submit" value="Make offer" /></div></td></tr>
 			</table>
 		</form>
 		</div>
@@ -96,7 +96,7 @@
 		<div style="clear:both; height: 1px;"></div>
 	</div><!-- end loading -->
 </div><!-- end main body -->
-
+{include file="footer.tpl"}
 <script type="text/javascript">
 {literal}
 	//<![CDATA[
@@ -156,4 +156,3 @@
 	//]]>
 {/literal}
 </script>
-{include file="footer.tpl"}
