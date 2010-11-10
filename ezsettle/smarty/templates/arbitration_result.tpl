@@ -51,9 +51,12 @@
 		</tr>
 		
 	</table>
-	<div id="done" >
-		<a class="large super awesome red button" href="http://chimestudies.com/sela/instructions.php">Done</a>
+	<div class="prepend-20 span-4 last">
+		<div style="float: right;">
+		<a href="http://chimestudies.com/sela/instructions.php" class="large super awesome red button">Exit EZSettle</a>
+		</div>
 	</div>
+
 	
 </div><!-- end main body -->
 
