@@ -51,8 +51,8 @@
 		</tr>
 		
 	</table>
-	<div id="done" class="super large awesome red button" />
-		<a href="http://chimestudies.com/sela/instructions.php">Done</a>
+	<div id="done" >
+		<a class="large super awesome red button" href="http://chimestudies.com/sela/instructions.php">Done</a>
 	</div>
 	
 </div><!-- end main body -->
