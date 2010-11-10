@@ -79,11 +79,11 @@
 			
 			$("#accept_offer").click(function() {
 				alert("yo");
-				$.post("actions/offer.php",
+				$.post("offer.php",
 				{offer_num: {/literal}{$offer_num}{literal},
 				accept: "yes"},
 				function(data) {
-					window.location = 'offer.php';
+					//window.location = 'offer.php';
 				},
 				'json'
 				);
