@@ -10,10 +10,10 @@ try {
 
 
     $sql1 = "UPDATE users SET try_additional_issue = 1 WHERE user_id =".$_SESSION['experimental_id']; 
-	$sql2 = "UPDATE users SET additional_issue ='".$_POST['added']."' WHERE user_id =".$_SESSION['experimental_id']; 
+	//$sql2 = "UPDATE users SET additional_issue ='".$_POST['added']."' WHERE user_id =".$_SESSION['experimental_id']; 
     try {
     	$count = $db->exec($sql1);
-    	$count = $db->exec($sql2);
+    //	$count = $db->exec($sql2);
     } catch(PDOException $e){
       echo $e->getMessage();
     }
