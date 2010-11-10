@@ -13,6 +13,25 @@ CREATE TABLE users (
 	pay_return_ship INTEGER
 	);
 
+CREATE TABLE offers (
+    user_fk INTEGER,
+    --FOREIGN KEY(user_fk) REFERENCES users(user_id),
+
+    offer_num INTEGER,
+    
+	return_laptop TEXT, --no = 0, yes = 1
+	pay_back_computer FLOAT,
+	pay_original_ship FLOAT,
+	pay_cost_rental FLOAT,
+	pay_emo_damage FLOAT,
+	pay_return_ship TEXT, --n/a = 0, buyer = 1, seller = 2
+    comment_to_2party TEXT,
+    comment_to_ezsettle TEXT,
+    PRIMARY KEY(user_fk, offer_num)
+);
+
+----------------
+
 CREATE TABLE conditions (
     condition_id INTEGER PRIMARY KEY,
     condition TEXT
@@ -53,19 +72,7 @@ CREATE TABLE ranks (
     importance INTEGER
 );
 
-CREATE TABLE offers (
-    offer_id INTEGER PRIMARY KEY,
-    
-    user_fk INTEGER,
-    --FOREIGN KEY(user_fk) REFERENCES users(user_id),
-    
-    issue_fk INTEGER,
-    --FOREIGN KEY(issue_fk) REFERENCES issues(issue_id),
-    
-    offer_num INTEGER,
-    
-    amount INTEGER
-);
+
 
 CREATE TABLE messages (
     chat_id INTEGER PRIMARY KEY,
