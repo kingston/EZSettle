@@ -66,12 +66,12 @@
 			<table>
 				<tr>
 					<th>Issues:</th>
-					<th>Your Offer 1</th>
-					<th>Casey345's Offer 1</th>
-					<th>Your Offer 2</th>
-					<th>Casey345's Offer 2</th>
-					<th>Your Offer 3</th>
-					<th>Casey345's Offer 3</th>
+					<th>Your Offer1</th>
+					<th>Casey345's Offer1</th>
+					<th>Your Offer2</th>
+					<th>Casey345's Offer2</th>
+					<th>Your Offer3</th>
+					<th>Casey345's Offer3</th>
 				</tr>
 				{section name=issuesIndex loop=$issues}
 					{ if $smarty.section.issuesIndex.index%2 == 0}
