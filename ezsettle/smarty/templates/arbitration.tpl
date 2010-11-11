@@ -46,14 +46,18 @@
 							<th>Likelihood</th>
 						</tr>
 						<tr class="even">
-							<td>Alternative Potential Causes for Damage</td>
+							<td>How likely it is that the latop was damaged after the seller has shipped it?</td>
 							<td style="vertical-align:top;">{$damage_likeliness}/100</td>
 						</tr>
 						<tr>
-							<td>Additional Ideas for Settlement</td>
+							<td>How willing are you to consider keeping the laptop?</td>
 							<td style="vertical-align:top;" >{$creative_likeliness}/100</td>
 						</tr>
 					</table>
+					<br />
+					<div class="loud headline">The messages you sent to the mediator and the other party</div>
+					<p>If you have written any messages to the mediator and Casey345, the messages have been sent to the arbitrator.
+					</p>
 				</div>
 			</div>
 			<div class="loud headline">The offers exchanged</div>
