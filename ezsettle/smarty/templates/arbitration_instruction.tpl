@@ -9,11 +9,10 @@
 	In the next page, you will be able to review a summary of the information that {$ezsettle_small} will consider in the process.
 	</p>
 	</div>
-	<div class="prepend-1 span-4">
-	<div {if $condition==5 || $condition==6}id="send_to_study"{else}id="send_to_arbitration"{/if} class="super large awesome red button" />
+	<div {if $condition==5 || $condition==6}id="send_to_study"{else}id="send_to_arbitration"{/if} class="prepend-1 span-6 super large awesome red button" />
 		Send Case to Arbitration
 	</div>
-	</div>
+
 	<!--<div id="send_to_arbitration" class="prepend-20 span-4 last super large awesome red button" style="float:right;">
 		
 		Send to Arbitration
