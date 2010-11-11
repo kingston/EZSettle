@@ -12,7 +12,7 @@
 				<td class="arb_computer"><img src="images/ezsettle_computer.jpg"> </td>
 			</tr>
 			<tr>
-				<td class="arb_human" >EZSettle trained staff mediator</td>
+				<td class="arb_human" >EZSettle trained staff arbitrator</td>
 				<td class="arb_computer">EZSettle AnaLegal arbitration engine</td>
 			</tr>
 			</table>
