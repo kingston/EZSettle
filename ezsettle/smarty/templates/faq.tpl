@@ -119,9 +119,6 @@
 		var d_e = new Date();
 		time_end = d_e.getTime();
 		expID = $("#expID").attr("exp_id");
-		if((expID == null)||(expID=="")){
-			alert("Hey it's null");
-		}
 		faq = "expID="+expID+"&time_spent="+(time_end-time_start);
 		$.ajax({
   			type: "POST",
