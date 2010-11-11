@@ -67,7 +67,7 @@ if(postVar('issues0')) {
 	}elseif($_SESSION['offer_num'] == 8){
 		$trial = 3;
 	}
-	$sql = "INSERT INTO offers (user_fk, offer_num, return_laptop) VALUES (".$_SESSION['experimental_id'].", ".$trial.",'".postVar('issues0')."')";
+	$sql = "INSERT INTO offers (user_fk, offer_num, return_laptop, pay_back_computer, pay_original_ship, pay_cost_rental, pay_emo_damage, pay_return_ship) VALUES (".$_SESSION['experimental_id'].", ".$trial.",'".postVar('issues0')."', ".postVar('issues1').", ".postVar('issues2').", ".postVar('issues3').", ".postVar('issues4').", '".postVar('issues5')."')";
 
 	try {
     	$count = $db->exec($sql);
