@@ -102,22 +102,15 @@
 	function exit_page(){
 		var d_e = new Date();
 		time_end = d_e.getTime();
-		expID = $("#expID").attr("exp_id");
 		
-		process = "page='process'&time_spent="+(time_end-time_start);
-		$.ajax({
-  			type: "POST",
-   			url: "save_time_on_page.php",
-   			data: process,
-   			success: function(msg){
-     			//alert(msg);
-			//window.location = link;
-
-   			},
-   			error: function(xhr, textStatus, errorThrown){
-   				alert("fail: " + xhr+" "+textStatus + " " + errorThrown);
-   			}
- 		});
+		$.post("actions/save_time_on_page.php",
+     		{page_name:'process',
+     		time_spent:(time_end-time_start)},
+     		function(data){
+     			alert("done");
+     		},
+     		'json'
+     		);
 	}
 //]]>
 {/literal}

@@ -50,3 +50,42 @@
 </div><!-- end main body -->
 
 {include file="footer.tpl"}
+<script type="text/javascript">
+{literal}
+	//<![CDATA[
+	var time_start;
+	var time_end;
+	$(document).ready(function() {
+		$("#process_description").scroll(function() { 
+			var scrollEnd = parseInt($("#process_inner").css('height')) - parseInt($("#process_description").css('height'));
+			if ($("#process_description").scrollTop() >= scrollEnd) {
+				$("#start_error").fadeOut();
+				$("#start").removeClass('disabled').addClass('red').click(function() {
+					window.location = "mediator_statement.php";
+				})
+			}
+		});
+		var d_s = new Date();
+		time_start = d_s.getTime();
+		
+	});
+	$(window).unload(function(){
+		exit_page();
+	});
+	
+	function exit_page(){
+		var d_e = new Date();
+		time_end = d_e.getTime();
+		
+		$.post("actions/save_time_on_page.php",
+     		{page_name:'mediator_statement',
+     		time_spent:(time_end-time_start)},
+     		function(data){
+     			alert("done");
+     		},
+     		'json'
+     		);
+	}
+//]]>
+{/literal}
+</script>
