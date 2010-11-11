@@ -12,8 +12,8 @@
 			</div>
 			
 			<div class="span-24 last">
-				<div class = "span-12">
-					<div class="loud headline" style="border:1px solid black">The issues to settle and your preferences</div>
+				<div class = "span-12" style="border:1px solid black">
+					<div class="loud headline" >The issues to settle and your preferences</div>
 					<table>
 						<tr> 
 							<th>Issues:</th>
