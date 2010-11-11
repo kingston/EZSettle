@@ -51,7 +51,7 @@ if(postVar('issues0')) {
 										postVar('issues5')
 									);
 	//connect to db
-	/*try {
+	try {
 		$db = new PDO("sqlite:../db/ezsettle.db" );
     	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);	    	
     	//echo "PDO connection object created";
@@ -59,7 +59,7 @@ if(postVar('issues0')) {
 	    echo $e->getMessage();
 	}	
 	
-	$sql = "INSERT INTO offers (user_fk, offer_num, return_laptop) VALUES (202, 1,".postVar('issues0').")";
+	/*$sql = "INSERT INTO offers (user_fk, offer_num, return_laptop) VALUES (202, 1,".postVar('issues0').")";
 
 	try {
     	$count = $db->exec($sql);
