@@ -3,6 +3,7 @@
 <div class="main_body">
 	<div class="prepend-1 large loud headline">Mediator Introduction</div>
 	<hr class="space"/>
+	<div class="prepend-1 span-22 append-1 last">
 	<p>Dear Jessie128 and Casey345,</p>
 	<p>
 		Thank you for joining the EZSettle process. {if $condition == 1 || $condition == 2 || $condition == 5}The EZSettle software is{else}I will be your
@@ -41,6 +42,7 @@
 	<div class="prepend-20 span-4 last">
 		<div style="float: right;">
 		<a href="issues.php" class="large super awesome red button">Next »</a>
+		</div>
 		</div>
 		</div>
 
