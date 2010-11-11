@@ -104,11 +104,11 @@
 		time_end = d_e.getTime();
 		expID = $("#expID").attr("exp_id");
 		
-		data = "page='process'&time_spent="+(time_end-time_start);
+		process = "page='process'&time_spent="+(time_end-time_start);
 		$.ajax({
   			type: "POST",
    			url: "save_time_on_page.php",
-   			data: faq,
+   			data: process,
    			success: function(msg){
      			//alert(msg);
 			//window.location = link;

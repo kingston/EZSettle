@@ -49,11 +49,11 @@
 		alert("before");
 		var d_e = new Date();
 		time_end = d_e.getTime();
-		data = "page='cases'&time_spent="+(time_end-time_start);
+		cases = "page='cases'&time_spent="+(time_end-time_start);
 		$.ajax({
   			type: "POST",
    			url: "save_time_on_page.php",
-   			data: faq,
+   			data: cases,
    			success: function(msg){
      			alert("after");
 			//window.location = link;
