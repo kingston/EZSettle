@@ -59,7 +59,9 @@ if(postVar('issues0')) {
 	    echo $e->getMessage();
 	}	
 	
-	$sql = "INSERT INTO offers (user_fk, offer_num, return_laptop) VALUES (".$_SESSION['experimental_id'].", 1,'".postVar('issues0')."')";
+	$trial = $_SESSION['offer_num']/3 + 1;
+	
+	$sql = "INSERT INTO offers (user_fk, offer_num, return_laptop) VALUES (".$_SESSION['experimental_id'].", ".$trial.",'".postVar('issues0')."')";
 
 	try {
     	$count = $db->exec($sql);
