@@ -29,7 +29,7 @@
 			Add additional issues:
 			<input type="text" id="issues_text"/>
 			<input type="submit" class="super medium awesome red button" id="add" value="Add">
-			<div id="issues_added" style="display:none;" class="notice span-6">Unfortunately, the system cannot consider this issue at this time. <a href="issues2.php">Click here to continue</a></div>
+			<div id="issues_added" style="display:none;" class="notice span-6">Unfortunately, the system cannot process additional issue at this time. <a href="issues2.php">Click here to continue</a></div>
 		</div>
 	</div>
 	</div>
