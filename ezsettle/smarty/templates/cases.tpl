@@ -50,12 +50,11 @@
 		var d_e = new Date();
 		time_end = d_e.getTime();
 		
-		$.post("save_time_on_page.php",
+		$.post("actions/save_time_on_page.php",
      		{page_name:'cases',
      		time_spent:(time_end-time_start)},
      		function(data){
-     			$("#issues_text").val("");
-				$("#issues_added").show();
+     			alert("done");
      		},
      		'json'
      		);

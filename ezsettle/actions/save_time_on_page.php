@@ -2,13 +2,13 @@
 ini_set('display_errors', 1);
 
 session_start();
-require_once(dirname(__FILE__) . 'utils.php');
+require_once(dirname(__FILE__) . '/../utils.php');
 $result = array('success' => true);
 
  //ini_set('display_errors', 1);                                                              
  //error_reporting(E_ALL);
 	try {
-    	$db = new PDO("sqlite:db/ezsettle.db" );
+    	$db = new PDO("sqlite:../db/ezsettle.db" );
     	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     	//echo "PDO connection object created";
     } catch(PDOException $e){
