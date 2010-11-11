@@ -53,7 +53,7 @@
 	</table>
 	<div class="prepend-20 span-4 last">
 		<div style="float: right;">
-		<div id="go_to_study" class="large super awesome red button">Exit EZSettle</a>
+		<div id="go_to_study" class="large super awesome red button">Finish</a>
 		</div>
 	</div>
 
