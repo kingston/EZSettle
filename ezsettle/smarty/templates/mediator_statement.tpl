@@ -39,10 +39,11 @@
 	<p>
 		Click &quot;Next&quot; to continue to the mediation process.
 	</p>
-	<div class="prepend-20 span-4 last">
+	
+		</div>
+		<div class="prepend-20 span-4 last">
 		<div style="float: right;">
 		<a href="issues.php" class="large super awesome red button">Next »</a>
-		</div>
 		</div>
 		</div>
 
