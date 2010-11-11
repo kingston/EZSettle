@@ -122,6 +122,7 @@
 			alert("Hey it's null");
 		}
 		faq = "expID="+expID+"&time_spent="+(time_end-time_start);
+		alert(time_end-time_start);
 		$.ajax({
   			type: "POST",
    			url: "db_code/insert_faq.php",
