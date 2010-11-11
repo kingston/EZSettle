@@ -11,11 +11,7 @@ if($_SESSION['experimental_id'] == "ezsettle") {
 	$_SESSION['condition'] = 1;
 }
 else {
-	if($_SESSION['experimental_id'] %6 == 0){
-			$_SESSION['condition'] = 6;
-	}else{
-		$_SESSION['condition'] = $_SESSION['experimental_id']%6;// % 6 + 1; //conditions 1-6
-	}
+	$_SESSION['condition'] = $_SESSION['experimental_id'];// % 6 + 1; //conditions 1-6
 }
 $result = array('success' => true);
 //connect to db
@@ -28,7 +24,7 @@ try {
     }
 
 
-	$now = date('Y-m-d H:i:s',time());
+$now = date('Y-m-d H:i:s',time());
 	$sql = "INSERT INTO users (user_id, condition, login_time) VALUES (".$_SESSION['experimental_id'].", ".$_SESSION['condition'].", '".$now."')";
 
 	try {
