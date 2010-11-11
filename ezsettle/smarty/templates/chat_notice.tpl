@@ -14,7 +14,7 @@
 		<div class="clearfix" style="margin-bottom: 5px;"></div>
 	</div><!-- end chat -->
 {/foreach}
-<div id="typing" style="font-weight:bold; color:red;">{$typing}</div>
+<div id="typing" class="success" style="font-weight:bold; color:red;">{$typing}</div>
 <div style="float: right;" class="super medium awesome red button" id="view_message_history">View Mediator Message History</div>
 
 <div class="clearfix"></div>
