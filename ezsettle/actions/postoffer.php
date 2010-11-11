@@ -41,6 +41,11 @@ if($_SESSION['offer_num'] == 3) {
 	}	
 	
 	$sql = "INSERT INTO damage_creatives (user_fk, damage) VALUES(".$_SESSION['experimental_id'].",".postVar('damage_likeliness').")";
+	try {
+    	$count = $db->exec($sql);
+    } catch(PDOException $e){
+    	echo $e->getMessage();
+    }
 }
 
 if($_POST['accept']){
