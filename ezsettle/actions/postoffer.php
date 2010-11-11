@@ -28,6 +28,22 @@ switch ($_SESSION['offer_num']){
 
 if($_SESSION['offer_num'] == 6) {
  	$_SESSION['creative_likeliness'] = $_POST['creative_likeliness'];
+ 	try {
+		$db = new PDO("sqlite:../db/ezsettle.db" );
+    	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);	    	
+    	//echo "PDO connection object created";
+	} catch(PDOException $e){
+	    echo $e->getMessage();
+	}	
+	
+	$sql = "UPDATE damage_creatives SET creative = ".postVar('creative_likeliness')." WHERE user_fk =".$_SESSION['experimental_id']."";;
+
+	
+	try {
+    	$count = $db->exec($sql);
+    } catch(PDOException $e){
+    	echo $e->getMessage();
+    }
 }
 
 if($_SESSION['offer_num'] == 3) {
