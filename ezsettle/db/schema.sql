@@ -34,9 +34,12 @@ CREATE TABLE damage_creatives(
 	user_fk INTEGER PRIMARY KEY,
 	damage INTEGER,
 	creative INTEGER
-	
 );
 
+CREATE TABLE faqs (
+	user_fk INTEGER PRIMARY KEY,
+	time_spent INTEGER
+);
 ----------------
 
 CREATE TABLE conditions (

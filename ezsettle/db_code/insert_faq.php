@@ -1,4 +1,10 @@
 <?php
+ini_set('display_errors', 1);
+
+session_start();
+require_once(dirname(__FILE__) . '/../utils.php');
+$result = array('success' => true);
+
  //ini_set('display_errors', 1);                                                              
  //error_reporting(E_ALL);
 	try {
@@ -9,7 +15,7 @@
     	echo $e->getMessage();
     }
 
-	$sql = "INSERT INTO faqs (user_fk, time_spent) VALUES (".$_POST['user'].", ".$_POST['time_spent'].")";
+	$sql = "INSERT INTO faqs (user_fk, time_spent) VALUES (".$_SESSION['experimental_id'].", ".$_POST['time_spent'].")";
 
 	try {
     	$count = $db->exec($sql);
@@ -18,4 +24,5 @@
     }
 
 	//echo $count;
+	echo json_encode($result);
 ?>
