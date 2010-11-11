@@ -46,23 +46,19 @@
 	});
 	
 	function exit_page(){
-		alert("before");
+		
 		var d_e = new Date();
 		time_end = d_e.getTime();
-		cases = "page='cases'&time_spent="+(time_end-time_start);
-		$.ajax({
-  			type: "POST",
-   			url: "save_time_on_page.php",
-   			data: cases,
-   			success: function(msg){
-     			alert("after");
-			//window.location = link;
-
-   			},
-   			error: function(xhr, textStatus, errorThrown){
-   				alert("fail: " + xhr+" "+textStatus + " " + errorThrown);
-   			}
- 		});
+		
+		$.post("save_time_on_page.php",
+     		{page_name:'cases',
+     		time_spent:(time_end-time_start)},
+     		function(data){
+     			$("#issues_text").val("");
+				$("#issues_added").show();
+     		},
+     		'json'
+     		);
 	}
 
 //]]>
