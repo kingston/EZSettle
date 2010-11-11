@@ -2,7 +2,7 @@
 ini_set('display_errors', 1);
 
 session_start();
-require_once(dirname(__FILE__) . '/../utils.php');
+require_once(dirname(__FILE__) . 'utils.php');
 $result = array('success' => true);
 
  //ini_set('display_errors', 1);                                                              
