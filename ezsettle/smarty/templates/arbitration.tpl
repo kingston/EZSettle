@@ -7,8 +7,8 @@
 		<div class="span-24 last">			
 			<div class="success">
 				Here is the information that you provided to EZSettle. 
-				{$ezsettle_pronoun_short_big} will use this information to determine 
-				the final settlement of the case.
+				This information will be used to determine 
+				the final settlement of the case in arbitration.
 			</div>
 			
 			<div class="span-24 last">
