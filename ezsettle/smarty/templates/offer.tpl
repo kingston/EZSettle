@@ -100,6 +100,8 @@
 <script type="text/javascript">
 {literal}
 	//<![CDATA[
+	var time_start;
+	var time_end;
 	 $(document).ready(function() {
 		$("input[name='issues0']").change(function() {
 			var returnItem = $("input[name='issues0']:checked").val();
@@ -120,6 +122,8 @@
 		setTimeout(function() {	
 			$("#make_offer").attr("disabled",false);
 		},max_time);
+		var d_s = new Date();
+		time_start = d_s.getTime();
 	});
 
 	
@@ -155,6 +159,31 @@
 			hideLoading();
 			window.location = 'offer.php';
 		}, 3000);
+	}
+	
+	$(window).unload(function(){
+		exit_page();
+	});
+	
+	function exit_page(){
+		var d_e = new Date();
+		time_end = d_e.getTime();
+		if({/literal}{$offer_num}{literal} == 1){
+			num_offer = 1;	
+		}else if({/literal}{$offer_num}{literal} == 4){
+			num_offer = 2;	
+		}else if({/literal}{$offer_num}{literal} == 7){
+			num_offer = 3;	
+		}
+		
+		$.post("actions/save_time_on_page.php",
+     		{page_name:'offers_' + num_offer,
+     		time_spent:(time_end-time_start)},
+     		function(data){
+     			alert("done");
+     		},
+     		'json'
+     		);
 	}
 	//]]>
 {/literal}
