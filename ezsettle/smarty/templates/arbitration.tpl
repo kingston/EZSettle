@@ -62,7 +62,7 @@
 					
 				</div>
 			</div>
-			<div class="loud headline">The offers exchanged</div>
+			<div class="loud headline">Mediation Offers</div>
 			<table>
 				<tr>
 					<th>Issues:</th>
