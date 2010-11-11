@@ -111,7 +111,7 @@
 	});
 	
 	$(window).unload(function(){
-		alert("going to exit!");
+		
 		exit_page();
 	});
 	
@@ -127,7 +127,7 @@
 		$.ajax({
   			type: "POST",
    			url: "db_code/insert_faq.php",
-   			data: ,
+   			data: faq,
    			success: function(msg){
      			alert(msg);
 			//window.location = link;
