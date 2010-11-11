@@ -30,6 +30,13 @@ CREATE TABLE offers (
     PRIMARY KEY(user_fk, offer_num)
 );
 
+CREATE TABLE damage_creatives(
+	user_fk INTEGER PRIMARY KEY,
+	damage INTEGER,
+	creative INTEGER
+	
+);
+
 ----------------
 
 CREATE TABLE conditions (
