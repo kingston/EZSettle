@@ -13,7 +13,7 @@
 	</p>
 	<div class="span-24 last">
 	<div class="success">
-		Summary of The Terms of the Settlement
+		Summary: The Terms of the Final Settlement
 	</div>
 	</div>
 	<table >
