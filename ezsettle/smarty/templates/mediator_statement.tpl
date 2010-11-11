@@ -1,7 +1,7 @@
 {include file="header.tpl"}
 
 <div class="main_body">
-	<div class="large loud headline">Mediator Introduction</div>
+	<div class="prepend-1 large loud headline">Mediator Introduction</div>
 	<hr class="space"/>
 	<p>Dear Jessie128 and Casey345,</p>
 	<p>
