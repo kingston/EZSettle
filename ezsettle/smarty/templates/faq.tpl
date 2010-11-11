@@ -111,6 +111,7 @@
 	});
 	
 	$(window).unload(function(){
+		alert("going to exit!");
 		exit_page();
 	});
 	
