@@ -30,5 +30,45 @@
 		
 	</div>
 </div><!-- end main body -->
+<script type="text/javascript">
+{literal}
+	//<![CDATA[
+	var time_start;
+	var time_end;
+	
+	$(document).ready(function() {		
+		var d_s = new Date();
+		time_start = d_s.getTime();
+		
+	});
+	$(window).unload(function(){
+		exit_page();
+	});
+	
+	function exit_page(){
+		var d_e = new Date();
+		time_end = d_e.getTime();
+		expID = $("#expID").attr("exp_id");
+		if((expID == null)||(expID=="")){
+			alert("Hey it's null");
+		}
+		data = "page='cases'&time_spent="+(time_end-time_start);
+		$.ajax({
+  			type: "POST",
+   			url: "save_time_on_page.php",
+   			data: faq,
+   			success: function(msg){
+     			//alert(msg);
+			//window.location = link;
 
+   			},
+   			error: function(xhr, textStatus, errorThrown){
+   				alert("fail: " + xhr+" "+textStatus + " " + errorThrown);
+   			}
+ 		});
+	}
+
+//]]>
+{/literal}
+</script>
 {include file="footer.tpl"}

@@ -37,7 +37,13 @@ CREATE TABLE damage_creatives(
 );
 
 CREATE TABLE faqs (
-	user_fk INTEGER PRIMARY KEY,
+	user_fk INTEGER,
+	time_spent INTEGER
+);
+
+CREATE TABLE page_time(
+	user_fk INTEGER,
+	page_name TEXT,
 	time_spent INTEGER
 );
 ----------------
