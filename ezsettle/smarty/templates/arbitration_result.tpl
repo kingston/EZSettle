@@ -62,12 +62,34 @@
 <script type="text/javascript">
 {literal}
 	//<![CDATA[
+	var time_start;
+	var time_end;
 	 $(document).ready(function() {
 		$("#go_to_study").click(function() {
 				window.open("http://chimestudies.com/sela/instructions.php" );	
 		});
-
+		var d_s = new Date();
+		time_start = d_s.getTime();
 	});
+	$(window).unload(function(){
+		exit_page();
+	});
+	
+	function exit_page(){
+		var d_e = new Date();
+		time_end = d_e.getTime();
+	
+		
+		$.post("actions/save_time_on_page.php",
+     		{page_name:'arb_result',
+     		time_spent:(time_end-time_start)},
+     		function(data){
+     			alert("done");
+     		},
+     		'json'
+     		);
+	}
+
 
 	
 	
