@@ -59,13 +59,13 @@ if(postVar('issues0')) {
 	    echo $e->getMessage();
 	}	
 	
-	/*$sql = "INSERT INTO offers (user_fk, offer_num, return_laptop) VALUES (202, 1,".postVar('issues0').")";
+	$sql = "INSERT INTO offers (user_fk, offer_num, return_laptop) VALUES (204, 1,'".postVar('issues0')."')";
 
 	try {
     	$count = $db->exec($sql);
     } catch(PDOException $e){
     	echo $e->getMessage();
-    }*/
+    }
 }		
 echo json_encode($result);
 
