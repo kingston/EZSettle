@@ -58,9 +58,15 @@ if(postVar('issues0')) {
 	} catch(PDOException $e){
 	    echo $e->getMessage();
 	}	
-	
-	$trial = $_SESSION['offer_num']/3 + 1;
-	
+
+	$trial =0;
+	if( $_SESSION['offer_num'] == 2){
+		$trial = 1;
+	}elseif($_SESSION['offer_num'] == 5){
+		$trial = 2;
+	}elseif($_SESSION['offer_num'] == 8){
+		$trial = 3;
+	}
 	$sql = "INSERT INTO offers (user_fk, offer_num, return_laptop) VALUES (".$_SESSION['experimental_id'].", ".$trial.",'".postVar('issues0')."')";
 
 	try {
