@@ -56,7 +56,7 @@
 					</table>
 					<br />
 					<div class="loud headline">Exchanged Messages</div>
-					<p class="even">If you have sent to the mediator or Casey345 are included in the arbitration materials.
+					<p class="even">If you sent messages to the mediator or Casey345, they are included in the arbitration materials.
 					</p>
 				</div>
 			</div>
