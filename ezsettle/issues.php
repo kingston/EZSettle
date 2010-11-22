@@ -5,7 +5,7 @@ require_once("include.php");
 $_SESSION['issuesArr']= array('Return laptop', 'Pay back cost of computer', 'Pay back original shipment', 'Pay cost of rental computer', 'Pay emotional distress damages', 'If relevant, who pays the cost of return shipment?');
 
 $_SESSION['chatNew'] = array(
-	array('speaker' => 'EZSettle Mediator says', 'message' => 'In this process, we would like to address the concerns that you and
+	array('speaker' => 'Mediator', 'message' => 'In this process, we would like to address the concerns that you and
 Casey345 raised. We combined the issues that the two of you included in your correspondence
 with PC4U.com into a single list. You may not recognize all the issues in the list, if the other
 party raised an issue that you did not address. After reviewing the list, please click “yes” to

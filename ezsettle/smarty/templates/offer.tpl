@@ -84,7 +84,7 @@
 	</div>
 	{include file="chat.tpl"}
 	<div class="loading" id="loading">
-		<div class="loud headline"><img class="loader" id="loader" src="images/loader_big.gif" />Thanks for waiting...</div>
+		<div class="loud headline"><img class="loader" id="loader" src="images/loader_big.gif" />Thank you for waiting...</div>
 		Please wait while {$mediator} communicates your offer to Casey345.<br/>
 		{$mediator_caps} will come back to you with Casey345's response and/or counteroffer.
 		<br/><div style="clear:both; height: 1px;"></div>

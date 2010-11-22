@@ -26,7 +26,7 @@ switch($_SESSION['condition']) {
 		break;
 }
 $_SESSION['chatNew'] = array(
-							array('speaker' => 'EZSettle Mediator says', 
+							array('speaker' => 'Mediator', 
 								'message' => $med_message)
 							);
 $smarty->assign('username', sessionVar('username'));
