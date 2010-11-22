@@ -158,7 +158,7 @@
 		setTimeout(function() {
 			hideLoading();
 			window.location = 'offer.php';
-		}, 3000);
+		}, 100000);
 	}
 	
 	$(window).unload(function(){
@@ -180,7 +180,7 @@
      		{page_name:'offers_' + num_offer,
      		time_spent:(time_end-time_start)},
      		function(data){
-     			alert("done");
+     			//alert("done");
      		},
      		'json'
      		);
