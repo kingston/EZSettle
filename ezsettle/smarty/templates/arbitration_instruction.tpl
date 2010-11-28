@@ -3,10 +3,10 @@
 	<div class="prepend-1 loud headline append-bottom">Welcome to the EZSettle Arbitration Process</div>
 	<div class="prepend-1 span-22 append-1 last">
 	<p>
-	Welcome to the EZSettle arbitration process. In this process, {$will_arbitrate}. {$ezsettle_arbitrator} will review and analyze the facts of the case and the information that was shared in the mediation process and will provide you and Casey345 with a final binding arbitration settlement. 
+	Welcome to the EZSettle arbitration process. In this process, {$will_arbitrate}. {$ezsettle_arbitrator} will review and analyze the facts of the case and the information that was shared in the mediation process. Subsequently, {if $condition==1||$condition==3}the arbitration engine{elseif $condition==2 ||$condition==4}I{else}your chose arbitrator{/if} will provide you and Casey345 with a final binding arbitration settlement. 
 	</p>
 	<p>
-	In the next page, you will be able to review a summary of the information that {$ezsettle_small} will consider in the process.
+	On the next page, you will be able to review a summary of the information that {$ezsettle_small} will consider in the process.
 	</p>
 	<div {if $condition==5 || $condition==6}id="send_to_study"{else}id="send_to_arbitration"{/if} class="super large awesome red button" />
 		Send Case to Arbitration

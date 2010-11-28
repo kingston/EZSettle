@@ -5,7 +5,7 @@
 {include file="chat_notice.tpl"}
 		<div class="span-24 last">
 		<div class="success">
-				Please indicate here if you are willing to consider this option.{$ezsettle} will
+				Please indicate here how willing you are to consider this option.{$ezsettle} will
 NOT share this information with Casey345.
 			</div>
 			<br/>

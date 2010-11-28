@@ -80,7 +80,7 @@ switch($_SESSION['condition']) {
 	
 	case 5:
 	case 6:
-		$ezsettle_person = "you will be asked to choose between the services of EZSettle’s AnaLegal™ arbitration software or an EZSettle staff mediator, that will";
+		$ezsettle_person = "you will be asked to choose between the services of EZSettle’s AnaLegal™ arbitration software or an EZSettle staff arbitrator, that will";
 		$ezsettle_pronoun = "the arbitrator's";
 		$ezsettle_person_long_cap = "The EZSettle arbitrator";
 		$ezsettle_arbitrating  = "The facts of the";
@@ -118,10 +118,10 @@ switch($_SESSION['offer_num']) {
 	case 3:
 		$_SESSION['chatNew'] = array(
 									array( 'speaker' => 'Mediator',
-										'message' =>"You reported receiving the {$goods} you bought from Casey345 in an unacceptable condition. In e-commerce deals, it is sometimes the case that someone other than the buyer or the seller could have damaged the goods. Try recalling whether the package was open or otherwise damaged when you received it or if someone else received the package on your behalf. Consider whether something might have happened to the package between the time you received it and opened it or before or after you began using it."
+										'message' =>"You reported receiving the laptop in an unacceptable condition. In e-commerce deals, it is sometimes the case that someone other than the buyer or seller could have damaged the goods. Try recalling whether the package was open or otherwise damaged when you received it or if someone else received the package on your behalf. Consider whether something might have happened to the package between the time you received it and opened it or before or after you began using it."
 									),
 									array( 'speaker' => 'Mediator',
-										'message' =>"Use the scale below to mark how likely it is that the {$goods} {$past_v2be} damaged AFTER the seller has shipped it. {$ezsettle} will NOT share this information with Casey345"
+										'message' =>"Use the scale below to mark how likely it is that the laptop was damaged AFTER the seller has shipped it. {$ezsettle} will NOT share this information with Casey345"
 									)
 								);
 		break;
@@ -129,10 +129,10 @@ switch($_SESSION['offer_num']) {
 	case 4:
 		$_SESSION['chatNew'] = array(
 									array( 'speaker' => 'Mediator',
-										'message' =>"As you may have noticed, after one mediation round the offers that you and Casey345 exchanged are still quite far apart. Please give some thought to Casey345's response, and consider whether someone else might have damaged the {$goods} as well as any other relevant factors."
+										'message' =>"After one mediation round the offers that you and Casey345 exchanged are still quite far apart. Consider your estimation of the likelihood that the laptop was not damaged by the seller, as well as any other relevant factors."
 									),
 									array( 'speaker' => 'Mediator',
-										'message' =>"Then, please make your second offer. You will be able to make one more offer later on."
+										'message' =>"Then, please make your second offer. You will be able to make one more offer after this one."
 									)
 								);
 		break;
@@ -144,13 +144,13 @@ switch($_SESSION['offer_num']) {
 									),
 									array('speaker' => 'Message from Casey345',
 									'style'=>'second_party',
-								'message' =>"This just doesn’t make sense. I mean, really, the laptop was in perfect condition when I sent it, and I don't think that you can prove otherwise. (The emotional distress really has nothing to do with me, much like the rental computer). BUT, following {$mediator}'s suggestion, I'm willing to offer something because of the (slim!) chance that I didn't pack the package well (which I don't think happened, but ok), and because I'm willing to split with you the chance that the delivery service damaged the laptop. Mainly, I just want to get this thing over with.")
+								'message' =>"This just doesn’t make sense. I mean, the laptop was in perfect condition when I sent it, and I don't think that you can prove otherwise. (The emotional distress really has nothing to do with me, much like the rental computer). BUT, following {$mediator}'s suggestion, I'm willing to offer something because of the (slim!) chance that I didn't pack the package well (which I don't think happened, but ok), and because I'm willing to split with you the chance that the laptop was somehow damaged on its way to you. Mainly, I just want to get this thing over with.")
 								);
 		break;
 	case 6:
 		$_SESSION['chatNew'] = array(
 									array( 'speaker' => 'Mediator',
-										'message' =>"You and Casey345 made some good progress, but your offers are still quite far apart. Before you make your last offer, {$ezsettle} would like you to think creatively about options you may have not considered yet. {$present_v2be_cap}the disputed {$goods} of any value to you? Perhaps you can keep the {$goods} for your personal use or re-sell it yourself, and ask Casey345 for less money?"
+										'message' =>"You and Casey345 made some good progress, but your offers are still quite far apart. Before you make your last offer, {$ezsettle} would like you to think creatively about options you may have not considered yet. Is the laptop of any value to you? Can you keep the laptop for your personal use? Can you re-sell the laptop yourself and ask Casey345 for less money?"
 									)
 									//,
 									//array( 'speaker' => 'Mediator',
@@ -165,7 +165,7 @@ switch($_SESSION['offer_num']) {
 										'message' =>"This is your third and final opportunity to make a mediation offer to Casey345 (Casey345 will be able to make a final offer too)."
 									),
 									array( 'speaker' => 'Mediator',
-										'message' =>"When you make your final offer, consider keeping the laptop and adjusting the financial compensation you are requesting accordingly. Remember that this is also your final opportunity to share information with {$ezsettle_me} or send messages to Casey345."
+										'message' =>"When you make your final offer, consider keeping the laptop and adjusting the financial compensation you are requesting accordingly. Remember that this is your final opportunity to share information with {$ezsettle_me} or send messages to Casey345."
 									)
 								);
 
@@ -177,9 +177,9 @@ switch($_SESSION['offer_num']) {
 										),
 										array('speaker' => 'Message from Casey345',
 									'style'=>'second_party',
-								'message' =>"I hope you realize how ridiculous the is the situation from my perspective. I’m making this final offer as an act of good faith and to get this over with. If you don’t accept it, whatever, let’s see what the arbitrator has to say."),
+								'message' =>"I hope you realize how ridiculous this situation is from my perspective. I’m making this final offer as an act of good faith and to get this over with. If you don’t accept it, whatever, let’s see what the arbitrator has to say."),
 										array( 'speaker' => 'Mediator',
-											'message' =>"{$ezsettle} would like to remind you that if you reject Casey345's offer, {$ezsettle} will transfer your case to arbitration, where {$ezsettle_person} review information exchanged in the mediation and provide you with a final binding settlement."
+											'message' =>"{$ezsettle} would like to remind you that if you reject Casey345's offer, {$ezsettle} will transfer your case to arbitration, where {$ezsettle_person} review the information that was exchanged in the mediation and provide you and Casey345 with a final binding settlement."
 										)
 									);
 	  	break;
