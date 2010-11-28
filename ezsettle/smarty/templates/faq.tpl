@@ -5,11 +5,11 @@
 	<ol class="faq">
 	<li><div class="loud q" id="1"><span id="arrow1"><img src="images/arrow_closed.png"/></span> What is Online Dispute Resolution (ODR)?</div>
 	<div class="quiet box hide" id="a1">
-	Online dispute resolution” (ODR) refers to means for settling disputes between parties in an online setting. ODR typically involves mediation or arbitration, or a combination of the two processes. EZSettle is a quick, convenient, and simple to use ODR system.</div>
+	Online dispute resolution” (ODR) refers to means for settling disputes between parties in an online setting. ODR typically involves mediation or arbitration, or a combination of the two processes. EZSettle is a quick, convenient, and simple-to-use ODR system.</div>
 	</li>
 	
 	<li><div class="loud q" id="2"><span id="arrow2"><img src="images/arrow_closed.png"/></span> How do I use the EZSettle system?</div>
-		<div class="quiet box hide" id="a2">EZSettle is an entirely web based ODR system. The system is available only for EZSettle registered users, or for clients of Amazon.com; E-bay.com, and PC4U.com. Please review our 6-step process page [LINK] before going to our homepage to start a case.
+		<div class="quiet box hide" id="a2">EZSettle is an entirely web-based ODR system. The system is available only for EZSettle registered users, or for clients of Amazon.com; E-bay.com, and PC4U.com. Please review our 6-step process page [LINK] before going to our homepage to start a case.
 	</div></li>
 	
 	<li><div class="loud q" id="3"><span id="arrow3"><img src="images/arrow_closed.png"/></span> When can I access the system?</div>
@@ -25,7 +25,13 @@
 	<div class="quiet box hide" id="a6">The Respondent is the party responding to the case. The Respondent may be either a buyer or a seller.</div></li>
 	
 	<li><div class="loud q" id="7"><span id="arrow7"><img src="images/arrow_closed.png"/></span> Can EZSettle generate efficient solutions?</div>
-	<div class="quiet box hide" id="a7">The EZSettle process is structured to help the parties to gain better understanding of their interests and the options for resolving their dispute in a consensual mediation process. If agreement is not reached, EZSettles helps the parties reach a fair and professional final settlement in arbitration. EZSettle’s preference analysis tools know exactly how both parties value the multiple issues that comprise every dispute. EZSettle takes that knowledge and uses the sophisticated optimization algorithms of the AnaLegal computational system to generate solutions that maximize satisfaction for both parties.</div></li>
+	<div class="quiet box hide" id="a7">The EZSettle process is structured to help the parties to gain better understanding of their
+interests and the options for resolving their dispute in a consensual mediation process. If
+agreement is not reached, EZSettle helps the parties reach a fair and professional final
+settlement in arbitration. EZSettle’s preference analysis tools know exactly how both parties value
+the multiple issues that comprise every dispute. EZSettle takes that knowledge and uses the
+sophisticated optimization algorithms of the AnaLegal computational system to generate solutions
+that maximize satisfaction for both parties.</div></li>
 
 	<li><div class="loud q" id="8"><span id="arrow8"><img src="images/arrow_closed.png"/></span> What is mediation?</div>
 	<div class="quiet box hide" id="a8">Mediation is a way of resolving disputes between two parties through the use of a third party facilitator (termed a mediator). The purpose of the mediator is to structure the negotiation between the two parties with the intent of reaching a mutually acceptable resolution. Mediation is not a legally binding process.</div></li>
@@ -62,7 +68,8 @@
 	<div class="quiet box hide" id="a13">No. Once an offer is made in the EZSettle system, it is considered a legal contract.</div></li>
 
 	<li><div class="loud q" id="14"><span id="arrow14"><img src="images/arrow_closed.png"/></span> Are EZSettle transactions secure?</div>
-	<div class="quiet box hide" id="a14">EZSettle currently employs the widely used OpenSSL protocol with the 168-bit triple-DES encryption algorithm to provide state of the art security for your online dispute resolution needs.</div></li>
+	<div class="quiet box hide" id="a14">EZSettle currently employs the widely used OpenSSL protocol with the 168-bit triple-DES
+encryption algorithms to provide state-of-the-art security for your online dispute resolution needs.</div></li>
 
 	<li><div class="loud q" id="15"><span id="arrow15"><img src="images/arrow_closed.png"/> Do I have to accept one of the other party’s offers?</span></div>
 	<div class="quiet box hide" id="a15">No. You are not required to accept any of the other party’s offers during the mediation stage. However, if no agreement is reached the case will proceed to binding arbitration.</div></li>
