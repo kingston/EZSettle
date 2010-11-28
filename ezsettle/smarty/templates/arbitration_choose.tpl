@@ -17,7 +17,6 @@
 			</table>
 		</div>
 	</div>
-<!--	{include file="chat.tpl"}-->
 </div><!-- end main body -->
 <script type="text/javascript">
 {literal}
