@@ -2,7 +2,6 @@
 <div class="main_body">
 	<div class="loud headline append-bottom">Choose Arbitration Service</div>
 	<div class="span-24 last">
-		<!--{include file="chat_notice.tpl"}-->
 		You and Casey345 chose the same arbitration service. Click 'Next' to move to
 		arbitration.
 		<div class="prepend-20 span-4 last">
@@ -11,7 +10,7 @@
 			</div></td>
 		</div>
 	</div>
-	<!--{include file="chat.tpl"}-->
+
 </div><!-- end main body -->
 <script type="text/javascript">
 {literal}
