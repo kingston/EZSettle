@@ -6,11 +6,11 @@
 	<div class="prepend-1 span-22 append-1 last">
 	<p>Dear Jessie128 and Casey345,</p>
 	<p>
-		Thank you for joining the EZSettle process. {if $condition == 1 || $condition == 2 || $condition == 5}The EZSettle software is{else}I will be your
-		mediator, and I'm{/if} here to help you solve this case. {if $condition == 1 || $condition == 2 || $condition == 5}Here is a quick explanation on{else}
-		Let me first quickly explain{/if} how our process works. We begin with trying to reach
-		agreement in mediation. After agreeing on the list of issues that need to be resolved and
-		individually ranking their importance to you, each one of you will be able to make up to 3
+		Thank you for choosing the EZSettle process. {if $condition == 1 || $condition == 2 || $condition == 5}The EZSettle software is{else}I will be your
+		mediator, and I am{/if} here to help you solve the case. {if $condition == 1 || $condition == 2 || $condition == 5}Here is a brief explanation on{else}
+		Let me first briefly explain{/if} how the process works. It begins by trying to reach
+		agreement in mediation. After agreeing on the list of issues that need to be resolved, each of you will 
+		individually indicate the importance of each of these items to you. Each one of you will be able to make up to three
 		settlement offers, which the other party can accept or reject. By custom, the complainant makes
 		the first offer. Throughout the process, {if $condition == 1 || $condition == 2 || $condition == 5}the system{else}I{/if} will communicate with you
 		separately. Any information you share with {if $condition == 1 || $condition == 2 || $condition == 5}the system{else}me{/if} remains completely
@@ -21,19 +21,20 @@
 
 	<p>
 		As you will be making offers, {if $condition == 1 || $condition == 2 || $condition == 5}the system{else}I{/if} will make suggestions to help you
-		reach agreement. If after 3 offers and counter offers you will not reach agreement, you will be
+		reach agreement. {if $condition == 1 || $condition == 2 || $condition == 5}The system's{else}My{/if} messages to you will appear in chat boxes at the
+		top of the page. If after three offers and counter offers you will not reach agreement, you will be
 		transferred to the EZSettle arbitration process. {if $condition == 1 || $condition == 3}The EZSettle professional AnaLegal arbitration
 		software will generate a binding settlement for you{elseif $condition==2 || $condition==4}An EZSettle professional staff arbitrator
-		will provide you with a binding settlement{else}You will be asked to choose receiving a binding
-		settlement from either the EZSettle professional AnaLegal arbitration software or one of our
+		will provide you with a binding settlement{else}You will be asked to decide whether you will receive a binding
+		settlement from either the EZSettle professional AnaLegal arbitration software or an EZSettle
 		professional staff arbitrators{/if}. The arbitration settlement will be based on information received
 		during the mediation.
 	</p>
 
 	<p>
 		Some people reach mutual agreement in mediation; others prefer to decline the last offer and
-		proceed to arbitration. The decision depends on the assessment of the ability to receive a better
-		arbitration settlement compared to the last mediation offer by the other party.
+		proceed to arbitration. The decision depends, among other things, on the assessment of the potential ability to receive a better
+		arbitration settlement compared to the last offer that was made in the mediation.
 	</p>
 	
 	<p>
