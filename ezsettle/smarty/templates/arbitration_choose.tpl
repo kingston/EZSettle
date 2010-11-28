@@ -17,6 +17,12 @@
 			</table>
 		</div>
 	</div>
+	<div class="loading" id="loading">
+		<div class="loud headline"><img class="loader" id="loader" src="images/loader_big.gif" />Thank you for waiting...</div>
+		Please wait Casey345 chooses an arbitrator.<br/>
+		<br/><div style="clear:both; height: 1px;"></div>
+		<div style="clear:both; height: 1px;"></div>
+	</div><!-- end loading -->
 </div><!-- end main body -->
 <script type="text/javascript">
 {literal}
