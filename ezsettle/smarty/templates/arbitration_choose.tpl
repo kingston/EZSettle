@@ -80,6 +80,14 @@
 		exit_page();
 	});
 	
+	function exit_wait() {
+		alert("exit_wait");
+		setTimeout(function() {
+			hideLoading();
+			window.location = 'offer.php';
+		}, 100000);
+	}
+	
 	function exit_page(){
 		var d_e = new Date();
 		time_end = d_e.getTime();
@@ -93,6 +101,7 @@
      		},
      		'json'
      		);
+     		exit_wait();
 	}
 
 	//]]>
