@@ -45,7 +45,7 @@ switch($_SESSION['condition']) {
 		$past_v2be = "was";
 		$present_v2be_cap = "Is";
 		$ezsettle = "I";
-		$mediator = "the mediator";
+		$mediator = "I";
 		$ezsettle_i_small = "I";
 		$ezssetle_me = "me";
 		$typing = "The mediator is typing ... ";
@@ -156,7 +156,7 @@ switch($_SESSION['offer_num']) {
 	case 6:
 		$_SESSION['chatNew'] = array(
 									array( 'speaker' => 'Mediator',
-										'message' =>"You and Casey345 made some good progress, but your offers are still quite far apart. Before you make your last offer, {$ezsettle} would like you to think creatively about options you may have not considered yet. Is the laptop of any value to you? Can you keep the laptop for your personal use? Can you re-sell the laptop yourself and ask Casey345 for less money?"
+										'message' =>"You and Casey345 made some good progress, but your offers are still quite far apart. Before you make your last offer, {$mediator} would like you to think creatively about options you may have not considered yet. Is the laptop of any value to you? Can you keep the laptop for your personal use? Can you re-sell the laptop yourself and ask Casey345 for less money?"
 									)
 									//,
 									//array( 'speaker' => 'Mediator',
