@@ -14,7 +14,7 @@
 		settlement offers, which the other party can accept or reject. By custom, the complainant makes
 		the first offer. Throughout the process, {if $condition == 1 || $condition == 2 || $condition == 5}the system{else}I{/if} will communicate with you
 		separately. Any information you share with {if $condition == 1 || $condition == 2 || $condition == 5}the system{else}me{/if} remains completely
-		confidential. If you would like {if $condition == 1 || $condition == 2 || $condition == 5}the system{else}me{/if}to share particular information with
+		confidential. If you would like {if $condition == 1 || $condition == 2 || $condition == 5}the system{else}me{/if} to share particular information with
 		the other party, you may do so by using the chat box titled “share message with the other party”.
 		Please respect each other and avoid using foul language.
 	</p>

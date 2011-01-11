@@ -19,7 +19,7 @@
 		<div class="quiet box" id="a2">
 			<ul>
 				<li>{if $condition == 1 || $condition == 2 || $condition == $5}The system presents the parties{else}Our Mediator presents the parties{/if} 
-					with an initial list of issues that need to resolved, based on the case referral letter from the e-commerce
+					with an initial list of issues that need to be resolved, based on the case referral letter from the e-commerce
 					platform (Amzon.com; E-bay; PC4U.com) and amend or confirm it.
 				</li>
 			</ul>
