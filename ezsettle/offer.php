@@ -287,17 +287,31 @@ if($_SESSION['accept'] == 'yes'){
 	}
 }else if($_SESSION['offer_num']== 11){
 	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
-		
-		$smarty->display('arbitration_instruction.tpl');
+		$smarty->display('choose_pre_arbitration.tpl');
+		//$smarty->display('arbitration_instruction.tpl');
 		
 	}else{
 		$smarty->display('arbitration_result.tpl');	
 	}
 }else if($_SESSION['offer_num']== 12){
-	$smarty->display('arbitration.tpl');
+	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
+		$smarty->display('arbitration_instruction.tpl');
+		
+	}else{
+		$smarty->display('arbitration.tpl');
+	}
 }else if($_SESSION['offer_num']== 13){
+	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
+		$smarty->display('arbitration.tpl');
+		
+	}else{	
 		$smarty->display('arbitration_result.tpl');
-}else if($_SESSION['offer_num']%3 == 1) {
+	}
+}else if($_SESSION['offer_num']== 13){
+	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
+		$smarty->display('arbitration_result.tpl');
+	}
+} else if($_SESSION['offer_num']%3 == 1) {
 	$smarty->display('offer.tpl');
 }
 
