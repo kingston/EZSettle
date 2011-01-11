@@ -97,8 +97,10 @@ switch($_SESSION['condition']) {
 switch($_SESSION['offer_num']) {
 	case 1:
 		$s = "";
-		if ($ezsettle_i_small != "I"){
-			$s = "s"	
+		if ($ezsettle_i_small == "I"){
+			$s = "";	
+		}else{
+			$s = "s";	
 		}
 		$_SESSION['chatNew'] = array(
 								array(	'speaker' => 'Mediator', 
