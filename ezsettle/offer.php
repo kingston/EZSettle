@@ -187,7 +187,7 @@ switch($_SESSION['offer_num']) {
 									'style'=>'second_party',
 								'message' =>"I hope you realize how ridiculous this situation is from my perspective. I’m making this final offer as an act of good faith and to get this over with. If you don’t accept it, whatever, let’s see what the arbitrator has to say."),
 										array( 'speaker' => 'Mediator',
-											'message' =>"{$ezsettle} would like to remind you that if you reject Casey345's offer, {$ezsettle} will transfer your case to arbitration, where {$ezsettle_person} review the information that was exchanged in the mediation and provide you and Casey345 with a final binding settlement."
+											'message' =>"{$ezsettle} would like to remind you that if you reject Casey345's offer, {$mediator} will transfer your case to arbitration, where {$ezsettle_person} review the information that was exchanged in the mediation and provide you and Casey345 with a final binding settlement."
 										)
 									);
 	  	break;
