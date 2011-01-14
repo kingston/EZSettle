@@ -4,10 +4,7 @@
 	<div class="span-24 last">
 {include file="chat_notice.tpl"}
 		<div class="span-24 last">
-		<div class="success">
-				Please indicate here how willing you are to consider these options.{$ezsettle} will
-NOT share this information with Casey345.
-			</div>
+		
 			<br/>
 		<div class="span-3">Completely Unwilling&nbsp;&nbsp;&nbsp;</div><div id="damage_slider" class="span-11" style="width: 400px;"></div><div class="span-4">&nbsp;&nbsp;&nbsp;Extremely<br />&nbsp;&nbsp;&nbsp;Willing</div>
 		<div class="span-4 last"><a id="next" class="super large awesome red button wait">Next »</a></div>
