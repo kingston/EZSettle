@@ -20,7 +20,7 @@
 			<ul>
 				<li>{if $condition == 1 || $condition == 2 || $condition == $5}The system presents the parties{else}Our Mediator presents the parties{/if} 
 					with an initial list of issues that need to be resolved, based on the case referral letter from the e-commerce
-					platform (Amzon.com; E-bay; PC4U.com) and amend or confirm it.
+					platform (Amzon.com; E-bay; PC4U.com). Parties amend or confirm the list.
 				</li>
 			</ul>
 		</div></li>
@@ -36,12 +36,12 @@
 	<div class="quiet box" id="a4">
 		<ul> 
 			<li>Parties go through up to three rounds of offers and counter-offers in the mediation stage.</li>
-			<li>The EZSettle {if $condition == 1 || $condition == 2 || $condition == 5}mediation software{else}staff mediator{/if} 
+			<li>EZSettle {if $condition == 1 || $condition == 2 || $condition == 5}mediation software{else}staff mediator{/if} 
 				works independently and confidentially with each party to advance a settlement and maximize benefits.</li>
 			<li>{if $condition == 1 || $condition == 2 || $condition == 5}The system{else}The staff mediator{/if} never shares information communicated by
 				one party with another party. However, parties may communicate with each other through
 				the {if $condition == 1 || $condition == 2 || $condition == 5}system{else}mediator{/if} by typing messages in the designated text box.</li>
-			<li>If no agreement is reached within 3 rounds of mediation, the case is directed to the EZSettle final arbitration process.</li>
+			<li>If no agreement is reached within three rounds of mediation, the case is directed to the EZSettle final arbitration process.</li>
 		</ul>
 	</div></li>
 	
@@ -51,7 +51,7 @@
 			<li>{if $condition == 1 || $condition == 3}The EZSettle AnaLegal™ professional arbitration software reviews{elseif $condition == 2 || $condition == 4}An EZSettle
 				professional staff arbitrator reviews{else}EZSettle asks the parties to choose using either
 				the EZSettle AnaLegal™ professional arbitration software or an EZSettle professional
-				staff arbitrator to review{/if} all the information that was received in the mediation stage,
+				staff arbitrator to review{/if} the information that was received in the mediation stage
 				{if $condition == 1 || $condition == 3}and generates{else}and provides the parties with{/if} a binding fair settlement that
 				represents an equitable solution and maximizes benefits for the parties.</li>
 		</ul>

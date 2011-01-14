@@ -27,13 +27,13 @@
 		software will generate a binding settlement for you{elseif $condition==2 || $condition==4}An EZSettle professional staff arbitrator
 		will provide you with a binding settlement{else}You will be asked to decide whether you will receive a binding
 		settlement from either the EZSettle professional AnaLegal arbitration software or an EZSettle
-		professional staff arbitrators{/if}. The arbitration settlement will be based on information received
+		professional staff arbitrator{/if}. The arbitration settlement will be based on information received
 		during the mediation.
 	</p>
 
 	<p>
 		Some people reach mutual agreement in mediation; others prefer to decline the last offer and
-		proceed to arbitration. The decision depends, among other things, on the assessment of the potential ability to receive a better
+		proceed to arbitration. The decision depends, among other things, on the assessment of the potential to receive a better
 		arbitration settlement compared to the last offer that was made in the mediation.
 	</p>
 	
