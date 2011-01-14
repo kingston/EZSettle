@@ -157,7 +157,9 @@ switch($_SESSION['offer_num']) {
 		$_SESSION['chatNew'] = array(
 									array( 'speaker' => 'Mediator',
 										'message' =>"You and Casey345 made some good progress, but your offers are still quite far apart. Before you make your last offer, {$mediator} would like you to think creatively about options you may have not considered yet. Is the laptop of any value to you? Can you keep the laptop for your personal use? Can you re-sell the laptop yourself and ask Casey345 for less money?"
-									)
+									),
+									array('speaker' => 'Mediator',
+									'message'=>"Please indicate here how willing you are to consider these options.{$ezsettle} will NOT share this information with Casey345.")
 									//,
 									//array( 'speaker' => 'Mediator',
 								//			'message' => "When you make your final offer, consider keeping the {$goods} and adjusting the financial compensation you are requesting accordingly"
