@@ -8,7 +8,7 @@
 			<div class="success">
 				Here is the information that you provided to EZSettle. 
 				This information will be used to determine 
-				the final settlement of the case in arbitration.
+				the final settlement of the case.
 			</div>
 			
 			<div class="span-24 last">
@@ -190,8 +190,8 @@
 	{include file="chat.tpl"}
 	<div class="arb_loading" id="loading" style="display:none">
 				<div class="loud headline"><img class="loader" id="loader" src="images/loader_big.gif" />Thank you for waiting...</div>
-				Please wait for your arbitration Settlement.{$ezsettle_arbitrating} case and the information that was shared in the mediation process{if isset($ezsettle_being_considered)} {$ezsettle_being_considered} {/if}.<br/>
-				The review and analysis process may take a few minutes, please wait for a pop-up window with the terms of the binding arbitration settlement to appear here.
+				Please wait for your arbitration Settlement.<p>{$ezsettle_arbitrating} case and the information that was shared in the mediation process{if isset($ezsettle_being_considered)} {$ezsettle_being_considered} {/if}.<br/>
+				The arbitration review and analysis process may take a few minutes, please wait for a pop-up window with the terms of the binding arbitration settlement to appear here.</p>
 				<br/><div style="clear:both; height: 1px;"></div>
 				<div style="clear:both; height: 1px;"></div>
 			</div><!-- end loading -->

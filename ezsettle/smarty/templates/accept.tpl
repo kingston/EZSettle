@@ -2,7 +2,7 @@
 <div class="main_body">
 	<div class="large loud headline">Resolution</div>
 	<hr class="space"/>
-	Congratulations! You and Casey345 have reached an agreement about the terms of your settlement.
+	Congratulations! You and Casey345 have reached an agreement on the terms of your settlement.
 	<hr class="space"/>
 	According to your agreement:
 				<table>

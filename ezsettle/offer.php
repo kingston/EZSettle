@@ -80,7 +80,7 @@ switch($_SESSION['condition']) {
 	
 	case 5:
 	case 6:
-		$ezsettle_person = "you will be asked to choose between the services of EZSettle’s AnaLegal™ arbitration software or an EZSettle staff arbitrator, that will";
+		$ezsettle_person = "you will be asked to choose between the services of EZSettle’s AnaLegal™ arbitration software or an EZSettle staff arbitrator that will";
 		$ezsettle_pronoun = "the arbitrator's";
 		$ezsettle_person_long_cap = "The EZSettle arbitrator";
 		$ezsettle_arbitrating  = "The facts of the";
