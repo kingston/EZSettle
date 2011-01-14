@@ -19,7 +19,7 @@
 	</div>
 	<div class="loading" id="loading">
 		<div class="loud headline"><img class="loader" id="loader" src="images/loader_big.gif" />Thank you for waiting...</div>
-		Please wait Casey345 chooses an arbitrator.<br/>
+		Please wait while Casey345 chooses an arbitrator.<br/>
 		<br/><div style="clear:both; height: 1px;"></div>
 		<div style="clear:both; height: 1px;"></div>
 	</div><!-- end loading -->
@@ -82,6 +82,7 @@
 	
 	function exit_wait() {
 		//alert("exit_wait");
+		showLoading();
 		setTimeout(function() {
 			hideLoading();
 			window.location = 'offer.php';
