@@ -81,7 +81,7 @@
 	});
 	
 	function exit_wait() {
-		alert("exit_wait");
+		//alert("exit_wait");
 		setTimeout(function() {
 			hideLoading();
 			window.location = 'offer.php';
