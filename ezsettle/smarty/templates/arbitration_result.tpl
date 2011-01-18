@@ -66,7 +66,7 @@
 	var time_end;
 	 $(document).ready(function() {
 		$("#go_to_study").click(function() {
-				window.open("http://chimestudies.com/sela/instructions.php" );	
+				window.open("https://stanforduniversity.qualtrics.com/SE/?SID=SV_26sE8JX0VKJ5FNq" );	
 		});
 		var d_s = new Date();
 		time_start = d_s.getTime();

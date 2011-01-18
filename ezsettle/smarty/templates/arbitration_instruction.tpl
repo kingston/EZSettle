@@ -40,7 +40,7 @@
 		
 		$("#send_to_study").click(function() {
 			alert("Please complete the mediation questionnaire and then return to the EZSettle website to complete the arbitration.");
-			window.open("http://chimestudies.com/sela/instructions.php" );
+			window.open("https://stanforduniversity.qualtrics.com/SE/?SID=SV_26sE8JX0VKJ5FNq" );
 			$.post("actions/postoffer.php",
 			{offer_num: {/literal}{$offer_num}{literal}}, //Add info about choice here
 			function(data) {
