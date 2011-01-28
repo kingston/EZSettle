@@ -17,6 +17,12 @@
 	<p>
 	This study is intended to test a new service called <i>EZSettle</i>.
 	</p>
+        <p>
+    IMPORTANT:<u>Before you continue reading, please close ALL other applications on your
+    computer, including other web-pages, IM, chat, and file-sharing programs. Please do NOT open
+    any applications during the experiment: it will interfere with the operation of the experimental system.
+        </u>
+        </p>
 	<p>
 	You and another participant will each be playing the role of a person who has been involved in
 	an e-commerce transaction in which something has gone wrong. You were randomly assigned
