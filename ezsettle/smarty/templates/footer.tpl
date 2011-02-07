@@ -21,13 +21,13 @@
 				max_time = time;	
 			}
 			var elem = $(this);
-			setTimeout(function() { $(elem).fadeIn();}, time);
+			setTimeout(function() { $(elem).fadeIn();}, time+4000);
 		});
 		
 		setTimeout(function() {	
 			$("#typing").hide();
 			$('.wait.button').removeClass('disabled');
-			},max_time);
+			},max_time + 4000);
 		
 		
 
