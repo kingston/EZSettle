@@ -4,8 +4,7 @@
 <hr class="space"/>
 <div class="prepend-1 span-22 append-1 last">
 	<p>
-	The mediation process will be conducted by {if $condition == 1 || $condition == 2 || $condition == 5}ProSet™, <i>EZSettle</i>’s mediation software
-	{else}Avery Campbell, an <i>EZSettle</i> staff mediator{/if}.
+	The mediation process will be conducted by {if $condition == 1 || $condition == 2 || $condition == 5}ProSet™, <i>EZSettle</i>’s mediation software{else}Avery Campbell, an <i>EZSettle</i> staff mediator{/if}.
 	</p>
 	<div class="prepend-1 span-20 append-2 last">
 	<table>
