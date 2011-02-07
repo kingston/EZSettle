@@ -5,7 +5,12 @@
 		{literal}
 			//<![CDATA[
 		$(document).ready(function() {
-		$('.wait.button').addClass('disabled');
+				setTimeout("waitInBeginning()",4000);
+		
+	});
+	
+	function waitInBeginning(){
+	$('.wait.button').addClass('disabled');
 		max_time = 0;
 		accumulated_time = 0;
 		$(".chatnotice").each(function(index) {
@@ -39,9 +44,8 @@
 				}, 'json'
 			);
 		});
-		
-		
-	});
+	
+	}
 	function closeNotice(id) {
 		$("#"+id).hide();
 	}

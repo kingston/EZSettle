@@ -3,10 +3,14 @@
 	<div class="loud headline append-bottom">Final Arbitration Settlement</div>
 	
 	<p>
+	{if $condition==2||$condition==4}
+	As an EZSettle professional staff arbitrator, I reviewed your case and concluded that based on the available information the terms of settlement that are presented below would bring this dispute to its fair conclusion. </p>     
+	<p>  
+    Based on the available information, I rejected the claim{else}
 	{$ezsettle_person_long_cap} reviewed your case and concluded that based on the available information the terms of settlement that are presented below would bring this 		dispute to its fair conclusion. 
 	</p>
 	<p>
-	Based on the available information {$ezsettle_arbitrator_result} rejected the claim to return the laptop and pay back the cost of the original shipment and the cost of the rental computer. {$ezsettle_pronoun_short_big} concluded that, Seller345 should pay Buyer128 $500 for the cost of the laptop and $100 for emotional distress. 
+	Based on the available information {$ezsettle_arbitrator_result} rejected the claim{/if} to return the laptop and pay back the cost of the original shipment and the cost of the rental computer. {$ezsettle_pronoun_short_big} concluded that, Seller345 should pay Buyer128 $500 for the cost of the laptop and $100 for emotional distress. 
 	</p>
 	<p>
 	Please be reminded that {$ezsettle_pronoun} decision is final. A binding legal settlement document will be sent to you and Seller345 via post mail. The money will be posted to your credit card. 

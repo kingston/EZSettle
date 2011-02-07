@@ -227,7 +227,7 @@
 		setTimeout(function() {
 			$("#loading").fadeOut();
 			window.location = 'offer.php';
-		}, 180000);
+		}, 210000);
 	}
 	
 	$(window).unload(function(){

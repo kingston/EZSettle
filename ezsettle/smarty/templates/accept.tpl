@@ -131,7 +131,7 @@
 						</div></td></tr>-->
 			</table>
 	
-	<div class="prepend-20 span-4 last"><a href="javascript:window.close()" id="close_window" href="javascript:void(0)" class="super medium awesome red button">Print Agreement</a></div>
+	<div class="prepend-20 span-4 last"><a href="javascript:window.close()" id="close_window" href="javascript:void(0)" class="super medium awesome red button">Finish</a></div>
 
 </div><!-- end main body -->
 

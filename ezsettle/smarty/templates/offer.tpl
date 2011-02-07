@@ -86,7 +86,7 @@
 	<div class="loading" id="loading">
 		<div class="loud headline"><img class="loader" id="loader" src="images/loader_big.gif" />Thank you for waiting...</div>
 		Please wait while {$mediator2} communicates your offer to Seller345.<br/><br />
-		{$mediator_caps} will get back to you with Seller345's response and/or counteroffer.
+		The {if $condition == 1 || $condition == 2 || $condition == 5}system{else}mediator{/if} will get back to you with Seller345's response and/or counteroffer.
 		<br/><div style="clear:both; height: 1px;"></div>
 		{if $condition == 1 || $condition == 2 || $condition == 5}
 		<img id="diagram" src="images/diagram-computer.jpg"/>
