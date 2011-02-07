@@ -87,7 +87,7 @@
 		setTimeout(function() {
 			hideLoading();
 			window.location = 'offer.php';
-		}, 100000);
+		}, 10000);
 	}
 	
 	function exit_page(){
