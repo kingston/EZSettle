@@ -117,7 +117,11 @@ switch($_SESSION['offer_num']) {
 										'message' =>"Casey345 did not accept your first offer. Casey345 has a message for you." ),
 								array('speaker' => 'Message from Casey345',
 									'style'=>'second_party',
-								'message' =>'I don’t understand this complaint at all. The computer was not broken when I packed it. I used it for just one month before I realized it wasn\'t what I needed. Honestly, I don\'t see why I should pay anything, especially not the costs of the rental computer and "emotional distress," which seem to me like an outrageous request')
+								'message' =>'This complaint doesn’t make any sense.The computer was not broken when I packed it. I used it
+										for just a month before I realized it wasn’t what I needed, but it was fine when it went into the
+										box. It seems to me that the computer rental was only necessary due to bad planning on your
+										part, so I don’t feel I am responsible for that. Finally, "emotional distress" is your own personal
+										problem. For these reasons, I don’t think I need to pay anything at this point.')
 						);
 		break;
 		
@@ -150,7 +154,12 @@ switch($_SESSION['offer_num']) {
 									),
 									array('speaker' => 'Message from Casey345',
 									'style'=>'second_party',
-								'message' =>"This just doesn’t make sense. I mean, the laptop was in perfect condition when I sent it, and I don't think that you can prove otherwise. (The emotional distress really has nothing to do with me, much like the rental computer). BUT, following {$mediator}'s suggestion, I'm willing to offer something because of the (slim!) chance that I didn't pack the package well (which I don't think happened, but ok), and because I'm willing to split with you the chance that the laptop was somehow damaged on its way to you. Mainly, I just want to get this thing over with.")
+								'message' =>"Again, the laptop was in perfect condition when I sent it, and I don't think that you can prove
+										otherwise. &quot;Emotional distress&quot; has nothing to do with me, much like the rental computer. BUT,
+										following the{$mediator}'s suggestion, I'm willing to offer something
+										because of the chance that I didn't pack the laptop well, and because I'm willing to accept that
+										there is a chance that the laptop was somehow damaged on its way to you, I’ll split the money
+										for that. I hope this settles the case.")
 								);
 		break;
 	case 6:
@@ -185,7 +194,9 @@ switch($_SESSION['offer_num']) {
 										),
 										array('speaker' => 'Message from Casey345',
 									'style'=>'second_party',
-								'message' =>"I hope you realize how ridiculous this situation is from my perspective. I’m making this final offer as an act of good faith and to get this over with. If you don’t accept it, whatever, let’s see what the arbitrator has to say."),
+								'message' =>"I hope you realize how ridiculous this situation is from my perspective. I’m making this final offer
+as an act of good faith and to get this over with. If you choose not to accept it, I’m perfectly fine
+with finding out what the arbitrator has to say."),
 										array( 'speaker' => 'Mediator',
 											'message' =>"{$ezsettle} would like to remind you that if you reject Casey345's offer, {$mediator} will transfer your case to arbitration, where {$ezsettle_person} review the information that was exchanged in the mediation and provide you and Casey345 with a final binding settlement."
 										)

@@ -1,69 +1,55 @@
 {include file="header.tpl"}
 
 <div class="main_body">
-	<div class="large loud headline">The EZSettle Process has 6 simple phases</div>
+	<div class="large loud headline">The EZSettle Process has 3 simple stages</div>
 	<div id="process_description">
 		<div id="process_inner">
 	<ol class="faq">
-	<li><div class="loud q2" id="1">Prepare for Mediation</div>
+	<li><div class="loud q2" id="1">PREPARATION</div>
 	<div class="quiet box" id="a1">
 		<ul>
-			<li>Parties review the EZSettle mediation-arbitration process and agree to be bound by its results.</li>
 			<li>Parties familiarize themselves with the dispute details and set their goals for the process.</li>
-			<li>An EZSettle agent sets up the case online and gives access codes to each party.</li>
+			<li>EZSettle sets up the case online with the list of issues that need to be resolved based on
+				the case referral letter from the e-commerce website (Amzon.com; E-bay; PC4U.com).</li>
 		 </ul>
 		</div>
 	</li>
 	
-	<li><div class="loud q" id="2">Qualify Interests</div>
+	<li><div class="loud q" id="2">MEDIATION</div>
 		<div class="quiet box" id="a2">
 			<ul>
-				<li>{if $condition == 1 || $condition == 2 || $condition == $5}The system presents the parties{else}Our Mediator presents the parties{/if} 
-					with an initial list of issues that need to be resolved, based on the case referral letter from the e-commerce
-					platform (Amzon.com; E-bay; PC4U.com). Parties amend or confirm the list.
+				<li>The mediation process is run by {if $condition == 1 || $condition == 2 || $condition == $5}the EZSettle mediation software, which
+					{else}an EZSettle staff mediator, who{/if} works independently and confidentially with each party
+					to advance a settlement and maximize benefits.
 				</li>
+				<li>Parties first review and confirm the list of disputed issues, and indicate confidentially the
+				importance of each issue to them.</li>
+				<li>Parties then exchange up to three offers and counter-offers trying to resolve the dispute in mutual agreement.</li>
+				<li>{if $condition == 1 || $condition == 2 || $condition == $5}The mediation software{else}The staff mediator{/if} never shares information or
+				preferences communicated to {if $condition == 1 || $condition == 2 || $condition == $5}it{else}him/her{/if} by one party with another party.</li>
+				<li>The {if $condition == 1 || $condition == 2 || $condition == $5}mediation software{else}staff mediator{/if}will communicate messages to the
+				other party if they are typed in the designated text box.</li>
+				<li>If no agreement is reached within three rounds of offers and counter-offers, the case is
+				directed to the EZSettle arbitration process.</li>
 			</ul>
 		</div></li>
 	
-	<li><div class="loud q" id="3">Quantify Preferences</div>
+	<li><div class="loud q" id="3">ARBITRATION</div>
 		<div class="quiet box" id="a3">
 			<ul>  
-				<li>Parties indicate the importance of each issue to them, using a numerical scale (1-100).</li>
-				<li>These preference values are <b>confidential</b> and will never be revealed to the other party.</li>
+				<li>The arbitration process is conducted by {if $condition == 1 || $condition == 3}the sophisticated EZSettle AnaLegal™ arbitration
+				software{elseif $condition == 2 || $condition == 4}an experienced EZSettle staff arbitrator{else}an arbitrator that the parties
+				will choose: either the sophisticated EZSettle AnaLegal™ arbitration software or an
+				experienced EZSettle staff arbitrator{/if}.</li>
+				<li>The {if $condition == 1 || $condition == 3}AnaLegal™ arbitration software reviews{elseif $condition == 2 || $condition == 4}staff arbitrator reviews{else}chosen
+				arbitrator reviews{/if} all the information that was received in the mediation stage, including preferences, offers and messages.</li>
+				<li>The {if $condition == 1 || $condition == 3}software{elseif $condition == 2 || $condition == 4}staff arbitrator{else}chosen arbitrator{/if} 
+				{if $condition == 1 || $condition == 3}generates{else}provides the parties with{/if} a binding fair settlement that represents an equitable
+				solution and maximizes benefits for the parties.</li>
+				<li>The arbitration settlement is the final stage of the process. The parties are bound by its result.</li>
 		</div></li>
 	
-	<li><div class="loud q" id="4">Mediation</div>
-	<div class="quiet box" id="a4">
-		<ul> 
-			<li>Parties go through up to three rounds of offers and counter-offers in the mediation stage.</li>
-			<li>EZSettle {if $condition == 1 || $condition == 2 || $condition == 5}mediation software{else}staff mediator{/if} 
-				works independently and confidentially with each party to advance a settlement and maximize benefits.</li>
-			<li>{if $condition == 1 || $condition == 2 || $condition == 5}The system{else}The staff mediator{/if} never shares information communicated by
-				one party with another party. However, parties may communicate with each other through
-				the {if $condition == 1 || $condition == 2 || $condition == 5}system{else}mediator{/if} by typing messages in the designated text box.</li>
-			<li>If no agreement is reached within three rounds of mediation, the case is directed to the EZSettle final arbitration process.</li>
-		</ul>
-	</div></li>
 	
-	<li><div class="loud q" id="5">Arbitration</div>
-	<div class="quiet box" id="a5">
-		<ul>
-			<li>{if $condition == 1 || $condition == 3}The EZSettle AnaLegal™ professional arbitration software reviews{elseif $condition == 2 || $condition == 4}An EZSettle
-				professional staff arbitrator reviews{else}EZSettle asks the parties to choose using either
-				the EZSettle AnaLegal™ professional arbitration software or an EZSettle professional
-				staff arbitrator to review{/if} the information that was received in the mediation stage
-				{if $condition == 1 || $condition == 3}and generates{else}and provides the parties with{/if} a binding fair settlement that
-				represents an equitable solution and maximizes benefits for the parties.</li>
-		</ul>
-	</div></li>
-	
-	<li><div class="loud q" id="6">Secure commitment</div>
-	<div class="quiet box" id="a6">
-		<ul>
-			<li>EZSettle agents compile a formal binding legal document with the terms of the agreement.
-				This document will be dispatched to both parties by email.</li>
-		</ul>
-	</div></li>
 	
 </ol>	
 </div><!-- end process inner -->
@@ -87,7 +73,7 @@
 			if ($("#process_description").scrollTop() >= scrollEnd) {
 				$("#start_error").fadeOut();
 				$("#start").removeClass('disabled').addClass('red').click(function() {
-					window.location = "mediator_statement.php";
+					window.location = "mediator_arbitrator_intro.php";
 				})
 			}
 		});
