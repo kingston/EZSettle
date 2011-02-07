@@ -45,9 +45,11 @@
 			 arb_choice: "EZSettle trained staff mediator"},
 			function(data) {
 				showLoading();
-				alert("hey");
+				setTimeout(function(){
+					hideLoading();
+					window.location = 'offer.php';
+				},5000 );
 				
-				window.location = 'offer.php';
 			},
 			'json'
 			);
@@ -70,9 +72,10 @@
 				arb_choice:"EZSettle AnaLegal arbitration engine"}, //Add info about choice here
 			function(data) {
 				showLoading();
-				alert("hey");
-				
-				window.location = 'offer.php';
+				setTimeout(function(){
+					hideLoading();
+					window.location = 'offer.php';
+				},5000 );
 			},
 			'json'
 			);			
