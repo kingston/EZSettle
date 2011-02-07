@@ -57,7 +57,7 @@
 					<br />
 					
 					<div class="loud headline" style="background:#eeeeee">Exchanged Messages</div>
-					<table style="background:#eeeeee"><tr><td>If you sent messages to the mediator or Casey345, they are included in the arbitration materials.</td></tr></table>
+					<table style="background:#eeeeee"><tr><td>If you sent messages to the mediator or Seller345, they are included in the arbitration materials.</td></tr></table>
 					
 					
 				</div>
@@ -67,11 +67,11 @@
 				<tr>
 					<th>Issues:</th>
 					<th>Your Offer-1</th>
-					<th>Casey345's Offer-1</th>
+					<th>Seller345's Offer-1</th>
 					<th>Your Offer-2</th>
-					<th>Casey345's Offer-2</th>
+					<th>Seller345's Offer-2</th>
 					<th>Your Offer-3</th>
-					<th>Casey345's Offer-3</th>
+					<th>Seller345's Offer-3</th>
 				</tr>
 				{section name=issuesIndex loop=$issues}
 					{ if $smarty.section.issuesIndex.index%2 == 0}

@@ -19,7 +19,7 @@ switch($_SESSION['condition']) {
 }
 
 $_SESSION['chatOld'] = $newOld;
-$med_message = 'Slide the marker left or right to indicate how important each issue is to you, on a scale from 1 (not important) to 100 (very important). Your ranking will help you, as well as '.$me.', understand your priorities. In case you and Casey345 do not reach an agreement in mediation, the EZSettle ';
+$med_message = 'Slide the marker left or right to indicate how important each issue is to you, on a scale from 1 (not important) to 100 (very important). Your ranking will help you, as well as '.$me.', understand your priorities. In case you and Seller345 do not reach an agreement in mediation, the EZSettle ';
 if(($_SESSION['condition']==1) || ($_SESSION['condition']==3)){
 	$med_message=$med_message.'arbitration software';
 }else if (($_SESSION['condition']==2) || ($_SESSION['condition']==4)){

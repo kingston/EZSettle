@@ -7,13 +7,13 @@
 		
 			<input type="hidden" name="offer" value="{$offer}" />
 			<div class="success">
-				Here is Casey345’s counter offer. You may accept the offer or make a new counter offer.
+				Here is Seller345’s counter offer. You may accept the offer or make a new counter offer.
 			</div>
 			<table>
 				<tr>
 					<th>Issues:</th>
 					<th>Your Offer</th>
-					<th>Casey345's Counteroffer</th>
+					<th>Seller345's Counteroffer</th>
 				</tr>
 				{section name=issuesIndex loop=$issues}
 					{ if $smarty.section.issuesIndex.index%2 == 0}

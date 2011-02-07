@@ -21,7 +21,7 @@ $_SESSION['issuesArr']= array('Return laptop', 'Pay back cost of computer', 'Pay
 
 $_SESSION['chatNew'] = array(
 	array('speaker' => 'Mediator', 'message' => 'In this process, '.$I.' would like to address the concerns that you and
-Casey345 raised. EZSettle combined the issues that the two of you
+Seller345 raised. EZSettle combined the issues that the two of you
 included in your correspondence with PC4U.com into a single list. You may not recognize all
 the issues in the list: the other party may have raised an issue that you did not address. After
 reviewing the list, please click “yes” to confirm that these are the issues or “no” to add another

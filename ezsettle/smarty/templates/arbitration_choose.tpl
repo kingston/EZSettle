@@ -2,7 +2,7 @@
 <div class="main_body">
 	<div class="span-24 last">
 		<div class="loud headline append-bottom">Choose Arbitration Service</div>
-		Please choose whether you would like the case to be arbitrated by one of EZSettle's staff arbitrators or by EZSettle’s AnaLegal™ arbitration software. If you and Casey345 do not make the same choice, you will be directed to discuss your options and reach agreement on the matter.
+		Please choose whether you would like the case to be arbitrated by one of EZSettle's staff arbitrators or by EZSettle’s AnaLegal™ arbitration software. If you and Seller345 do not make the same choice, you will be directed to discuss your options and reach agreement on the matter.
 		<br/><br/>
 		<div class="prepend-4 span-16 last">
 			<table id="arb_opt">
@@ -19,7 +19,7 @@
 	</div>
 	<div class="loading" id="loading">
 		<div class="loud headline"><img class="loader" id="loader" src="images/loader_big.gif" />Thank you for waiting...</div>
-		Please wait while Casey345 chooses an arbitrator.<br/>
+		Please wait while Seller345 chooses an arbitrator.<br/>
 		<br/><div style="clear:both; height: 1px;"></div>
 		<div style="clear:both; height: 1px;"></div>
 	</div><!-- end loading -->

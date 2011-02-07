@@ -2,7 +2,7 @@
 <div class="main_body">
 	<div class="loud headline append-bottom">Choose Arbitration Service</div>
 	<div class="span-24 last">
-		You and Casey345 chose the same arbitration service. Click 'Next' to move to
+		You and Seller345 chose the same arbitration service. Click 'Next' to move to
 		arbitration.
 		<div class="prepend-20 span-4 last">
 			<div id="send_to_arbitration" class="super large awesome red button" />

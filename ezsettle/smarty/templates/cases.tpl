@@ -15,7 +15,7 @@
 			</tr>
 			<tr class="even">
 				<td>Laptop purchase</td>
-				<td>Casey345</td>
+				<td>Seller345</td>
 				<td>EZSettle Mediator</td>
 				<td><a href="process.php" class="super large awesome red button">Resolve Case</a></td>
 			</tr>

@@ -13,7 +13,7 @@
 					<th style="width:300px;">Issues:</th>
 					{if $offer_num > 1}
 					<th style="width:200px;"><div style="float: right; width:200px; text-align: right;">Your Previous<br/>Offer:</div></th>
-					<th style="width:200px;"><div style="float: right; width:200px; text-align: right;">Casey's<br/>Counteroffer:</div></th>
+					<th style="width:200px;"><div style="float: right; width:200px; text-align: right;">Seller's<br/>Counteroffer:</div></th>
 					<th style="width:200px;"><div style="float: right; width:200px; text-align: right;">Your New<br/>Offer:</div></th>
 					{else}
 					<th style="width:200px;"><div style="float: right; width:200px;"></div></th>
@@ -72,9 +72,9 @@
 				{/section}
 				<tr><td colspan="4"><hr/></td></tr>
 				<tr><td colspan="4" class="loud headline">Comments:</td></tr>
-					<tr><td colspan="2">Comments {$mediator} should pass to Casey345:</td><td colspan="2"><div style="float: right;"><textarea rows="3" cols="40" name="casey" value="" ></textarea></div></td></tr>
-					<tr><td colspan="2">Comments for {$mediator}:<br/>
-					<span class="quiet">(These will not be shown to Casey345)</span></td>
+					<tr><td colspan="2">Comments {$mediator2} should pass to Seller345:</td><td colspan="2"><div style="float: right;"><textarea rows="3" cols="40" name="casey" value="" ></textarea></div></td></tr>
+					<tr><td colspan="2">Comments for {$mediator2}:<br/>
+					<span class="quiet">(These will not be shown to Seller345)</span></td>
 					<td colspan="2"><div style="float: right;"><textarea rows="3" cols="40" name="mediator" value="" ></textarea></div></td></tr>
 					<tr><td colspan="4"><div style="float: right;"><input id="make_offer" type="submit" class="super large awesome red button wait" name="submit" disabled="true" value="Make offer" /></div></td></tr>
 			</table>
@@ -85,8 +85,8 @@
 	{include file="chat.tpl"}
 	<div class="loading" id="loading">
 		<div class="loud headline"><img class="loader" id="loader" src="images/loader_big.gif" />Thank you for waiting...</div>
-		Please wait while {$mediator} communicates your offer to Casey345.<br/>
-		{$mediator_caps} will get back to you with Casey345's response and/or counteroffer.
+		Please wait while {$mediator} communicates your offer to Seller345.<br/>
+		{$mediator_caps} will get back to you with Seller345's response and/or counteroffer.
 		<br/><div style="clear:both; height: 1px;"></div>
 		{if $condition == 1 || $condition == 2 || $condition == 5}
 		<img id="diagram" src="images/diagram-computer.jpg"/>

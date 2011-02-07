@@ -4,7 +4,7 @@
 	<div class="prepend-1 large loud headline">Mediator Introduction</div>
 	<hr class="space"/>
 	<div class="prepend-1 span-22 append-1 last">
-	<p>Dear Jessie128 and Casey345,</p>
+	<p>Dear Buyer128 and Seller345,</p>
 	<p>
 		Thank you for choosing the EZSettle process. {if $condition == 1 || $condition == 2 || $condition == 5}The EZSettle software is{else}I will be your
 		mediator, and I am{/if} here to help you solve the case. {if $condition == 1 || $condition == 2 || $condition == 5}Here is a brief explanation on{else}
@@ -32,7 +32,7 @@
 	</p>
 
 	<p>
-		Some people reach mutual agreement in mediation; others prefer to decline the last offer and
+		PLEASE REMEMBER: Some people reach mutual agreement in mediation; others prefer to decline the last offer and
 		proceed to arbitration. The decision depends, among other things, on the assessment of the potential to receive a better
 		arbitration settlement compared to the last offer that was made in the mediation.
 	</p>

@@ -2,21 +2,21 @@
 <div class="main_body">
 	<div class="large loud headline">Resolution</div>
 	<hr class="space"/>
-	Congratulations! You and Casey345 have reached an agreement on the terms of your settlement.
+	Congratulations! You and Seller345 have reached an agreement on the terms of your settlement.
 	<hr class="space"/>
 	According to your agreement:
 				<table>
 				<tr>
 					<th>Issues:</th>
 					<th>Your 1st Offer</th>
-					<th>Casey345's 1st Counteroffer</th>
+					<th>Seller345's 1st Counteroffer</th>
 					{if $step > 0}
 					<th>Your 2nd Offer</th>
-					<th>Casey345's 2nd Counteroffer</th>
+					<th>Seller345's 2nd Counteroffer</th>
 					{/if}
 					{if $step > 1}
 					<th>Your 3rd Offer</th>
-					<th>Casey345's 3rd Counteroffer</th>
+					<th>Seller345's 3rd Counteroffer</th>
 					{/if}
 				</tr>
 				{section name=issuesIndex loop=$issues}
