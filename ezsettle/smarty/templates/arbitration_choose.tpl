@@ -44,6 +44,9 @@
 			{offer_num: {/literal}{$offer_num}{literal},
 			 arb_choice: "EZSettle trained staff mediator"},
 			function(data) {
+				showLoading();
+				alert("hey");
+				
 				window.location = 'offer.php';
 			},
 			'json'
@@ -66,6 +69,9 @@
 			{offer_num: {/literal}{$offer_num}{literal},
 				arb_choice:"EZSettle AnaLegal arbitration engine"}, //Add info about choice here
 			function(data) {
+				showLoading();
+				alert("hey");
+				
 				window.location = 'offer.php';
 			},
 			'json'
