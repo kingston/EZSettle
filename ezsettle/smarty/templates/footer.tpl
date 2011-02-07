@@ -6,8 +6,6 @@
 			//<![CDATA[
 		$(document).ready(function() {
 		$('.wait.button').addClass('disabled');
-		$("#typing").hide();
-		
 		max_time = 0;
 		accumulated_time = 0;
 		$(".chatnotice").each(function(index) {
@@ -22,14 +20,10 @@
 			setTimeout(function() { $(elem).fadeIn();}, time);
 		});
 		
-		setTimeout(function(){
-			$("#typing").show();
-		},4000);
-		
 		setTimeout(function() {	
 			$("#typing").hide();
 			$('.wait.button').removeClass('disabled');
-			},max_time + 4000);
+			},max_time);
 		
 		
 
