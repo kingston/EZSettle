@@ -7,9 +7,7 @@
 		$(document).ready(function() {
 		$('.wait.button').addClass('disabled');
 		$("#typing").hide();
-		setTimeout(function(){
-			$("#typing").show();
-		},4000);
+		
 		max_time = 0;
 		accumulated_time = 0;
 		$(".chatnotice").each(function(index) {
