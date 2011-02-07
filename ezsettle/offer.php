@@ -213,6 +213,8 @@ with finding out what the arbitrator has to say."),
 												array( 'speaker' => 'System text',
 													'message' =>"Please choose whether you would like the case to be arbitrated by one of EZSettle's staff arbitrators or by EZSettle’s AnaLegal™ arbitration software. If you and Seller345 do not make the same choice, you will be directed to discuss your options and reach agreement on the matter."
 												)											);	
+		}else{
+			$_SESSION['chatNew'] = array();
 		}
 		/*else{
 				$_SESSION['chatNew'] = array(
