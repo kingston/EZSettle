@@ -286,7 +286,6 @@ $smarty->assign('ezsettle_pronoun',$ezsettle_pronoun);
 
 //var_dump($_SESSION['counteroffers'][$step]);
 //Your offer
-$_SESSION['offer_num'] = 9;
 if($_SESSION['accept'] == 'yes'){
 //if ($_POST['accept'] && $_POST['accept'] != '') {
 	$smarty->assign('all_offers', $_SESSION['offers']);	
