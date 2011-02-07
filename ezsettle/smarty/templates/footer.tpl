@@ -5,12 +5,8 @@
 		{literal}
 			//<![CDATA[
 		$(document).ready(function() {
-				setTimeout("waitInBeginning()",4000);
-		
-	});
-	
-	function waitInBeginning(){
-	$('.wait.button').addClass('disabled');
+		$('.wait.button').addClass('disabled');
+		$("#typing").hide();
 		max_time = 0;
 		accumulated_time = 0;
 		$(".chatnotice").each(function(index) {
@@ -24,6 +20,10 @@
 			var elem = $(this);
 			setTimeout(function() { $(elem).fadeIn();}, time);
 		});
+		
+		setTimeout(function(){
+			$("#typing").show();
+		},4000);
 		
 		setTimeout(function() {	
 			$("#typing").hide();
@@ -44,8 +44,9 @@
 				}, 'json'
 			);
 		});
-	
-	}
+		
+		
+	});
 	function closeNotice(id) {
 		$("#"+id).hide();
 	}
