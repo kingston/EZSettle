@@ -22,12 +22,14 @@
 			setTimeout(function() { $(elem).fadeIn();}, time);
 		});
 		
-		
+		setTimeout(function(){
+			$("#typing").show();
+		},4000);
 		
 		setTimeout(function() {	
 			$("#typing").hide();
 			$('.wait.button').removeClass('disabled');
-			},max_time);
+			},max_time + 4000);
 		
 		
 
