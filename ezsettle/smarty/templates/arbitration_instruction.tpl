@@ -38,8 +38,8 @@ On the next page, you will be able to review a summary of the information that {
 		});
 		
 		$("#send_to_study").click(function() {
-			alert("Please complete the mediation questionnaire and then return to the EZSettle website to complete the arbitration.");
-			window.open("https://stanforduniversity.qualtrics.com/SE/?SID=SV_8G704w1sqaQkpY8" );
+			//alert("Please complete the mediation questionnaire and then return to the EZSettle website to complete the arbitration.");
+			//window.open("https://stanforduniversity.qualtrics.com/SE/?SID=SV_8G704w1sqaQkpY8" );
 			$.post("actions/postoffer.php",
 			{offer_num: {/literal}{$offer_num}{literal}}, //Add info about choice here
 			function(data) {
