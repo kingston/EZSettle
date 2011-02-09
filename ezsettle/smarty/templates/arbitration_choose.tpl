@@ -8,7 +8,7 @@
 			<table id="arb_opt">
 			<tr>
 				<td class="arb_human"><img src="images/ezsettle_human.jpg"></td>
-				<td class="arb_computer"><img src="images/ezsettle_computer.jpg"> </td>
+				<td class="arb_computer"><img src="images/ezsettle_computer_arb.jpg"> </td>
 			</tr>
 			<tr>
 				<td class="arb_human" >EZSettle trained staff arbitrator</td>
