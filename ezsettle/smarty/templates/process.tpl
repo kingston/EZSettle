@@ -27,7 +27,7 @@
 				<li>Parties then exchange up to three offers and counter-offers trying to resolve the dispute in mutual agreement.</li>
 				<li>{if $condition == 1 || $condition == 2 || $condition == $5}The mediation software{else}The staff mediator{/if} never shares information or
 				preferences communicated to {if $condition == 1 || $condition == 2 || $condition == $5}it{else}him/her{/if} by one party with another party.</li>
-				<li>The {if $condition == 1 || $condition == 2 || $condition == $5}mediation software{else}staff mediator{/if}will communicate messages to the
+				<li>The {if $condition == 1 || $condition == 2 || $condition == $5}mediation software{else}staff mediator{/if} will communicate messages to the
 				other party if they are typed in the designated text box.</li>
 				<li>If no agreement is reached within three rounds of offers and counter-offers, the case is
 				directed to the EZSettle arbitration process.</li>

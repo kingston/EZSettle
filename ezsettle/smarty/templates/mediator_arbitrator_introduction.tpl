@@ -40,7 +40,7 @@
 	</div>
 	<p>
 	Should your case reach the arbitration stage of the dispute resolution process {if $condition == 1 || $condition == 3}the <i>EZSettle</i>
-	AnaLegal™ arbitration software{elseif $condition == 2 || $condition == 4}Taylor Green, an <i>EZSettle</i> staff arbitrator{else}
+	AnaLegal™ arbitration software{elseif $condition == 2 || $condition == 4}Taylor Green, an <i>EZSettle</i> staff arbitrator,{else}
 	an arbitrator of your choice: either the <i>EZSettle</i> AnaLegal™ arbitration software or
 	Taylor Green, an experienced <i>EZSettle</i> staff arbitrator{/if} will provide you with a final
 	binding settlement.
