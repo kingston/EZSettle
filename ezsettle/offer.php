@@ -5,7 +5,7 @@ $newOld = array_merge($_SESSION['chatOld'], $_SESSION['chatNew']);
 $_SESSION['chatOld'] = $newOld;
 
 $_SESSION['offer_titles'] = array(	1 => "Your First Offer",
-									2 => "Casy345's First Counter Offer",
+									2 => "Seller345's First Counter Offer",
 									4 => "Your Second Offer",
 									5 => "Seller345's Second Counter Offer",
 									7 => "Your Final Offer",
@@ -32,8 +32,8 @@ switch($_SESSION['condition']) {
 		$goods = "goods";
 		$past_v2be = "were";
 		$present_v2be_cap = "Are";
-		$ezsettle = "The system";
-		$mediator = "the system";
+		$ezsettle = "ProSet™";
+		$mediator = "ProSet™";
 		$mediator2 = "the mediation software";
 		$ezsettle_i_small = "the system";
 		$ezsettle_me = "EZSettle";
@@ -158,16 +158,22 @@ switch($_SESSION['offer_num']) {
 									'style'=>'second_party',
 								'message' =>"Again, the laptop was in perfect condition when I sent it, and I don't think that you can prove
 										otherwise. &quot;Emotional distress&quot; has nothing to do with me, much like the rental computer. BUT,
-										following the{$mediator2}'s suggestion, I'm willing to offer something
+										following {$mediator2}'s suggestion, I'm willing to offer something
 										because of the chance that I didn't pack the laptop well, and because I'm willing to accept that
 										there is a chance that the laptop was somehow damaged on its way to you, I’ll split the money
 										for that. I hope this settles the case.")
 								);
 		break;
 	case 6:
+		$s = "";
+		if ($ezsettle_i_small == "I"){
+			$s = "";	
+		}else{
+			$s = "s";	
+		}
 		$_SESSION['chatNew'] = array(
 									array( 'speaker' => 'Mediator',
-										'message' =>"You and Seller345 made some good progress, but your offers are still quite far apart. Before you make your last offer, {$mediator} would like you to think creatively about options you may have not considered yet. Is the laptop of any value to you? Can you keep the laptop for your personal use? Can you re-sell the laptop? If such ideas appeal to you, perhaps you could yourself and ask Seller345 for less money.? "
+										'message' =>"You and Seller345 made some good progress, but your offers are still quite far apart. Before you make your last offer, {$mediator} encourage".$s." you to think creatively about options you may have not considered yet. Is the laptop of any value to you? Can you keep the laptop for your personal use? Can you re-sell the laptop? If such ideas appeal to you, perhaps you could ask Seller345 for less money.? "
 									),
 									array('speaker' => 'Mediator',
 									'message'=>"Please indicate here how willing you are to consider these options.{$ezsettle} will NOT share this information with Seller345.")

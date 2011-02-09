@@ -13,14 +13,14 @@
 		individually indicate the importance of each of these items to you. Each one of you will be able to make up to three
 		settlement offers, which the other party can accept or reject. By custom, the complainant makes
 		the first offer. Throughout the process, {if $condition == 1 || $condition == 2 || $condition == 5}the system{else}I{/if} will communicate with you
-		separately. Any information you share with {if $condition == 1 || $condition == 2 || $condition == 5}the system{else}me{/if} remains completely
+		separately. Any information you share with {if $condition == 1 || $condition == 2 || $condition == 5}ProSet™ {else}me{/if} remains completely
 		confidential. If you would like {if $condition == 1 || $condition == 2 || $condition == 5}the system{else}me{/if} to share particular information with
 		the other party, you may do so by using the chat box titled “share message with the other party”.
 		Please respect each other and avoid using foul language.
 	</p>
 
 	<p>
-		As you will be making offers, {if $condition == 1 || $condition == 2 || $condition == 5}the system{else}I{/if} will make suggestions to help you
+		As you will be making offers, {if $condition == 1 || $condition == 2 || $condition == 5}ProSet™{else}I{/if} will make suggestions to help you
 		reach agreement. {if $condition == 1 || $condition == 2 || $condition == 5}The system's{else}My{/if} messages to you will appear in chat boxes at the
 		top of the page. If after three offers and counter offers you will not reach agreement, you will be
 		transferred to the EZSettle arbitration process. {if $condition == 1 || $condition == 3}The EZSettle professional AnaLegal arbitration

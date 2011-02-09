@@ -8,7 +8,7 @@ switch($_SESSION['condition']) {
 	case 2:
 	case 5:
 		$typing = "The system is generating text ...";
-		$me = "the system";
+		$me = "ProSet™";
 		break;
 	case 3:
 	case 4:

@@ -50,7 +50,7 @@
 	<tr>
 		{if $condition == 1 || $condition == 3}
 		<td style="vertical-align:top">
-			<img src="images/ezsettle_computer.jpg" height="150px" />
+			<img src="images/ezsettle_computer_arb.jpg" height="150px" />
 		</td>
 		<td style="vertical-align:top; padding-left:40px;">
 			<b>AnaLegal™ Arbitration Engine</b><br />
