@@ -11,7 +11,7 @@
 	<tr>
 		{if $condition == 1 || $condition == 2 || $condition == 5}
 		<td style="vertical-align:top">
-			<img src="images/ezsettle_computer.jpg" height="150px" />
+			<img src="images/ezsettle_computer.jpg" width="300px" />
 		</td>
 		<td style="vertical-align:top; padding-left:40px;">
 			<b>ProSet™ Mediation Software</b><br />
@@ -24,7 +24,7 @@
 		</td>
 		{else}
 		<td style="vertical-align:top">
-			<img src="images/mediator.jpg" height="150px">	
+			<img src="images/mediator.jpg" width="300px">	
 		</td>
 		<td style="vertical-align:top">
 			<b>Avery Campbell</b><br />
@@ -50,7 +50,7 @@
 	<tr>
 		{if $condition == 1 || $condition == 3}
 		<td style="vertical-align:top">
-			<img src="images/ezsettle_computer_arb.jpg" height="150px" />
+			<img src="images/ezsettle_computer_arb.jpg" width="300px" />
 		</td>
 		<td style="vertical-align:top; padding-left:40px;">
 			<b>AnaLegal™ Arbitration Engine</b><br />
@@ -64,7 +64,7 @@
 		</td>
 		{elseif $condition == 2 || $condition == 4}
 		<td style="vertical-align:top">
-			<img src="images/arbitrator.jpg" height="150px">	
+			<img src="images/arbitrator.jpg" width="300px">	
 		</td>
 		<td style="vertical-align:top">
 			<b>Taylor Green</b><br />
