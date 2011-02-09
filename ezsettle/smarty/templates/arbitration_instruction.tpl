@@ -7,7 +7,7 @@
 On the next page, you will be able to review a summary of the information that {if $condition==1||$condition==3}the system{elseif $condition==2 ||$condition==4}I{else}your chosen arbitrator{/if} will consider in the process.
 	</p>
 	
-	<div {if $condition==5 || $condition==6}id="send_to_study"{else}id="send_to_arbitration"{/if} class="super large awesome red button" />
+	<div id="send_to_arbitration" class="super large awesome red button" />
 		Send Case to Arbitration
 	</div>
 	</div>
