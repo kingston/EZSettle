@@ -26,7 +26,7 @@
 		<td style="vertical-align:top">
 			<img src="images/mediator.jpg" width="200px">	
 		</td>
-		<td style="vertical-align:top">
+		<td style="vertical-align:top; padding-left:40px;">
 			<b>Avery Campbell</b><br />
 			Avery Campbell is a lawyer from the Bay Area specializing in contract law, consumer
 			disputes, and tort law. Campbell received a law degree from Stanford University and has
@@ -66,7 +66,7 @@
 		<td style="vertical-align:top">
 			<img src="images/arbitrator.jpg" width="200px">	
 		</td>
-		<td style="vertical-align:top">
+		<td style="vertical-align:top; padding-left:40px;">
 			<b>Taylor Green</b><br />
 			Taylor Green is a San Francisco-based lawyer specializing in contract law, consumer
 			disputes, and tort law. Green earned his degree from Stanford Law School and has
