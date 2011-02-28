@@ -131,7 +131,7 @@
 						</div></td></tr>-->
 			</table>
 	
-	<div class="prepend-20 span-4 last"><a href="javascript:window.close()" id="close_window" href="javascript:void(0)" class="super medium awesome red button">Finish</a></div>
+	<div class="prepend-20 span-4 last"><div id="close_window" class="super medium awesome red button">Finish</div></div>
 
 </div><!-- end main body -->
 
@@ -142,6 +142,7 @@
 	//<![CDATA[
 	 $(document).ready(function() {
 		$("#close_window").click(function() {
+			window.open("https://stanforduniversity.qualtrics.com/SE/?SID=SV_7NzKMc153rEMj6A");
 			$(window).close();
 		});
 	});

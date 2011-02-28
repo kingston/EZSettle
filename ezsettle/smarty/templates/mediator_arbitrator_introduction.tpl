@@ -16,8 +16,8 @@
 		<td style="vertical-align:top; padding-left:40px;">
 			<b>ProSet™ Mediation Software</b><br />
 			The ProSet mediation software is based on sophisticated computational algorithms
-			that were developed at Stanford University in collaboration with attorneys specializing
-			in contract law, consumer disputes, and tort law. The software has successfully
+			that were developed at Stanford University in collaboration with professionals specializing
+			in contracts, consumer disputes, and tort cases. The software has successfully
 			mediated over 350 settlements for <i>EZSettle</i>, using an interest-based approach to identify
 			preferences and facilitate agreement. ProSet™ has resolved buyer-seller disputes for a
 			variety of online corporations including E-Bay and Amazon.
@@ -28,8 +28,8 @@
 		</td>
 		<td style="vertical-align:top; padding-left:40px;">
 			<b>Avery Campbell</b><br />
-			Avery Campbell is a lawyer from the Bay Area specializing in contract law, consumer
-			disputes, and tort law. Campbell received a law degree from Stanford University and has
+			Avery Campbell is a mediator from the Bay Area specializing in contracts, consumer
+			disputes, and tort cases. Campbell received his degree from Stanford University and has
 			successfully mediated over 350 cases for <i>EZSettle</i>, using an interest-based approach to
 			identify preferences and facilitate agreement. Campbell has resolved buyer-seller disputes
 			for a variety of online corporations including E-Bay and Amazon.
@@ -55,8 +55,8 @@
 		<td style="vertical-align:top; padding-left:40px;">
 			<b>AnaLegal™ Arbitration Engine</b><br />
 			The AnaLegal arbitration engine is based on sophisticated computational algorithms
-			that were developed at Stanford University in collaboration with attorneys specializing
-			in consumer disputes, tort law, and contract law. The AnaLegal™ arbitration software
+			that were developed at Stanford University in collaboration with experts specializing in contracts, consumer disputes, and tort cases.
+			The AnaLegal™ arbitration software
 			uses the information that parties provide in order to form trade-off rules that allocate
 			issues according to a strategy of appropriate compensation. The software has successfully
 			provided arbitration services in over 400 <i>EZSettle</i> cases, resulting in binding enforceable
@@ -68,8 +68,8 @@
 		</td>
 		<td style="vertical-align:top; padding-left:40px;">
 			<b>Taylor Green</b><br />
-			Taylor Green is a San Francisco-based lawyer specializing in contract law, consumer
-			disputes, and tort law. Green earned his degree from Stanford Law School and has
+			Taylor Green is a San Francisco-based arbitrator specializing in contracts, consumer
+			disputes, and tort cases. Green earned his degree from Stanford University and has
 			provided arbitration services in over 400 <i>EZSettle</i> cases. As an arbitrator, Green uses
 			the information that parties provide in order to form trade-off rules that allocate issues
 			according to a strategy of appropriate compensation. Green has successfully provided

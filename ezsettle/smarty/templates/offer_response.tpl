@@ -70,7 +70,7 @@
 	 $(document).ready(function() {
 	 	setTimeout(function() {	
 			$("#counteroffer").click(function() {
-				{/literal}{if $offer_num==8}
+				{/literal}{if $offer_num==8 &&($condition == 5 || $condition == 6)}
 				alert("Please complete the mediation questionnaire and then return to the EZSettle website to complete the arbitration.");
 				window.open("https://stanforduniversity.qualtrics.com/SE/?SID=SV_8G704w1sqaQkpY8" );{/if}{literal}
 				

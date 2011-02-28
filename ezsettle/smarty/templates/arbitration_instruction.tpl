@@ -27,7 +27,7 @@ On the next page, you will be able to review a summary of the information that {
 	var time_end;
 	$(document).ready(function() {	
 
-		x$("#send_to_arbitration").click(function() {
+		$("#send_to_arbitration").click(function() {
 			$.post("actions/postoffer.php",
 			{offer_num: {/literal}{$offer_num}{literal}}, //Add info about choice here
 			function(data) {

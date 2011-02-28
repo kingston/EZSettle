@@ -320,25 +320,28 @@ if($_SESSION['accept'] == 'yes'){
 		//$smarty->display('arbitration_instruction.tpl');
 		
 	}else{
-		$smarty->display('arbitration_result.tpl');	
+		$smarty->display('arbitration_result2.tpl');
+		
 	}
 }else if($_SESSION['offer_num']== 12){
 	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
 		$smarty->display('arbitration_instruction.tpl');
 		
 	}else{
-		$smarty->display('arbitration.tpl');
+		$smarty->display('arbitration_result2.tpl');
 	}
 }else if($_SESSION['offer_num']== 13){
 	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
 		$smarty->display('arbitration.tpl');
 		
 	}else{	
-		$smarty->display('arbitration_result.tpl');
+		$smarty->display('arbitration_result2.tpl');
 	}
 }else if($_SESSION['offer_num']== 14){
 	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
 		$smarty->display('arbitration_result.tpl');
+	}else{
+		$smarty-display('arbitration_result2.tpl');
 	}
 } else if($_SESSION['offer_num']%3 == 1) {
 	$smarty->display('offer.tpl');
