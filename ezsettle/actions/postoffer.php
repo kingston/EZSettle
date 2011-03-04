@@ -64,7 +64,7 @@ if($_SESSION['offer_num'] == 3) {
     }
 }
 
-if($_POST['accept']){
+if(isset($_POST['accept'])){
 	$_SESSION['accept'] = $_POST['accept'];	
 }
 

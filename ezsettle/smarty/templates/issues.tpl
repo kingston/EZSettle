@@ -21,7 +21,7 @@
 		</table>
 		</div>
 	<div class="prepend-1 span-8 append-2 last">
-		<div style="height: 75px; width:1px;">&nbsp:</div>
+		<div style="height: 75px; width:1px;">&nbsp;</div>
 		Do you agree that these are the issues that need to be addressed in this process:<br/>
 		<span id="go_to_rank_issue" class="super large awesome red button wait">Yes</span>
 		<span id="add_issue" class="super large awesome black button wait">No&nbsp;</span>

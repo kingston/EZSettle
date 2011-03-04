@@ -56,7 +56,10 @@
 <div class="clearfix" style="margin-bottom: 10px;"></div>
 </div><!-- end process description -->
 <div class="clearfix" style="margin-bottom: 10px;"></div>
-	<span id="start_error" class="span-18 error">You must read the process description before starting!</span><button id="start" class="large awesome super disabled button startbutton">Get Started »</button>
+	<span class="span-19">
+		<span id="start_error" class="span-18 error">You must read the process description before starting!</span>&nbsp;
+	</span>
+	<span class="span-4 last"><button id="start" class="large awesome super disabled button startbutton">Get Started »</button></span>
 <div class="clearfix" style="margin-bottom: 10px;"></div>
 </div><!-- end main body -->
 
