@@ -6,7 +6,7 @@ function adminer_object() {
 
         function name() {
             // custom name in title and heading
-            return 'EZSettle Results View';
+            return 'EZSettle Results';
         }
 
         function permanentLogin() {
@@ -26,12 +26,26 @@ function adminer_object() {
 
         function login($login, $password) {
             // validate user submitted credentials
-            return ($login == 'admin' && sha1(sha1($password)) == 'dd0d6d260fe53026b096d72cc8e3c20444bdc1b5dd0d6d260fe53026b096d72cc8e3c20444bdc1b5');
+            return ($login == 'admin' && sha1(sha1($password)) == 'dd0d6d260fe53026b096d72cc8e3c20444bdc1b5');
+        }
+
+        function loginForm() {
+?>
+<table cellspacing="0">
+<tr><th><?php echo lang('Username'); ?><td><input type="hidden" name="driver" value="sqlite"><input type="hidden" name="server" value=""><input id="username" name="username" value="<?php echo h($_GET["username"]);  ?>">
+<tr><th><?php echo lang('Password'); ?><td><input type="password" name="password">
+</table>
+            <script type="text/javascript">
+            document.getElementById('username').focus();
+            </script>
+<?php
+            echo "<p><input type='submit' value='" . lang('Login') . "'>\n";
+            echo checkbox("permanent", 1, $_COOKIE["adminer_permanent"], lang('Permanent login')) . "\n";
         }
     }
 
     return new AdminerSoftware;
 }
 
-include "./editor.php";
+include "./editor.inc.php";
 
