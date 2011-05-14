@@ -11,7 +11,7 @@
 		<!--[if lt IE 8]><link rel="stylesheet" href="/../css/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
 		<link rel="stylesheet" href="js/jqueryui/css/blitzer/jqueryui.css" type="text/css" />
 		
-		<script type="text/javascript" src="js/jquery-1.4.3.js"></script>
+		<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
 		<script type="text/javascript" src="js/jqueryui/js/jqueryui.js"></script>
 		<script type="text/javascript" src="js/jquery.form.js"></script>
 		<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
