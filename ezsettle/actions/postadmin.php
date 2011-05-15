@@ -10,7 +10,7 @@ if($_SESSION['admin']) {
 }
 else { 
 	$result['success'] = false; 
-}								
+}
 echo json_encode($result);
 
 ?>
