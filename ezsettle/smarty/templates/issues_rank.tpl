@@ -80,7 +80,7 @@
      		{page_name:'issues_rank',
      		time_spent:(time_end-time_start)},
      		function(data){
-     			alert("done");
+     			//alert("done");
      		},
      		'json'
      		);

@@ -96,7 +96,7 @@
      		{page_name:'process',
      		time_spent:(time_end-time_start)},
      		function(data){
-     			alert("done");
+     			//alert("done");
      		},
      		'json'
      		);

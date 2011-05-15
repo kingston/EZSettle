@@ -32,7 +32,11 @@
 					</div><br/>
 					<div style="float: right;">
 						{if isset($username) && $username != "" }
-							Welcome, Buyer128! | <a href="signin.php?logout=true">Logout</a>
+							Welcome, Buyer128! |
+                            {if isset($public) }
+                            <a href="signin.php">Return to case</a> |
+                            {/if}
+                            <a href="signin.php?logout=true">Logout</a>
 						{else}
 							<a href="signin.php">Login</a>
 						{/if}

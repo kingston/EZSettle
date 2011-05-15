@@ -1,7 +1,8 @@
 <?php
-ini_set('display_errors', 1);
-
 session_start();
+require_once("../stage.inc.php");
+checkStage("issues");
+
 require_once(dirname(__FILE__) . '/../utils.php');
 $result = array('success' => true);
 //connect to db
@@ -15,12 +16,12 @@ try {
 
 
     $sql1 = "UPDATE users SET try_additional_issue = 1 WHERE user_id =".$_SESSION['experimental_id'].""; 
-	$sql2 = "UPDATE users SET additional_issue ='".$_POST['added']."' WHERE user_id =".$_SESSION['experimental_id']; 
+	$sql2 = "UPDATE users SET additional_issue ='".sqlite_escape_string($_POST['added'])."' WHERE user_id =".$_SESSION['experimental_id']; 
     try {
     	$count = $db->exec($sql1);
     	$count = $db->exec($sql2);
     } catch(PDOException $e){
-      echo $e->getMessage();
+      //echo $e->getMessage();
     }
     
 echo json_encode($result);

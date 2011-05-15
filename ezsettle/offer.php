@@ -1,4 +1,7 @@
 <?php
+require_once("stage.inc.php");
+transitionStage("issues2", "offer");
+
 require_once("include.php");
 
 $newOld = array_merge($_SESSION['chatOld'], $_SESSION['chatNew']);
@@ -21,6 +24,7 @@ if (!isset($_SESSION['offer_num'])) {
 	$_SESSION['offer_num'] = 1;
 	$_SESSION['offers'] = array();
 	
+    $_SESSION['step'] = -1;
 }
 
 $step = $_SESSION['step'];
@@ -254,20 +258,22 @@ $smarty->assign('chatNew', $_SESSION['chatNew']);
 $smarty->assign('chatOld', $_SESSION['chatOld']);
 $smarty->assign('offer_title', $_SESSION['offer_titles'][$_SESSION['offer_num']]);
 $smarty->assign('offer_num', $_SESSION['offer_num']);
-$smarty->assign('offers', $_SESSION['offers'][$step]);
+if ($step >= 0) {
+    $smarty->assign('offers', $_SESSION['offers'][$step]);
+    $smarty->assign('counteroffers', $_SESSION['counteroffers'][$step]);
+}
 $smarty->assign('issues_rank',$_SESSION['issues_rank']);
 $smarty->assign('ezsettle',$ezsettle);
 if($_SESSION['offer_num']>= 9 ){
-	$smarty->assign('all_offers', $_SESSION['offers']);	
-	$smarty->assign('all_counteroffers', $_SESSION['counteroffers']);
-	$smarty->assign('creative_likeliness',$_SESSION['creative_likeliness']);
-	$smarty->assign('damage_likeliness',$_SESSION['damage_likeliness']);
+    $smarty->assign('all_offers', $_SESSION['offers']);	
+    $smarty->assign('all_counteroffers', $_SESSION['counteroffers']);
+    $smarty->assign('creative_likeliness',$_SESSION['creative_likeliness']);
+    $smarty->assign('damage_likeliness',$_SESSION['damage_likeliness']);
 }
 if(($_SESSION['condition'] == 5)||($_SESSION['condition'] == 6)){
-	$smarty->assign('ezsettle_being_considered',$ezsettle_being_considered);	
+    $smarty->assign('ezsettle_being_considered',$ezsettle_being_considered);	
 }
 
-$smarty->assign('counteroffers', $_SESSION['counteroffers'][$step]);
 $smarty->assign('username', sessionVar('username'));
 $smarty->assign('condition', $_SESSION['condition']);
 $smarty->assign('avatar', $avatar);
@@ -282,7 +288,7 @@ $smarty->assign('step', $step);
 $smarty->assign('ezsettle_arbitrating',$ezsettle_arbitrating);
 $smarty->assign('typing',$typing);
 if(($_SESSION['offer_num']== 11) &&(($_SESSION['condition']==5) || ($_SESSION['condition']==6))){
-	$smarty->assign('arb_choice',$_SESSION['arb_choice']);
+    $smarty->assign('arb_choice',$_SESSION['arb_choice']);
 }
 $smarty->assign('will_arbitrate', $will_arbitrate);
 
@@ -295,69 +301,69 @@ $smarty->assign('ezsettle_pronoun',$ezsettle_pronoun);
 //var_dump($_SESSION['counteroffers'][$step]);
 //Your offer
 if($_SESSION['accept'] == 'yes'){
-//if ($_POST['accept'] && $_POST['accept'] != '') {
-	$smarty->assign('all_offers', $_SESSION['offers']);	
-	$smarty->assign('all_counteroffers', $_SESSION['counteroffers']);
-	$smarty->display('accept.tpl');
+    //if ($_POST['accept'] && $_POST['accept'] != '') {
+    $smarty->assign('all_offers', $_SESSION['offers']);	
+    $smarty->assign('all_counteroffers', $_SESSION['counteroffers']);
+    $smarty->display('accept.tpl');
 }else if($_SESSION['offer_num']== 9){
-	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
-		$smarty->display('arbitration_choose.tpl');
-		
-	}else{
-		$smarty->display('arbitration_instruction.tpl');	
-	}
-	
+    if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
+        $smarty->display('arbitration_choose.tpl');
+
+    }else{
+        $smarty->display('arbitration_instruction.tpl');	
+    }
+
 }else if ($_SESSION['offer_num']== 10){
-	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
-		$smarty->display('choose_pre_arbitration.tpl');
-		
-	}else{
-		$smarty->display('arbitration.tpl');	
-	}
+    if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
+        $smarty->display('choose_pre_arbitration.tpl');
+
+    }else{
+        $smarty->display('arbitration.tpl');	
+    }
 }else if($_SESSION['offer_num']== 11){
-	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
-		$smarty->display('choose_pre_arbitration.tpl');
-		//$smarty->display('arbitration_instruction.tpl');
-		
-	}else{
-		$smarty->display('arbitration_result2.tpl');
-		
-	}
+    if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
+        $smarty->display('choose_pre_arbitration.tpl');
+        //$smarty->display('arbitration_instruction.tpl');
+
+    }else{
+        $smarty->display('arbitration_result2.tpl');
+
+    }
 }else if($_SESSION['offer_num']== 12){
-	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
-		$smarty->display('arbitration_instruction.tpl');
-		
-	}else{
-		$smarty->display('arbitration_result2.tpl');
-	}
+    if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
+        $smarty->display('arbitration_instruction.tpl');
+
+    }else{
+        $smarty->display('arbitration_result2.tpl');
+    }
 }else if($_SESSION['offer_num']== 13){
-	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
-		$smarty->display('arbitration.tpl');
-		
-	}else{	
-		$smarty->display('arbitration_result2.tpl');
-	}
+    if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
+        $smarty->display('arbitration.tpl');
+
+    }else{	
+        $smarty->display('arbitration_result2.tpl');
+    }
 }else if($_SESSION['offer_num']== 14){
-	if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
-		$smarty->display('arbitration_result.tpl');
-	}else{
-		$smarty-display('arbitration_result2.tpl');
-	}
+    if(($_SESSION['condition']==5) || ($_SESSION['condition']==6)){
+        $smarty->display('arbitration_result.tpl');
+    }else{
+        $smarty-display('arbitration_result2.tpl');
+    }
 } else if($_SESSION['offer_num']%3 == 1) {
-	$smarty->display('offer.tpl');
+    $smarty->display('offer.tpl');
 }
 
 else if ($_SESSION['offer_num']%3 == 2){
-	$smarty->display('offer_response.tpl');
+    $smarty->display('offer_response.tpl');
 }
 
 else if ($_SESSION['offer_num']==3) {
-	$smarty->display('damage.tpl');
+    $smarty->display('damage.tpl');
 }
 
 else if ($_SESSION['offer_num']==6) {
-	$smarty->display('creative.tpl');
+    $smarty->display('creative.tpl');
 }
- 
+
 ?>
 

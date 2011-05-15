@@ -1,4 +1,6 @@
 <?php
+require_once("stage.inc.php");
+transitionStage("medarb_intro", "med_statement");
 
 include('include.php');
 $smarty->assign('username', sessionVar('username'));

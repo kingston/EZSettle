@@ -116,6 +116,9 @@
 		});
 		$("#offer").ajaxForm({
 			beforeSubmit:checkOffer,
+            error: function(a, b, c) {
+                postOfferError();
+            },
 			success:afterOffer,
 			dataType: 'json'
 		});
@@ -155,11 +158,20 @@
 	}
 
 	function afterOffer(data) {
-		setTimeout(function() {
-			hideLoading();
-			window.location = 'offer.php';
-		}, 100000);
+        if (data.success === true) {
+            setTimeout(function() {
+			    hideLoading();
+		    	window.location = 'offer.php';
+		    }, 100000);
+        } else {
+            postOfferError();
+        }
 	}
+
+    function postOfferError() {
+        hideLoading();
+        alert("Sorry, we were unable to process the offer.  Please try submitting again.  If this error continues, please contact the system administrator.");
+    }
 	
 	$(window).unload(function(){
 		exit_page();

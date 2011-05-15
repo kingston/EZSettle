@@ -1,4 +1,6 @@
 <?php
+require_once("stage.inc.php");
+transitionStage("issues", "issues2");
 
 require_once("include.php");
 

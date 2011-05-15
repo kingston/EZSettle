@@ -1,4 +1,7 @@
 <?php
+require_once("stage.inc.php");
+transitionStage("cases", "process");
+
 require_once('include.php');
 
 $smarty->assign('username', sessionVar('username'));

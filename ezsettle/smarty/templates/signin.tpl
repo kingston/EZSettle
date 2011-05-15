@@ -42,15 +42,24 @@
 			if($("#password").val() == "") {
 				errors += "You must enter your password!<br/>";
 			}
+            if (!$("#agree").prop("checked")) {
+                errors += "You must agree to the terms of service before continuing!";
+            }
 			if (errors != "") {
 				$("#errors").html(errors);
 				$("#errors").show();
 				return false;
 			}
+            $("#errors").hide();
 		}
 		
 		function postSignin(data) {
-			window.location = 'cases.php';
+            if (data.success === true) {
+			    window.location = 'cases.php';
+            } else {
+                $("#errors").html(data.errors);
+                $("#errors").show();
+            }
 		}
 		
 	//]]>

@@ -1,4 +1,6 @@
 <?php
+require_once("stage.inc.php");
+transitionStage("process", "medarb_intro");
 
 include('include.php');
 $smarty->assign('username', sessionVar('username'));
