@@ -15,7 +15,7 @@ $result = array('success' => true);
     	echo $e->getMessage();
     }
 
-	$sql = "INSERT INTO page_time (user_fk, page_name,time_spent) VALUES (".$_SESSION['experimental_id'].", '".$_POST['page_name']."', ".$_POST['time_spent'].")";
+	$sql = "INSERT INTO page_time (user_fk, page_name,time_spent) VALUES (".$_SESSION['experimental_id'].", '".sqlite_escape_string($_POST['page_name'])."', ".sqlite_escape_string($_POST['time_spent']).")";
 
 	try {
     	$count = $db->exec($sql);
