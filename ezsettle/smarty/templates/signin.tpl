@@ -42,9 +42,6 @@
 			if($("#password").val() == "") {
 				errors += "You must enter your password!<br/>";
 			}
-            if (!$("#agree").prop("checked")) {
-                errors += "You must agree to the terms of service before continuing!";
-            }
 			if (errors != "") {
 				$("#errors").html(errors);
 				$("#errors").show();
